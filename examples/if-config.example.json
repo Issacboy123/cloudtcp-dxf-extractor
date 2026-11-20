@@ -30,6 +30,7 @@
       0
     ]
   },
+  "source_units": "feet",
   "block_mappings": {
     "W20_1": {
       "type": "sign",
@@ -39,6 +40,11 @@
     "ARROW_BOARD": {
       "type": "arrow_board",
       "mode": "flashing",
+      "zone_id": "Z1"
+    },
+    "FLAGGER": {
+      "type": "flagger",
+      "controls": "NB",
       "zone_id": "Z1"
     }
   }

@@ -7,7 +7,7 @@ name = "cloudtcp-dxf-extractor"
 version = "0.2.0"
 description = "Loss-aware DXF extraction and conservative CloudTCP IF v1 mapping"
 requires-python = ">=3.10"
-dependencies = ["ezdxf>=1.3,<2", "jsonschema>=4.18"]
+dependencies = ["ezdxf>=1.3,<2", "jsonschema>=4.18", "rfc3339-validator>=0.1.4"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
@@ -17,3 +17,6 @@ cloudtcp-dxf = "cloudtcp_dxf.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+cloudtcp_dxf = ["tcp-intermediate-format.schema.json"]

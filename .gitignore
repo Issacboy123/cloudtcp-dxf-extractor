@@ -7,3 +7,6 @@ __pycache__/
 *.extracted.json
 *.if.json
 *.log.json
+build/
+dist/
+*.egg-info/
