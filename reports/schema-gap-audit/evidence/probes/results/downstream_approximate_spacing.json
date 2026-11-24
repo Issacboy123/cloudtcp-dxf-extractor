@@ -1,0 +1,72 @@
+{
+  "blocker_categories": [
+    "schema",
+    "source_policy"
+  ],
+  "expected": {
+    "w1": [
+      "not_evaluable",
+      false
+    ]
+  },
+  "explanation": "",
+  "name": "downstream_approximate_spacing",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "The source gives approximate 20-ft spacing, not a numeric acceptance tolerance. Schema 1.0.0 has no authored tolerance or unambiguous device-to-taper association; no pass/fail band is invented.",
+          "rule_id": "mutcd.TAPER-03",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 358,
+      "input_valid": true,
+      "raw_evaluator_result": null,
+      "status_counts": {
+        "not_applicable": 59,
+        "not_evaluable": 358,
+        "pass": 2
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "The source gives approximate 20-ft spacing, not a numeric acceptance tolerance. Schema 1.0.0 has no authored tolerance or unambiguous device-to-taper association; no pass/fail band is invented.",
+          "rule_id": "mutcd.TAPER-03",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 67,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": false,
+        "errors": [],
+        "findings": [],
+        "reason": "The source gives approximate 20-ft spacing, not a numeric acceptance tolerance. Schema 1.0.0 has no authored tolerance or unambiguous device-to-taper association; no pass/fail band is invented.",
+        "rule_id": "mutcd.TAPER-03",
+        "score": null,
+        "status": "not_evaluable"
+      },
+      "status_counts": {
+        "not_applicable": 7,
+        "not_evaluable": 67,
+        "pass": 2
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "TAPER-03"
+}

@@ -1,0 +1,61 @@
+{
+  "blocker_categories": [
+    "missing_input"
+  ],
+  "expected": {
+    "full": [
+      "not_evaluable",
+      false
+    ]
+  },
+  "explanation": "",
+  "name": "mileage_absent",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "S1: legend does not establish a supported explicit ROAD WORK NEXT nonnegative numeric MILE(S) distance.",
+          "rule_id": "mutcd.SIGN-26.c02",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 359,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": false,
+        "errors": [],
+        "findings": [],
+        "reason": "S1: legend does not establish a supported explicit ROAD WORK NEXT nonnegative numeric MILE(S) distance.",
+        "rule_id": "mutcd.SIGN-26.c02",
+        "score": null,
+        "status": "not_evaluable"
+      },
+      "status_counts": {
+        "not_applicable": 59,
+        "not_evaluable": 359,
+        "pass": 1
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [],
+      "incomplete_count": 67,
+      "input_valid": true,
+      "raw_evaluator_result": null,
+      "status_counts": {
+        "not_applicable": 8,
+        "not_evaluable": 67,
+        "pass": 1
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "SIGN-26.c02"
+}

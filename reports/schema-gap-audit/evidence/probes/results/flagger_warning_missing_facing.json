@@ -1,0 +1,81 @@
+{
+  "blocker_categories": [
+    "missing_input"
+  ],
+  "expected": {
+    "full": [
+      "not_evaluable",
+      false
+    ],
+    "w1": [
+      "not_evaluable",
+      false
+    ]
+  },
+  "explanation": "",
+  "name": "flagger_warning_missing_facing",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "F1: candidate W20-7 facing direction is absent.",
+          "rule_id": "mutcd.SIGN-21",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 361,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": false,
+        "errors": [],
+        "findings": [],
+        "reason": "F1: candidate W20-7 facing direction is absent.",
+        "rule_id": "mutcd.SIGN-21",
+        "score": null,
+        "status": "not_evaluable"
+      },
+      "status_counts": {
+        "not_applicable": 58,
+        "not_evaluable": 361
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "F1: candidate W20-7 facing direction is absent.",
+          "rule_id": "mutcd.SIGN-21",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 70,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": false,
+        "errors": [],
+        "findings": [],
+        "reason": "F1: candidate W20-7 facing direction is absent.",
+        "rule_id": "mutcd.SIGN-21",
+        "score": null,
+        "status": "not_evaluable"
+      },
+      "status_counts": {
+        "not_applicable": 6,
+        "not_evaluable": 70
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "SIGN-21"
+}

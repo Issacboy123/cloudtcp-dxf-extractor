@@ -1,0 +1,81 @@
+{
+  "blocker_categories": [
+    "schema"
+  ],
+  "expected": {
+    "full": [
+      "not_evaluable",
+      false
+    ],
+    "w1": [
+      "not_evaluable",
+      false
+    ]
+  },
+  "explanation": "",
+  "name": "arrow_two_lanes_no_traffic_pattern",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "Explicit shoulder_closure supports the caution-mode check. Two lanes alone do not establish a two-way road; other operation types remain not evaluable when boards exist. The schema lacks lane-shift intent and cannot establish the source prohibition on arrow boards indicating lane shifts.",
+          "rule_id": "mutcd.ARROW-03",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 359,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": false,
+        "errors": [],
+        "findings": [],
+        "reason": "Explicit shoulder_closure supports the caution-mode check. Two lanes alone do not establish a two-way road; other operation types remain not evaluable when boards exist. The schema lacks lane-shift intent and cannot establish the source prohibition on arrow boards indicating lane shifts.",
+        "rule_id": "mutcd.ARROW-03",
+        "score": null,
+        "status": "not_evaluable"
+      },
+      "status_counts": {
+        "not_applicable": 60,
+        "not_evaluable": 359
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "Explicit shoulder_closure supports the caution-mode check. Two lanes alone do not establish a two-way road; other operation types remain not evaluable when boards exist. The schema lacks lane-shift intent and cannot establish the source prohibition on arrow boards indicating lane shifts.",
+          "rule_id": "mutcd.ARROW-03",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 67,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": false,
+        "errors": [],
+        "findings": [],
+        "reason": "Explicit shoulder_closure supports the caution-mode check. Two lanes alone do not establish a two-way road; other operation types remain not evaluable when boards exist. The schema lacks lane-shift intent and cannot establish the source prohibition on arrow boards indicating lane shifts.",
+        "rule_id": "mutcd.ARROW-03",
+        "score": null,
+        "status": "not_evaluable"
+      },
+      "status_counts": {
+        "not_applicable": 9,
+        "not_evaluable": 67
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "ARROW-03"
+}

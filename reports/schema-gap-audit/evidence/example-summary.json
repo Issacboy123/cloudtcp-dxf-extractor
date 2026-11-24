@@ -1,0 +1,4062 @@
+[
+  {
+    "fixture": "examples/invalid.json",
+    "registry": "default",
+    "exit_code": 2,
+    "input_valid": false,
+    "evaluation_complete": false,
+    "statuses": {},
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/invalid.json",
+    "registry": "w1",
+    "exit_code": 2,
+    "input_valid": false,
+    "evaluation_complete": false,
+    "statuses": {},
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/taper-125ft.json",
+    "registry": "default",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 358,
+      "not_applicable": 60,
+      "fail": 1
+    },
+    "findings": 1,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/taper-125ft.json",
+    "registry": "w1",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 67,
+      "not_applicable": 8,
+      "fail": 1
+    },
+    "findings": 1,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/taper-75ft.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 358,
+      "not_applicable": 60,
+      "pass": 1
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/taper-75ft.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 67,
+      "not_applicable": 8,
+      "pass": 1
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-01/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-01/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-01/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-01/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-02/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 359,
+      "not_applicable": 60
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-02/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 67,
+      "not_applicable": 9
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-02/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 359,
+      "not_applicable": 60
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-02/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 67,
+      "not_applicable": 9
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-03/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 358,
+      "not_applicable": 60,
+      "pass": 1
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-03/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 64,
+      "not_applicable": 11,
+      "pass": 1
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-03/violating.json",
+    "registry": "default",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 358,
+      "not_applicable": 60,
+      "fail": 1
+    },
+    "findings": 1,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-03/violating.json",
+    "registry": "w1",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 64,
+      "not_applicable": 11,
+      "fail": 1
+    },
+    "findings": 1,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-04/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-04/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-04/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-04/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-05/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-05/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-05/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-05/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-06/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-06/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-06/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-06/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-07/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-07/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-07/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/ARROW-07/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/BUFFER-01/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 358,
+      "not_applicable": 60,
+      "pass": 1
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/BUFFER-01/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 66,
+      "not_applicable": 9,
+      "pass": 1
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/BUFFER-01/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 358,
+      "not_applicable": 60,
+      "pass": 1
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/BUFFER-01/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 66,
+      "not_applicable": 9,
+      "pass": 1
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/BUFFER-02/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/BUFFER-02/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/BUFFER-02/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/BUFFER-02/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-01/compliant.json",
+    "registry": "default",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 358,
+      "not_applicable": 59,
+      "fail": 1,
+      "pass": 1
+    },
+    "findings": 1,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-01/compliant.json",
+    "registry": "w1",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 66,
+      "not_applicable": 8,
+      "fail": 1,
+      "pass": 1
+    },
+    "findings": 1,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-01/violating.json",
+    "registry": "default",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 359,
+      "not_applicable": 59,
+      "fail": 1
+    },
+    "findings": 1,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-01/violating.json",
+    "registry": "w1",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 67,
+      "not_applicable": 8,
+      "fail": 1
+    },
+    "findings": 1,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-02/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-02/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-02/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-02/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-03/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-03/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-03/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-03/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-04/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-04/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-04/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-04/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-05/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-05/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-05/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-05/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-06/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-06/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-06/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-06/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-07/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-07/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-07/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-07/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-08/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-08/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-08/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-08/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-09/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-09/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-09/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-09/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-10/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-10/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-10/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-10/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-11/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-11/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-11/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-11/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-12/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-12/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-12/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/CHAN-12/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-01/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-01/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-01/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-01/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-02/compliant.json",
+    "registry": "default",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 358,
+      "not_applicable": 60,
+      "fail": 1
+    },
+    "findings": 1,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-02/compliant.json",
+    "registry": "w1",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 67,
+      "not_applicable": 8,
+      "fail": 1
+    },
+    "findings": 1,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-02/violating.json",
+    "registry": "default",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 358,
+      "not_applicable": 60,
+      "fail": 1
+    },
+    "findings": 1,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-02/violating.json",
+    "registry": "w1",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 67,
+      "not_applicable": 8,
+      "fail": 1
+    },
+    "findings": 1,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-03/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-03/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-03/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-03/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-04/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-04/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-04/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-04/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-05/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-05/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-05/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-05/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-06/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-06/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-06/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-06/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-07/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-07/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-07/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-07/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-08/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-08/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-08/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-08/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-09/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-09/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-09/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-09/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-10/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-10/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-10/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/FLAG-10/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-01/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-01/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-01/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-01/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-02/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-02/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-02/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-02/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-03/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-03/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-03/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-03/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-04/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-04/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-04/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-04/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-05/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-05/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-05/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/PED-05/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SHLD-01/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SHLD-01/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SHLD-01/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SHLD-01/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SHLD-02/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SHLD-02/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SHLD-02/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SHLD-02/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SHLD-03/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SHLD-03/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SHLD-03/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SHLD-03/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-01/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-01/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-01/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-01/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-02/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-02/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-02/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-02/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-03/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-03/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-03/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-03/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-04/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-04/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-04/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-04/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-05/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-05/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-05/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-05/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-06/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-06/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-06/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-06/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-07/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-07/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-07/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-07/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-08/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-08/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-08/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-08/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-09/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-09/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-09/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-09/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-10/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-10/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-10/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-10/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-11/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-11/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-11/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-11/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-12/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-12/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-12/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-12/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-13/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-13/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-13/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-13/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-14/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-14/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-14/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-14/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-15/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-15/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-15/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-15/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-16/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-16/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-16/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-16/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-17/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-17/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-17/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-17/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-18/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-18/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-18/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-18/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-19/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-19/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-19/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-19/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-20/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-20/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-20/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-20/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-21/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 361,
+      "not_applicable": 58
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-21/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 70,
+      "not_applicable": 6
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-21/violating.json",
+    "registry": "default",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 358,
+      "not_applicable": 60,
+      "fail": 1
+    },
+    "findings": 1,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-21/violating.json",
+    "registry": "w1",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 67,
+      "not_applicable": 8,
+      "fail": 1
+    },
+    "findings": 1,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-22/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-22/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-22/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-22/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-23/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-23/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-23/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-23/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-24/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-24/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-24/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-24/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-25/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-25/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-25/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-25/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-26/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-26/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-26/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-26/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-27/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-27/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-27/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-27/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-28/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-28/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-28/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-28/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-29/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-29/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-29/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-29/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-30/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-30/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-30/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-30/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-31/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-31/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-31/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/SIGN-31/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-01/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 358,
+      "not_applicable": 60,
+      "pass": 1
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-01/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 66,
+      "not_applicable": 9,
+      "pass": 1
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-01/violating.json",
+    "registry": "default",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 358,
+      "not_applicable": 60,
+      "fail": 1
+    },
+    "findings": 1,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-01/violating.json",
+    "registry": "w1",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 66,
+      "not_applicable": 9,
+      "fail": 1
+    },
+    "findings": 1,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-02/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 358,
+      "not_applicable": 59,
+      "pass": 2
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-02/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 67,
+      "not_applicable": 8,
+      "pass": 1
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-02/violating.json",
+    "registry": "default",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 358,
+      "not_applicable": 59,
+      "fail": 2
+    },
+    "findings": 2,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-02/violating.json",
+    "registry": "w1",
+    "exit_code": 1,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 67,
+      "not_applicable": 8,
+      "fail": 1
+    },
+    "findings": 2,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-03/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 358,
+      "not_applicable": 59,
+      "pass": 2
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-03/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 67,
+      "not_applicable": 7,
+      "pass": 2
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-03/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 359,
+      "not_applicable": 59,
+      "pass": 1
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-03/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 7,
+      "pass": 1
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-04/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-04/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-04/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-04/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-05/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-05/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-05/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-05/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-06/compliant.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-06/compliant.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-06/violating.json",
+    "registry": "default",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 360,
+      "not_applicable": 59
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  },
+  {
+    "fixture": "examples/w1/TAPER-06/violating.json",
+    "registry": "w1",
+    "exit_code": 3,
+    "input_valid": true,
+    "evaluation_complete": false,
+    "statuses": {
+      "not_evaluable": 68,
+      "not_applicable": 8
+    },
+    "findings": 0,
+    "incomplete_failures": 0
+  }
+]

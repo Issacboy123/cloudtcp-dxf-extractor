@@ -1,0 +1,69 @@
+{
+  "blocker_categories": [
+    "schema"
+  ],
+  "expected": {
+    "w1": [
+      "not_evaluable",
+      false
+    ]
+  },
+  "explanation": "",
+  "name": "arrow_boards_no_lane_identity",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "A single closed lane requires freeway applicability, which is absent from schema 1.0.0. Multiple closed lanes require distinct board-to-closed-lane associations; schema 1.0.0 provides no lane identity.",
+          "rule_id": "mutcd.ARROW-02",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 359,
+      "input_valid": true,
+      "raw_evaluator_result": null,
+      "status_counts": {
+        "not_applicable": 60,
+        "not_evaluable": 359
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "A single closed lane requires freeway applicability, which is absent from schema 1.0.0. Multiple closed lanes require distinct board-to-closed-lane associations; schema 1.0.0 provides no lane identity.",
+          "rule_id": "mutcd.ARROW-02",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 67,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": false,
+        "errors": [],
+        "findings": [],
+        "reason": "A single closed lane requires freeway applicability, which is absent from schema 1.0.0. Multiple closed lanes require distinct board-to-closed-lane associations; schema 1.0.0 provides no lane identity.",
+        "rule_id": "mutcd.ARROW-02",
+        "score": null,
+        "status": "not_evaluable"
+      },
+      "status_counts": {
+        "not_applicable": 9,
+        "not_evaluable": 67
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "ARROW-02"
+}

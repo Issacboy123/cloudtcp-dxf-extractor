@@ -1,0 +1,81 @@
+{
+  "blocker_categories": [],
+  "expected": {
+    "full": [
+      "pass",
+      true
+    ],
+    "w1": [
+      "pass",
+      true
+    ]
+  },
+  "explanation": "",
+  "name": "arrow_shoulder_caution",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": true,
+          "errors": [],
+          "findings": [],
+          "reason": null,
+          "rule_id": "mutcd.ARROW-03",
+          "score": 1,
+          "status": "pass"
+        }
+      ],
+      "incomplete_count": 358,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": true,
+        "errors": [],
+        "findings": [],
+        "reason": null,
+        "rule_id": "mutcd.ARROW-03",
+        "score": 1.0,
+        "status": "pass"
+      },
+      "status_counts": {
+        "not_applicable": 60,
+        "not_evaluable": 358,
+        "pass": 1
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": true,
+          "errors": [],
+          "findings": [],
+          "reason": null,
+          "rule_id": "mutcd.ARROW-03",
+          "score": 1,
+          "status": "pass"
+        }
+      ],
+      "incomplete_count": 64,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": true,
+        "errors": [],
+        "findings": [],
+        "reason": null,
+        "rule_id": "mutcd.ARROW-03",
+        "score": 1.0,
+        "status": "pass"
+      },
+      "status_counts": {
+        "not_applicable": 11,
+        "not_evaluable": 64,
+        "pass": 1
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "ARROW-03"
+}

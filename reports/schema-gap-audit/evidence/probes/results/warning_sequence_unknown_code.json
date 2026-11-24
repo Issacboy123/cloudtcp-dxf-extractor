@@ -1,0 +1,71 @@
+{
+  "blocker_categories": [
+    "implementation"
+  ],
+  "expected": {
+    "full": [
+      "not_evaluable",
+      false
+    ]
+  },
+  "explanation": "",
+  "name": "warning_sequence_unknown_code",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "S2: warning code W999-999 is outside the supported series policy.",
+          "rule_id": "mutcd.SIGN-08",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 359,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": false,
+        "errors": [],
+        "findings": [],
+        "reason": "S2: warning code W999-999 is outside the supported series policy.",
+        "rule_id": "mutcd.SIGN-08",
+        "score": null,
+        "status": "not_evaluable"
+      },
+      "status_counts": {
+        "not_applicable": 59,
+        "not_evaluable": 359,
+        "pass": 1
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "Requires ordered advance-warning sign identification and approach direction; supported warning-code policy and unique approach geometry are not established for production findings.",
+          "rule_id": "mutcd.SIGN-08",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 67,
+      "input_valid": true,
+      "raw_evaluator_result": null,
+      "status_counts": {
+        "not_applicable": 8,
+        "not_evaluable": 67,
+        "pass": 1
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "SIGN-08"
+}

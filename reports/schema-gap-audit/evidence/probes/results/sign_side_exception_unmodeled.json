@@ -1,0 +1,82 @@
+{
+  "blocker_categories": [
+    "schema",
+    "engineering_judgment"
+  ],
+  "expected": {
+    "full": [
+      "not_evaluable",
+      false
+    ],
+    "w1": [
+      "not_evaluable",
+      false
+    ]
+  },
+  "explanation": "",
+  "name": "sign_side_exception_unmodeled",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "Left/center placement exceptions cannot be established from schema 1.0.0.",
+          "rule_id": "mutcd.SIGN-11",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 359,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": false,
+        "errors": [],
+        "findings": [],
+        "reason": "Left/center placement exceptions cannot be established from schema 1.0.0.",
+        "rule_id": "mutcd.SIGN-11",
+        "score": null,
+        "status": "not_evaluable"
+      },
+      "status_counts": {
+        "not_applicable": 60,
+        "not_evaluable": 359
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "Left/center placement exceptions cannot be established from schema 1.0.0.",
+          "rule_id": "mutcd.SIGN-11",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 68,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": false,
+        "errors": [],
+        "findings": [],
+        "reason": "Left/center placement exceptions cannot be established from schema 1.0.0.",
+        "rule_id": "mutcd.SIGN-11",
+        "score": null,
+        "status": "not_evaluable"
+      },
+      "status_counts": {
+        "not_applicable": 8,
+        "not_evaluable": 68
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "SIGN-11"
+}

@@ -1,0 +1,181 @@
+{
+  "blocker_categories": [],
+  "expected": {
+    "full": [
+      "fail",
+      true
+    ],
+    "w1": [
+      "fail",
+      true
+    ]
+  },
+  "explanation": "",
+  "name": "arrow_shoulder_arrow_mode",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 1,
+      "focused_rule_results": [
+        {
+          "complete": true,
+          "errors": [],
+          "findings": [
+            {
+              "citations": [
+                {
+                  "local_reference": "ARROW-03 — STANDARD — Caution mode for shoulder/two-lane; no lane shift indication",
+                  "mutcd_reference": "Sec. 6L.06 ¶18,25, p. 833, 835",
+                  "source_document": "TCP-W1-1 Rules.md"
+                }
+              ],
+              "classification": "STANDARD",
+              "element_ids": [
+                "A1"
+              ],
+              "message": "Arrow board A1 mode sequential_arrow is not caution mode; arrow/chevron mode shall not be used for shoulder work or closing one lane of a two-lane road.",
+              "paths": [
+                "/elements/0/mode"
+              ],
+              "rule_id": "mutcd.ARROW-03",
+              "severity": "error",
+              "units": null,
+              "values": {
+                "score": 0
+              },
+              "zone_ids": []
+            }
+          ],
+          "reason": null,
+          "rule_id": "mutcd.ARROW-03",
+          "score": 0,
+          "status": "fail"
+        }
+      ],
+      "incomplete_count": 358,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": true,
+        "errors": [],
+        "findings": [
+          {
+            "citations": [
+              {
+                "local_reference": "ARROW-03 — STANDARD — Caution mode for shoulder/two-lane; no lane shift indication",
+                "mutcd_reference": "Sec. 6L.06 ¶18,25, p. 833, 835",
+                "source_document": "TCP-W1-1 Rules.md"
+              }
+            ],
+            "classification": "STANDARD",
+            "element_ids": [
+              "A1"
+            ],
+            "message": "Arrow board A1 mode sequential_arrow is not caution mode; arrow/chevron mode shall not be used for shoulder work or closing one lane of a two-lane road.",
+            "paths": [
+              "/elements/0/mode"
+            ],
+            "rule_id": "mutcd.ARROW-03",
+            "severity": "error",
+            "units": null,
+            "values": {
+              "score": 0.0
+            },
+            "zone_ids": []
+          }
+        ],
+        "reason": null,
+        "rule_id": "mutcd.ARROW-03",
+        "score": 0.0,
+        "status": "fail"
+      },
+      "status_counts": {
+        "fail": 1,
+        "not_applicable": 60,
+        "not_evaluable": 358
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 1,
+      "focused_rule_results": [
+        {
+          "complete": true,
+          "errors": [],
+          "findings": [
+            {
+              "citations": [
+                {
+                  "local_reference": "ARROW-03 — STANDARD — Caution mode for shoulder/two-lane; no lane shift indication",
+                  "mutcd_reference": "Sec. 6L.06 ¶18,25, p. 833, 835",
+                  "source_document": "TCP-W1-1 Rules.md"
+                }
+              ],
+              "classification": "STANDARD",
+              "element_ids": [
+                "A1"
+              ],
+              "message": "Arrow board A1 mode sequential_arrow is not caution mode; arrow/chevron mode shall not be used for shoulder work or closing one lane of a two-lane road.",
+              "paths": [
+                "/elements/0/mode"
+              ],
+              "rule_id": "mutcd.ARROW-03",
+              "severity": "error",
+              "units": null,
+              "values": {
+                "score": 0
+              },
+              "zone_ids": []
+            }
+          ],
+          "reason": null,
+          "rule_id": "mutcd.ARROW-03",
+          "score": 0,
+          "status": "fail"
+        }
+      ],
+      "incomplete_count": 64,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": true,
+        "errors": [],
+        "findings": [
+          {
+            "citations": [
+              {
+                "local_reference": "ARROW-03 — STANDARD — Caution mode for shoulder/two-lane; no lane shift indication",
+                "mutcd_reference": "Sec. 6L.06 ¶18,25, p. 833, 835",
+                "source_document": "TCP-W1-1 Rules.md"
+              }
+            ],
+            "classification": "STANDARD",
+            "element_ids": [
+              "A1"
+            ],
+            "message": "Arrow board A1 mode sequential_arrow is not caution mode; arrow/chevron mode shall not be used for shoulder work or closing one lane of a two-lane road.",
+            "paths": [
+              "/elements/0/mode"
+            ],
+            "rule_id": "mutcd.ARROW-03",
+            "severity": "error",
+            "units": null,
+            "values": {
+              "score": 0.0
+            },
+            "zone_ids": []
+          }
+        ],
+        "reason": null,
+        "rule_id": "mutcd.ARROW-03",
+        "score": 0.0,
+        "status": "fail"
+      },
+      "status_counts": {
+        "fail": 1,
+        "not_applicable": 11,
+        "not_evaluable": 64
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "ARROW-03"
+}

@@ -1,0 +1,191 @@
+{
+  "blocker_categories": [
+    "missing_input"
+  ],
+  "expected": {
+    "full": [
+      "fail",
+      false
+    ],
+    "w1": [
+      "fail",
+      false
+    ]
+  },
+  "explanation": "",
+  "name": "flagger_warning_failure_plus_unknown",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 1,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [
+            {
+              "citations": [
+                {
+                  "local_reference": "SIGN-21 — GUIDANCE — Flagger W20-7 advance",
+                  "mutcd_reference": "Sec. 6H.15 ¶01-02; TA-10 note 8; TA-13 note 7, p. 806, 878, 884",
+                  "source_document": "TCP-W1-1 Rules.md"
+                }
+              ],
+              "classification": "GUIDANCE",
+              "element_ids": [
+                "F1"
+              ],
+              "message": "Flagger F1 has no matching-facing W20-7 upstream on its approach.",
+              "paths": [
+                "/elements/0/position/station",
+                "/elements/0/controls",
+                "/elements"
+              ],
+              "rule_id": "mutcd.SIGN-21",
+              "severity": "warning",
+              "units": null,
+              "values": {
+                "score": 0
+              },
+              "zone_ids": []
+            }
+          ],
+          "reason": "F2: controls must explicitly match the single approach.",
+          "rule_id": "mutcd.SIGN-21",
+          "score": 0,
+          "status": "fail"
+        }
+      ],
+      "incomplete_count": 359,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": false,
+        "errors": [],
+        "findings": [
+          {
+            "citations": [
+              {
+                "local_reference": "SIGN-21 — GUIDANCE — Flagger W20-7 advance",
+                "mutcd_reference": "Sec. 6H.15 ¶01-02; TA-10 note 8; TA-13 note 7, p. 806, 878, 884",
+                "source_document": "TCP-W1-1 Rules.md"
+              }
+            ],
+            "classification": "GUIDANCE",
+            "element_ids": [
+              "F1"
+            ],
+            "message": "Flagger F1 has no matching-facing W20-7 upstream on its approach.",
+            "paths": [
+              "/elements/0/position/station",
+              "/elements/0/controls",
+              "/elements"
+            ],
+            "rule_id": "mutcd.SIGN-21",
+            "severity": "warning",
+            "units": null,
+            "values": {
+              "score": 0.0
+            },
+            "zone_ids": []
+          }
+        ],
+        "reason": "F2: controls must explicitly match the single approach.",
+        "rule_id": "mutcd.SIGN-21",
+        "score": null,
+        "status": "fail"
+      },
+      "status_counts": {
+        "fail": 1,
+        "not_applicable": 60,
+        "not_evaluable": 358
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 1,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [
+            {
+              "citations": [
+                {
+                  "local_reference": "SIGN-21 — GUIDANCE — Flagger W20-7 advance",
+                  "mutcd_reference": "Sec. 6H.15 ¶01-02; TA-10 note 8; TA-13 note 7, p. 806, 878, 884",
+                  "source_document": "TCP-W1-1 Rules.md"
+                }
+              ],
+              "classification": "GUIDANCE",
+              "element_ids": [
+                "F1"
+              ],
+              "message": "Flagger F1 has no matching-facing W20-7 upstream on its approach.",
+              "paths": [
+                "/elements/0/position/station",
+                "/elements/0/controls",
+                "/elements"
+              ],
+              "rule_id": "mutcd.SIGN-21",
+              "severity": "warning",
+              "units": null,
+              "values": {
+                "score": 0
+              },
+              "zone_ids": []
+            }
+          ],
+          "reason": "F2: controls must explicitly match the single approach.",
+          "rule_id": "mutcd.SIGN-21",
+          "score": 0,
+          "status": "fail"
+        }
+      ],
+      "incomplete_count": 68,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": false,
+        "errors": [],
+        "findings": [
+          {
+            "citations": [
+              {
+                "local_reference": "SIGN-21 — GUIDANCE — Flagger W20-7 advance",
+                "mutcd_reference": "Sec. 6H.15 ¶01-02; TA-10 note 8; TA-13 note 7, p. 806, 878, 884",
+                "source_document": "TCP-W1-1 Rules.md"
+              }
+            ],
+            "classification": "GUIDANCE",
+            "element_ids": [
+              "F1"
+            ],
+            "message": "Flagger F1 has no matching-facing W20-7 upstream on its approach.",
+            "paths": [
+              "/elements/0/position/station",
+              "/elements/0/controls",
+              "/elements"
+            ],
+            "rule_id": "mutcd.SIGN-21",
+            "severity": "warning",
+            "units": null,
+            "values": {
+              "score": 0.0
+            },
+            "zone_ids": []
+          }
+        ],
+        "reason": "F2: controls must explicitly match the single approach.",
+        "rule_id": "mutcd.SIGN-21",
+        "score": null,
+        "status": "fail"
+      },
+      "status_counts": {
+        "fail": 1,
+        "not_applicable": 8,
+        "not_evaluable": 67
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "SIGN-21"
+}

@@ -1,0 +1,127 @@
+{
+  "blocker_categories": [],
+  "expected": {
+    "full": [
+      "fail",
+      true
+    ]
+  },
+  "explanation": "",
+  "name": "warning_sequence_reversed",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 1,
+      "focused_rule_results": [
+        {
+          "complete": true,
+          "errors": [],
+          "findings": [
+            {
+              "citations": [
+                {
+                  "local_reference": "Z-107 — GUIDANCE — First advance warning encountered in a series",
+                  "mutcd_reference": "Federal MUTCD §6H.02, para. 02; PDF p. 171; printed p. 1261\\.",
+                  "source_document": "TCP Rules Document.md"
+                },
+                {
+                  "local_reference": "SIGN-08 — GUIDANCE — ROAD WORK AHEAD first upstream",
+                  "mutcd_reference": "Sec. 6H.02 ¶02, p. 798",
+                  "source_document": "TCP-W1-1 Rules.md"
+                }
+              ],
+              "classification": "GUIDANCE",
+              "element_ids": [
+                "S1"
+              ],
+              "message": "ROAD WORK AHEAD (W20-1) is not the first supported advance warning sign encountered.",
+              "paths": [
+                "/elements/0/mutcd_code",
+                "/elements/0/position/station"
+              ],
+              "rule_id": "mutcd.SIGN-08",
+              "severity": "warning",
+              "units": null,
+              "values": {},
+              "zone_ids": [
+                "AW"
+              ]
+            }
+          ],
+          "reason": null,
+          "rule_id": "mutcd.SIGN-08",
+          "score": 0,
+          "status": "fail"
+        }
+      ],
+      "incomplete_count": 358,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": true,
+        "errors": [],
+        "findings": [
+          {
+            "citations": [
+              {
+                "local_reference": "SIGN-08",
+                "mutcd_reference": "Source citations supplied by the complete registry.",
+                "source_document": "TCP-W1-1 Rules.md"
+              }
+            ],
+            "classification": "GUIDANCE",
+            "element_ids": [
+              "S1"
+            ],
+            "message": "ROAD WORK AHEAD (W20-1) is not the first supported advance warning sign encountered.",
+            "paths": [
+              "/elements/0/mutcd_code",
+              "/elements/0/position/station"
+            ],
+            "rule_id": "mutcd.SIGN-08",
+            "severity": "warning",
+            "units": null,
+            "values": {},
+            "zone_ids": [
+              "AW"
+            ]
+          }
+        ],
+        "reason": null,
+        "rule_id": "mutcd.SIGN-08",
+        "score": null,
+        "status": "fail"
+      },
+      "status_counts": {
+        "fail": 1,
+        "not_applicable": 59,
+        "not_evaluable": 358,
+        "pass": 1
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "Requires ordered advance-warning sign identification and approach direction; supported warning-code policy and unique approach geometry are not established for production findings.",
+          "rule_id": "mutcd.SIGN-08",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 67,
+      "input_valid": true,
+      "raw_evaluator_result": null,
+      "status_counts": {
+        "not_applicable": 8,
+        "not_evaluable": 67,
+        "pass": 1
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "SIGN-08"
+}

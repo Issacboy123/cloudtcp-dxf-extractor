@@ -1,0 +1,81 @@
+{
+  "blocker_categories": [],
+  "expected": {
+    "full": [
+      "pass",
+      true
+    ],
+    "w1": [
+      "pass",
+      true
+    ]
+  },
+  "explanation": "OPTION length affects evaluator score; it does not create a finding.",
+  "name": "buffer_at_suggested_length",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": true,
+          "errors": [],
+          "findings": [],
+          "reason": null,
+          "rule_id": "mutcd.BUFFER-01",
+          "score": 1,
+          "status": "pass"
+        }
+      ],
+      "incomplete_count": 358,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": true,
+        "errors": [],
+        "findings": [],
+        "reason": null,
+        "rule_id": "mutcd.BUFFER-01",
+        "score": 1.0,
+        "status": "pass"
+      },
+      "status_counts": {
+        "not_applicable": 60,
+        "not_evaluable": 358,
+        "pass": 1
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": true,
+          "errors": [],
+          "findings": [],
+          "reason": null,
+          "rule_id": "mutcd.BUFFER-01",
+          "score": 1,
+          "status": "pass"
+        }
+      ],
+      "incomplete_count": 66,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": true,
+        "errors": [],
+        "findings": [],
+        "reason": null,
+        "rule_id": "mutcd.BUFFER-01",
+        "score": 1.0,
+        "status": "pass"
+      },
+      "status_counts": {
+        "not_applicable": 9,
+        "not_evaluable": 66,
+        "pass": 1
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "BUFFER-01"
+}

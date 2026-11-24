@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/private/tmp/cloudtcp-schema-audit-ef5e474/venv/bin/python",
+    "-m",
+    "ruff",
+    "check",
+    "."
+  ],
+  "cwd": "/private/tmp/cloudtcp-schema-audit-ef5e474/cloudtcp-python-verifier",
+  "exit_code": 0,
+  "duration_seconds": 0.044,
+  "stdout": "ruff.stdout.txt",
+  "stderr": "ruff.stderr.txt"
+}

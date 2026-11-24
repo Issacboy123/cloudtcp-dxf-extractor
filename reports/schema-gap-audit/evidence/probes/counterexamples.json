@@ -1,0 +1,57 @@
+[
+  {
+    "evidence_kind": "hypothetical distinct real-world arrangements sharing one validated schema payload",
+    "id": "device-taper-association",
+    "missing_fact": "Explicit device-line to taper/path association.",
+    "payload": "federal_spacing_60",
+    "rejected_extension": "device_taper_association",
+    "runtime_rule": "mutcd.CHAN-01",
+    "shared_payload_sha256": "8c372facaf20675fc39da8a760fe506e6aad8685a8df832d33d969e02dd48345",
+    "world_A": "60-ft-spaced line serves the merging taper at 45 mph; S spacing limit would be exceeded.",
+    "world_B": "The same station-overlapping line serves a separate tangent path; the 2S limit permits 60 ft."
+  },
+  {
+    "evidence_kind": "hypothetical distinct real-world arrangements sharing one validated schema payload",
+    "id": "sign-placement-exception",
+    "missing_fact": "Exception applicability and supporting engineering/agency evidence.",
+    "payload": "sign_side_exception_unmodeled",
+    "rejected_extension": "sign_placement_exception",
+    "runtime_rule": "mutcd.SIGN-11",
+    "shared_payload_sha256": "f7492290b6161d87098f81f10ec1b8ecbc9e5c4aa4740210e73511e8c48a0c8f",
+    "world_A": "Left-side sign placement has an applicable authorized exception.",
+    "world_B": "The identical sign placement has no applicable exception."
+  },
+  {
+    "evidence_kind": "hypothetical distinct real-world arrangements sharing one validated schema payload",
+    "id": "flagger-sight-distance",
+    "missing_fact": "Approach sight-distance measurement, stopping point, and supporting design context.",
+    "payload": "flagger_sight_distance_unmodeled",
+    "rejected_extension": "flagger_sight_distance",
+    "runtime_rule": "mutcd.FLAG-02",
+    "shared_payload_sha256": "2738627ed30bd0c86229e3321f0b7b824b40eb0b2f98c114bf1cce5abcfb82bc",
+    "world_A": "Approach alignment provides adequate sight distance to the intended stopping point.",
+    "world_B": "A crest/obstruction restricts sight distance below the applicable requirement."
+  },
+  {
+    "evidence_kind": "hypothetical distinct real-world arrangements sharing one validated schema payload",
+    "id": "arrow-board-lane-association",
+    "missing_fact": "Persistent lane identities and board-to-closed-lane associations; roadway applicability remains separate.",
+    "payload": "arrow_boards_no_lane_identity",
+    "rejected_extension": "board_lane_association",
+    "runtime_rule": "mutcd.ARROW-02",
+    "shared_payload_sha256": "e7a1cb4999e130bc7db35e15f80b3734b16467b3a6c04d564b761d604ade34ad",
+    "world_A": "The two boards are assigned distinctly to the two closed lanes.",
+    "world_B": "Both boards serve one closed lane; the other closed lane has no assigned board."
+  },
+  {
+    "evidence_kind": "hypothetical distinct real-world arrangements sharing one validated schema payload",
+    "id": "sign-road-tier",
+    "missing_fact": "Roadway classification/size-row applicability; no numeric size threshold invented.",
+    "payload": "sign_size_road_tier_unmodeled",
+    "rejected_extension": "road_classification",
+    "runtime_rule": "mutcd.SIGN-31",
+    "shared_payload_sha256": "3693717b7f1060b957ac6975db892ab89f3a80ac14d2833e350b0fd804c79d77",
+    "world_A": "The modeled sign serves a roadway tier whose applicable size row permits its dimensions.",
+    "world_B": "The identical sign serves a different roadway tier requiring a different size row."
+  }
+]

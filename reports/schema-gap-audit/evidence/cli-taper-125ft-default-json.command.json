@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/private/tmp/cloudtcp-schema-audit-ef5e474/venv/bin/python",
+    "-m",
+    "verifier",
+    "examples/taper-125ft.json",
+    "--registry",
+    "default",
+    "--format",
+    "json"
+  ],
+  "cwd": "/private/tmp/cloudtcp-schema-audit-ef5e474/cloudtcp-python-verifier",
+  "exit_code": 1,
+  "duration_seconds": 0.096,
+  "stdout": "cli-taper-125ft-default-json.stdout.txt.gz",
+  "stderr": "cli-taper-125ft-default-json.stderr.txt"
+}

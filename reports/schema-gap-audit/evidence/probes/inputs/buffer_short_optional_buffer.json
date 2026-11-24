@@ -1,0 +1,50 @@
+{
+  "elements": [],
+  "format_version": "1.0.0",
+  "site": {
+    "coordinate_system": "local station",
+    "name": "Audit synthetic site",
+    "road_name": "Synthetic Road",
+    "state": "OR",
+    "units": "feet"
+  },
+  "typical_application": {
+    "direction": "NB",
+    "lanes_closed": 1,
+    "lanes_total": 2,
+    "posted_speed_mph": 45,
+    "type": "lane_closure"
+  },
+  "zones": [
+    {
+      "end_station": 500,
+      "start_station": 0,
+      "type": "advance_warning",
+      "zone_id": "AW"
+    },
+    {
+      "end_station": 1000,
+      "start_station": 500,
+      "type": "transition",
+      "zone_id": "TR"
+    },
+    {
+      "end_station": 2000,
+      "start_station": 1000,
+      "type": "work",
+      "zone_id": "WK"
+    },
+    {
+      "end_station": 2200,
+      "start_station": 2000,
+      "type": "termination",
+      "zone_id": "TERM"
+    },
+    {
+      "end_station": 1200,
+      "start_station": 1100,
+      "type": "upstream_buffer",
+      "zone_id": "BUF"
+    }
+  ]
+}

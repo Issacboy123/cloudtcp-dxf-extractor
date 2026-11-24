@@ -1,0 +1,82 @@
+{
+  "blocker_categories": [
+    "implementation"
+  ],
+  "expected": {
+    "full": [
+      "not_evaluable",
+      false
+    ],
+    "w1": [
+      "pass",
+      true
+    ]
+  },
+  "explanation": "The schema encodes lane_width_ft, but full registry refuses to substitute lane width for zero offset W; historical W1 does substitute.",
+  "name": "zero_offset_width_lane_width_fallback",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "T1: Taper offset width W cannot be established.",
+          "rule_id": "mutcd.TAPER-01",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 359,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": false,
+        "errors": [],
+        "findings": [],
+        "reason": "T1: Taper offset width W cannot be established.",
+        "rule_id": "mutcd.TAPER-01",
+        "score": null,
+        "status": "not_evaluable"
+      },
+      "status_counts": {
+        "not_applicable": 60,
+        "not_evaluable": 359
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": true,
+          "errors": [],
+          "findings": [],
+          "reason": null,
+          "rule_id": "mutcd.TAPER-01",
+          "score": 1,
+          "status": "pass"
+        }
+      ],
+      "incomplete_count": 66,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": true,
+        "errors": [],
+        "findings": [],
+        "reason": null,
+        "rule_id": "mutcd.TAPER-01",
+        "score": 1.0,
+        "status": "pass"
+      },
+      "status_counts": {
+        "not_applicable": 9,
+        "not_evaluable": 66,
+        "pass": 1
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "TAPER-01"
+}

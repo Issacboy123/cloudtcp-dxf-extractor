@@ -1,0 +1,209 @@
+{
+  "blocker_categories": [],
+  "expected": {
+    "full": [
+      "fail",
+      true
+    ],
+    "w1": [
+      "fail",
+      true
+    ]
+  },
+  "explanation": "",
+  "name": "federal_spacing_100",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 1,
+      "focused_rule_results": [
+        {
+          "complete": true,
+          "errors": [],
+          "findings": [
+            {
+              "citations": [
+                {
+                  "local_reference": "T-021 — GUIDANCE — Taper channelizing-device spacing",
+                  "mutcd_reference": "Federal MUTCD §6K.01, para. 04; PDF p. 203; printed p. 1293\\.",
+                  "source_document": "TCP Rules Document.md"
+                },
+                {
+                  "local_reference": "T-021-B — GUIDANCE — Tangent channelizing-device spacing",
+                  "mutcd_reference": "Federal MUTCD §6K.01, para. 04; PDF p. 203; printed p. 1293\\.",
+                  "source_document": "TCP Rules Document.md"
+                },
+                {
+                  "local_reference": "CHAN-01 — GUIDANCE — Device spacing taper 1S tangent 2S",
+                  "mutcd_reference": "Sec. 6K.01 ¶04, p. 815",
+                  "source_document": "TCP-W1-1 Rules.md"
+                }
+              ],
+              "classification": "GUIDANCE",
+              "element_ids": [
+                "D1"
+              ],
+              "message": "Device line D1 spacing 100 ft exceeds the 2S maximum 90 ft.",
+              "paths": [
+                "/elements/1/spacing_ft",
+                "/typical_application/posted_speed_mph"
+              ],
+              "rule_id": "mutcd.CHAN-01",
+              "severity": "warning",
+              "units": "feet",
+              "values": {
+                "S_mph": 45,
+                "maximum_ft": 90,
+                "score": 0,
+                "spacing_ft": 100
+              },
+              "zone_ids": []
+            }
+          ],
+          "reason": null,
+          "rule_id": "mutcd.CHAN-01",
+          "score": 0,
+          "status": "fail"
+        }
+      ],
+      "incomplete_count": 358,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": true,
+        "errors": [],
+        "findings": [
+          {
+            "citations": [
+              {
+                "local_reference": "CHAN-01 — GUIDANCE — Device spacing taper 1S tangent 2S",
+                "mutcd_reference": "Sec. 6K.01 ¶04, p. 815",
+                "source_document": "TCP-W1-1 Rules.md"
+              }
+            ],
+            "classification": "GUIDANCE",
+            "element_ids": [
+              "D1"
+            ],
+            "message": "Device line D1 spacing 100 ft exceeds the 2S maximum 90 ft.",
+            "paths": [
+              "/elements/1/spacing_ft",
+              "/typical_application/posted_speed_mph"
+            ],
+            "rule_id": "mutcd.CHAN-01",
+            "severity": "warning",
+            "units": "feet",
+            "values": {
+              "S_mph": 45,
+              "maximum_ft": 90,
+              "score": 0.9,
+              "spacing_ft": 100
+            },
+            "zone_ids": []
+          }
+        ],
+        "reason": null,
+        "rule_id": "mutcd.CHAN-01",
+        "score": 0.9,
+        "status": "fail"
+      },
+      "status_counts": {
+        "fail": 1,
+        "not_applicable": 59,
+        "not_evaluable": 358,
+        "pass": 1
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 1,
+      "focused_rule_results": [
+        {
+          "complete": true,
+          "errors": [],
+          "findings": [
+            {
+              "citations": [
+                {
+                  "local_reference": "CHAN-01 — GUIDANCE — Device spacing taper 1S tangent 2S",
+                  "mutcd_reference": "Sec. 6K.01 ¶04, p. 815",
+                  "source_document": "TCP-W1-1 Rules.md"
+                }
+              ],
+              "classification": "GUIDANCE",
+              "element_ids": [
+                "D1"
+              ],
+              "message": "Device line D1 spacing 100 ft exceeds the 2S maximum 90 ft.",
+              "paths": [
+                "/elements/1/spacing_ft",
+                "/typical_application/posted_speed_mph"
+              ],
+              "rule_id": "mutcd.CHAN-01",
+              "severity": "warning",
+              "units": "feet",
+              "values": {
+                "S_mph": 45,
+                "maximum_ft": 90,
+                "score": 0,
+                "spacing_ft": 100
+              },
+              "zone_ids": []
+            }
+          ],
+          "reason": null,
+          "rule_id": "mutcd.CHAN-01",
+          "score": 0,
+          "status": "fail"
+        }
+      ],
+      "incomplete_count": 66,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": true,
+        "errors": [],
+        "findings": [
+          {
+            "citations": [
+              {
+                "local_reference": "CHAN-01 — GUIDANCE — Device spacing taper 1S tangent 2S",
+                "mutcd_reference": "Sec. 6K.01 ¶04, p. 815",
+                "source_document": "TCP-W1-1 Rules.md"
+              }
+            ],
+            "classification": "GUIDANCE",
+            "element_ids": [
+              "D1"
+            ],
+            "message": "Device line D1 spacing 100 ft exceeds the 2S maximum 90 ft.",
+            "paths": [
+              "/elements/1/spacing_ft",
+              "/typical_application/posted_speed_mph"
+            ],
+            "rule_id": "mutcd.CHAN-01",
+            "severity": "warning",
+            "units": "feet",
+            "values": {
+              "S_mph": 45,
+              "maximum_ft": 90,
+              "score": 0.9,
+              "spacing_ft": 100
+            },
+            "zone_ids": []
+          }
+        ],
+        "reason": null,
+        "rule_id": "mutcd.CHAN-01",
+        "score": 0.9,
+        "status": "fail"
+      },
+      "status_counts": {
+        "fail": 1,
+        "not_applicable": 8,
+        "not_evaluable": 66,
+        "pass": 1
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "CHAN-01"
+}

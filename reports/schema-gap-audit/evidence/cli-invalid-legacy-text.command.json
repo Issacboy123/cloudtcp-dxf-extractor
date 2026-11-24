@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/private/tmp/cloudtcp-schema-audit-ef5e474/venv/bin/python",
+    "-m",
+    "verifier",
+    "examples/invalid.json",
+    "--registry",
+    "legacy",
+    "--format",
+    "text"
+  ],
+  "cwd": "/private/tmp/cloudtcp-schema-audit-ef5e474/cloudtcp-python-verifier",
+  "exit_code": 2,
+  "duration_seconds": 0.07,
+  "stdout": "cli-invalid-legacy-text.stdout.txt",
+  "stderr": "cli-invalid-legacy-text.stderr.txt"
+}

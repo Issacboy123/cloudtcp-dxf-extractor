@@ -1,0 +1,41 @@
+{
+  "utc_timestamp": "2026-11-20T04:23:46.286081+00:00",
+  "commit": "ef5e47459aea9559ae8fad7f0087f376308fe09e",
+  "repository": "https://github.com/Issacboy123/cloudtcp-python-verifier.git",
+  "python": "3.14.10 (v3.14.10:b703b2c5e70, Oct 25 2026, 14:17:53) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "schema_sha256": {
+    "/private/tmp/cloudtcp-schema-audit-ef5e474/cloudtcp-python-verifier/tcp-intermediate-format.schema.json": "2109f24ef1659389dbfb72da650efe03767cdd9635a145afab86b2dfe000eba6",
+    "/Users/issacwoo/Documents/cloudtcp-dxf-extractor/tcp-intermediate-format.schema.json": "2109f24ef1659389dbfb72da650efe03767cdd9635a145afab86b2dfe000eba6",
+    "/Users/issacwoo/Documents/cloudtcp-dxf-extractor/src/cloudtcp_dxf/tcp-intermediate-format.schema.json": "2109f24ef1659389dbfb72da650efe03767cdd9635a145afab86b2dfe000eba6"
+  },
+  "workspace_commit": "67e0def600166301a72e1b2b64e0fa8bdac50a53",
+  "evaluator_keys": [
+    "ARROW-03",
+    "BUFFER-01",
+    "CA-007",
+    "CA-008",
+    "CHAN-01",
+    "SIGN-08",
+    "SIGN-11",
+    "SIGN-21",
+    "SIGN-26.c02",
+    "T-013",
+    "TAPER-01",
+    "TAPER-02"
+  ],
+  "capabilities": {
+    "TAPER-01": "partial",
+    "TAPER-02": "partial",
+    "T-013": "automated",
+    "CHAN-01": "partial",
+    "BUFFER-01": "partial",
+    "SIGN-11": "partial",
+    "SIGN-21": "partial",
+    "ARROW-03": "partial",
+    "SIGN-08": "partial",
+    "SIGN-26.c02": "automated",
+    "CA-007": "partial",
+    "CA-008": "partial"
+  }
+}

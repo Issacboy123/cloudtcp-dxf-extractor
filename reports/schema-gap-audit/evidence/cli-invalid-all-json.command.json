@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/private/tmp/cloudtcp-schema-audit-ef5e474/venv/bin/python",
+    "-m",
+    "verifier",
+    "examples/invalid.json",
+    "--registry",
+    "all",
+    "--format",
+    "json"
+  ],
+  "cwd": "/private/tmp/cloudtcp-schema-audit-ef5e474/cloudtcp-python-verifier",
+  "exit_code": 2,
+  "duration_seconds": 0.087,
+  "stdout": "cli-invalid-all-json.stdout.txt.gz",
+  "stderr": "cli-invalid-all-json.stderr.txt"
+}

@@ -1,0 +1,59 @@
+{
+  "blocker_categories": [],
+  "expected": {
+    "full": [
+      "pass",
+      true
+    ]
+  },
+  "explanation": "",
+  "name": "mileage_integer",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": true,
+          "errors": [],
+          "findings": [],
+          "reason": null,
+          "rule_id": "mutcd.SIGN-26.c02",
+          "score": 1,
+          "status": "pass"
+        }
+      ],
+      "incomplete_count": 358,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": true,
+        "errors": [],
+        "findings": [],
+        "reason": null,
+        "rule_id": "mutcd.SIGN-26.c02",
+        "score": null,
+        "status": "pass"
+      },
+      "status_counts": {
+        "not_applicable": 59,
+        "not_evaluable": 358,
+        "pass": 2
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [],
+      "incomplete_count": 67,
+      "input_valid": true,
+      "raw_evaluator_result": null,
+      "status_counts": {
+        "not_applicable": 8,
+        "not_evaluable": 67,
+        "pass": 1
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "SIGN-26.c02"
+}

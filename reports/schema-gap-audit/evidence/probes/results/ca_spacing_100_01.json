@@ -1,0 +1,130 @@
+{
+  "blocker_categories": [],
+  "expected": {
+    "full": [
+      "fail",
+      true
+    ]
+  },
+  "explanation": "",
+  "name": "ca_spacing_100_01",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 1,
+      "focused_rule_results": [
+        {
+          "complete": true,
+          "errors": [],
+          "findings": [
+            {
+              "citations": [
+                {
+                  "local_reference": "CA-008 — GUIDANCE — California addition — device-spacing maxima",
+                  "mutcd_reference": "CA MUTCD §6K.01 para. 05a; Chapter 6P, §6P.01 para. 08; Table 6K-101(CA); PDF p. 203, 215, 256; printed p. 1293, 1305, 1346\\.",
+                  "source_document": "TCP Rules Document.md"
+                },
+                {
+                  "local_reference": "T-021 — GUIDANCE — Taper channelizing-device spacing",
+                  "mutcd_reference": "Federal MUTCD §6K.01, para. 04; PDF p. 203; printed p. 1293\\.",
+                  "source_document": "TCP Rules Document.md"
+                },
+                {
+                  "local_reference": "T-021-B — GUIDANCE — Tangent channelizing-device spacing",
+                  "mutcd_reference": "Federal MUTCD §6K.01, para. 04; PDF p. 203; printed p. 1293\\.",
+                  "source_document": "TCP Rules Document.md"
+                },
+                {
+                  "local_reference": "CHAN-01 — GUIDANCE — Device spacing taper 1S tangent 2S",
+                  "mutcd_reference": "Sec. 6K.01 ¶04, p. 815",
+                  "source_document": "TCP-W1-1 Rules.md"
+                }
+              ],
+              "classification": "GUIDANCE",
+              "element_ids": [
+                "D1"
+              ],
+              "message": "Device line D1 spacing 100.01 ft exceeds every applicable California table maximum (largest 100 ft).",
+              "paths": [
+                "/elements/0",
+                "/typical_application/posted_speed_mph"
+              ],
+              "rule_id": "mutcd.CA-008",
+              "severity": "warning",
+              "units": "feet",
+              "values": {
+                "S_mph": 55,
+                "maximum_ft": 100,
+                "spacing_ft": 100.01
+              },
+              "zone_ids": []
+            }
+          ],
+          "reason": null,
+          "rule_id": "mutcd.CA-008",
+          "score": 0,
+          "status": "fail"
+        }
+      ],
+      "incomplete_count": 403,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": true,
+        "errors": [],
+        "findings": [
+          {
+            "citations": [
+              {
+                "local_reference": "CA-008",
+                "mutcd_reference": "Source citations supplied by the complete registry.",
+                "source_document": "TCP Rules Document.md"
+              }
+            ],
+            "classification": "GUIDANCE",
+            "element_ids": [
+              "D1"
+            ],
+            "message": "Device line D1 spacing 100.01 ft exceeds every applicable California table maximum (largest 100 ft).",
+            "paths": [
+              "/elements/0",
+              "/typical_application/posted_speed_mph"
+            ],
+            "rule_id": "mutcd.CA-008",
+            "severity": "warning",
+            "units": "feet",
+            "values": {
+              "S_mph": 55,
+              "maximum_ft": 100,
+              "spacing_ft": 100.01
+            },
+            "zone_ids": []
+          }
+        ],
+        "reason": null,
+        "rule_id": "mutcd.CA-008",
+        "score": null,
+        "status": "fail"
+      },
+      "status_counts": {
+        "fail": 1,
+        "not_applicable": 15,
+        "not_evaluable": 403
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [],
+      "incomplete_count": 66,
+      "input_valid": true,
+      "raw_evaluator_result": null,
+      "status_counts": {
+        "not_applicable": 9,
+        "not_evaluable": 66,
+        "pass": 1
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "CA-008"
+}

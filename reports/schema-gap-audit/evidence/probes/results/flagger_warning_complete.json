@@ -1,0 +1,81 @@
+{
+  "blocker_categories": [],
+  "expected": {
+    "full": [
+      "pass",
+      true
+    ],
+    "w1": [
+      "pass",
+      true
+    ]
+  },
+  "explanation": "",
+  "name": "flagger_warning_complete",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": true,
+          "errors": [],
+          "findings": [],
+          "reason": null,
+          "rule_id": "mutcd.SIGN-21",
+          "score": 1,
+          "status": "pass"
+        }
+      ],
+      "incomplete_count": 358,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": true,
+        "errors": [],
+        "findings": [],
+        "reason": null,
+        "rule_id": "mutcd.SIGN-21",
+        "score": 1.0,
+        "status": "pass"
+      },
+      "status_counts": {
+        "not_applicable": 59,
+        "not_evaluable": 358,
+        "pass": 2
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": true,
+          "errors": [],
+          "findings": [],
+          "reason": null,
+          "rule_id": "mutcd.SIGN-21",
+          "score": 1,
+          "status": "pass"
+        }
+      ],
+      "incomplete_count": 68,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": true,
+        "errors": [],
+        "findings": [],
+        "reason": null,
+        "rule_id": "mutcd.SIGN-21",
+        "score": 1.0,
+        "status": "pass"
+      },
+      "status_counts": {
+        "not_applicable": 6,
+        "not_evaluable": 68,
+        "pass": 2
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "SIGN-21"
+}

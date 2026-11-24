@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/private/tmp/cloudtcp-schema-audit-ef5e474/venv/bin/python",
+    "-m",
+    "ruff",
+    "check",
+    "/Users/issacwoo/Documents/cloudtcp-dxf-extractor/reports/schema-gap-audit/run_audit.py",
+    "/Users/issacwoo/Documents/cloudtcp-dxf-extractor/reports/schema-gap-audit/build_matrix.py",
+    "/Users/issacwoo/Documents/cloudtcp-dxf-extractor/reports/schema-gap-audit/evidence/probes/run_probes.py"
+  ],
+  "cwd": "/Users/issacwoo/Documents/cloudtcp-dxf-extractor",
+  "exit_code": 0,
+  "duration_seconds": 0.046,
+  "stdout": "audit-harness-ruff.stdout.txt",
+  "stderr": "audit-harness-ruff.stderr.txt"
+}

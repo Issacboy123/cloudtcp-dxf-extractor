@@ -1,0 +1,69 @@
+{
+  "blocker_categories": [],
+  "expected": {
+    "full": [
+      "pass",
+      true
+    ]
+  },
+  "explanation": "",
+  "name": "warning_sequence_ordered",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": true,
+          "errors": [],
+          "findings": [],
+          "reason": null,
+          "rule_id": "mutcd.SIGN-08",
+          "score": 1,
+          "status": "pass"
+        }
+      ],
+      "incomplete_count": 358,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": true,
+        "errors": [],
+        "findings": [],
+        "reason": null,
+        "rule_id": "mutcd.SIGN-08",
+        "score": null,
+        "status": "pass"
+      },
+      "status_counts": {
+        "not_applicable": 59,
+        "not_evaluable": 358,
+        "pass": 2
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "Requires ordered advance-warning sign identification and approach direction; supported warning-code policy and unique approach geometry are not established for production findings.",
+          "rule_id": "mutcd.SIGN-08",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 67,
+      "input_valid": true,
+      "raw_evaluator_result": null,
+      "status_counts": {
+        "not_applicable": 8,
+        "not_evaluable": 67,
+        "pass": 1
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "SIGN-08"
+}

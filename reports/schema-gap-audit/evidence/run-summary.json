@@ -1,0 +1,71 @@
+{
+  "example_files": 155,
+  "example_api_runs": 310,
+  "cli_smoke_runs": 24,
+  "api_cli_agreement_errors": [],
+  "source_entries": 457,
+  "source_clauses": 504,
+  "canonical_checks": 419,
+  "dispositions": {
+    "informational": 44,
+    "input_blocked": 372,
+    "review_required": 27,
+    "source_blocked": 34,
+    "partial": 23,
+    "automated": 4
+  },
+  "source_classifications": {
+    "SUPPORT": 34,
+    "OPTION": 88,
+    "STANDARD": 95,
+    "GUIDANCE": 287
+  },
+  "runtime_status_totals": {
+    "default:not_evaluable": 55407,
+    "default:not_applicable": 9098,
+    "default:fail": 10,
+    "w1:not_evaluable": 10445,
+    "w1:not_applicable": 1240,
+    "w1:fail": 9,
+    "default:pass": 11,
+    "w1:pass": 10
+  },
+  "example_exit_codes": {
+    "default:2": 1,
+    "w1:2": 1,
+    "default:1": 9,
+    "w1:1": 9,
+    "default:3": 145,
+    "w1:3": 145
+  },
+  "incomplete_failures": 0,
+  "test_commands": [
+    {
+      "command": [
+        "/private/tmp/cloudtcp-schema-audit-ef5e474/venv/bin/python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "cwd": "/private/tmp/cloudtcp-schema-audit-ef5e474/cloudtcp-python-verifier",
+      "exit_code": 0,
+      "duration_seconds": 11.544,
+      "stdout": "pytest.stdout.txt",
+      "stderr": "pytest.stderr.txt"
+    },
+    {
+      "command": [
+        "/private/tmp/cloudtcp-schema-audit-ef5e474/venv/bin/python",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "cwd": "/private/tmp/cloudtcp-schema-audit-ef5e474/cloudtcp-python-verifier",
+      "exit_code": 0,
+      "duration_seconds": 0.044,
+      "stdout": "ruff.stdout.txt",
+      "stderr": "ruff.stderr.txt"
+    }
+  ]
+}

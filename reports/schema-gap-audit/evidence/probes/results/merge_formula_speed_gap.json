@@ -1,0 +1,81 @@
+{
+  "blocker_categories": [
+    "source_policy"
+  ],
+  "expected": {
+    "full": [
+      "not_evaluable",
+      false
+    ],
+    "w1": [
+      "not_evaluable",
+      false
+    ]
+  },
+  "explanation": "",
+  "name": "merge_formula_speed_gap",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "T1: No Table 6B-4 formula branch is supplied for 40 < S < 45 mph.",
+          "rule_id": "mutcd.TAPER-01",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 359,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": false,
+        "errors": [],
+        "findings": [],
+        "reason": "T1: No Table 6B-4 formula branch is supplied for 40 < S < 45 mph.",
+        "rule_id": "mutcd.TAPER-01",
+        "score": null,
+        "status": "not_evaluable"
+      },
+      "status_counts": {
+        "not_applicable": 60,
+        "not_evaluable": 359
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "T1: No Table 6B-4 formula branch is supplied for 40 < S < 45 mph.",
+          "rule_id": "mutcd.TAPER-01",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 67,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": false,
+        "errors": [],
+        "findings": [],
+        "reason": "T1: No Table 6B-4 formula branch is supplied for 40 < S < 45 mph.",
+        "rule_id": "mutcd.TAPER-01",
+        "score": null,
+        "status": "not_evaluable"
+      },
+      "status_counts": {
+        "not_applicable": 9,
+        "not_evaluable": 67
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "TAPER-01"
+}

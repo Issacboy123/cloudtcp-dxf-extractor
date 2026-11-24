@@ -1,0 +1,60 @@
+{
+  "blocker_categories": [
+    "schema"
+  ],
+  "expected": {
+    "full": [
+      "not_evaluable",
+      false
+    ]
+  },
+  "explanation": "",
+  "name": "ca_spacing_20_01",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "D1: taper/tangent association, conflict-spacing applicability, and the CA-008-B 20-ft taper cap cannot be established by schema 1.0.0.",
+          "rule_id": "mutcd.CA-008",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 404,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": false,
+        "errors": [],
+        "findings": [],
+        "reason": "D1: taper/tangent association, conflict-spacing applicability, and the CA-008-B 20-ft taper cap cannot be established by schema 1.0.0.",
+        "rule_id": "mutcd.CA-008",
+        "score": null,
+        "status": "not_evaluable"
+      },
+      "status_counts": {
+        "not_applicable": 15,
+        "not_evaluable": 404
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [],
+      "incomplete_count": 66,
+      "input_valid": true,
+      "raw_evaluator_result": null,
+      "status_counts": {
+        "not_applicable": 9,
+        "not_evaluable": 66,
+        "pass": 1
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "CA-008"
+}

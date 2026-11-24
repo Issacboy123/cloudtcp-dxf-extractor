@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "markdown_broken_links": [],
+  "matrix_clauses": 504,
+  "archived_api_reports": 310,
+  "archived_rule_results": 76230,
+  "api_cli_comparisons": 24,
+  "focused_probe_summary": {
+    "assertion_failures": [],
+    "counterexample_pairs": 5,
+    "focused_result_rows": 92,
+    "full_partial_evaluator_keys": [
+      "ARROW-03",
+      "BUFFER-01",
+      "CA-007",
+      "CA-008",
+      "CHAN-01",
+      "SIGN-08",
+      "SIGN-11",
+      "SIGN-21",
+      "TAPER-01",
+      "TAPER-02"
+    ],
+    "full_partial_keys_probed": [
+      "ARROW-03",
+      "BUFFER-01",
+      "CA-007",
+      "CA-008",
+      "CHAN-01",
+      "SIGN-08",
+      "SIGN-11",
+      "SIGN-21",
+      "TAPER-01",
+      "TAPER-02"
+    ],
+    "registry_executions": 106,
+    "rejected_extension_probes": 14,
+    "schema_sha256": "2109f24ef1659389dbfb72da650efe03767cdd9635a145afab86b2dfe000eba6",
+    "valid_probe_documents": 53
+  },
+  "verifier_checkout_clean": true,
+  "schema_hashes_match": true,
+  "audit_script_syntax_valid": true,
+  "audit_script_ruff_exit": 0,
+  "artifacts_sha256": {
+    "report.md": "5da39dd6d5ba9148fbd6f5bbd58fbf05bf3b1a4e48f42e8544eefd9d12dcb29b",
+    "rule-gap-matrix.csv": "92d356f0095bbc843143ac08c5bcc60b97c972bd09c2505bfb5cb21fc5e3a2d3",
+    "gap-families.json": "40a158e585146cd26fdfce75b01f7f94403b45c5bb12e472af0fdf1b6fe6c444",
+    "gap-families.md": "9a6e2254763bb6c5749bdef390f65b9b671a608c7df9bf6ad7eccb7b412da6f3",
+    "run_audit.py": "1db07a9c5e67ba440d3a97b726f9a5ddd5e5221da7e3a53e5e8feaf6b930f3d2",
+    "build_matrix.py": "68b257942b1c9f5ca48fa001f043158f31761dd49f52ee443d62c04f0ae7c6b9"
+  }
+}

@@ -1,0 +1,3456 @@
+{
+  "mutcd.Z-007": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode work/shadow-vehicle equipment, activity, location, and relationship to lanes; roadway applicability, approach inventory, and warning-sign/closure associations required by Z-007 (Advance warning area forms)."
+    }
+  ],
+  "mutcd.Z-009": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Stationary/mobile status, required path redirection, and appropriate devices/methods are not encoded in schema 1.0.0."
+    }
+  ],
+  "mutcd.Z-010": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode operation duration, stationary/mobile status, and illumination conditions; mounting/support geometry and vertical clearances; arrow-board type, closed-lane identity, equipment, and placement association required by Z-010 (Mobile operation transition alternative)."
+    }
+  ],
+  "mutcd.Z-013": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode operation duration, stationary/mobile status, and illumination conditions required by Z-013 (Stationary or moving work space)."
+    }
+  ],
+  "mutcd.Z-014": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The schema has no roadway/approach associations for separated work spaces or engineering determination of adequate warning for each work space."
+    }
+  ],
+  "mutcd.Z-016": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode work/shadow-vehicle equipment, activity, location, and relationship to lanes; traffic volume, capacity, vehicle mix, and operational assessment required by Z-016 (Incident response staging space)."
+    }
+  ],
+  "mutcd.Z-018": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway applicability, approach inventory, and warning-sign/closure associations required by Z-018 (Signs announcing normal operations)."
+    }
+  ],
+  "mutcd.Z-019": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; roadway applicability, approach inventory, and warning-sign/closure associations required by Z-019 (Freeway and expressway advance warning extent). Freeway/expressway classification is absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.Z-020": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; roadway applicability, approach inventory, and warning-sign/closure associations required by Z-020 (Urban nearest warning sign placement). Urban-street applicability is absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.Z-020-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; roadway applicability, approach inventory, and warning-sign/closure associations required by Z-020-B (Higher-speed urban multiple-sign warning area)."
+    }
+  ],
+  "mutcd.Z-021": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; roadway applicability, approach inventory, and warning-sign/closure associations required by Z-021 (Single-sign short advance warning area). Single-sign / low-speed residential applicability is absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.Z-022": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; roadway applicability, approach inventory, and warning-sign/closure associations required by Z-022 (Rural first warning sign placement). Rural-highway and open-highway applicability are absent from schema 1.0.0. The 'first warning sign' endpoint (upstream-first vs nearest) is unresolved."
+    }
+  ],
+  "mutcd.Z-022-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway applicability, approach inventory, and warning-sign/closure associations required by Z-022-B (Open-highway advance warning extent). Rural-highway and open-highway applicability are absent from schema 1.0.0. The 'first warning sign' endpoint (upstream-first vs nearest) is unresolved."
+    }
+  ],
+  "mutcd.Z-023": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "This clause requires a site-specific engineering judgment/study or review; schema 1.0.0 has no record of that determination. Schema 1.0.0 does not encode responsible-agency approval and documented engineering decisions required by Z-023 (Advance warning spacing adjustments). Field-adjustment and engineering-judgment overrides are user/agency inputs, not schema facts."
+    }
+  ],
+  "mutcd.Z-025": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Activity-area removal from the road-user path and its effect on normal traffic flow are not input facts; the omission decision needs site review. Source reviewer note: Federal baseline retained for comparison; California modifies the omission conditions in CA-001. Field-adjustment and engineering-judgment overrides are user/agency inputs, not schema facts."
+    }
+  ],
+  "mutcd.Z-026": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "This clause requires a site-specific engineering judgment/study or review; schema 1.0.0 has no record of that determination. Schema 1.0.0 does not encode roadway class and State-highway ownership; responsible-agency approval and documented engineering decisions; roadway applicability, approach inventory, and warning-sign/closure associations required by Z-026 (Federal baseline — advance warning sign spacing). Roadway category and agency urban low/high speed classification are absent from schema 1.0.0. Federal Table 6B-1 defaults cannot be selected without those facts."
+    }
+  ],
+  "mutcd.Z-028": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; roadway applicability, approach inventory, and warning-sign/closure associations; taper/device-to-lane associations and intended traffic-path geometry required by Z-028 (Position of advance warning signs). Roadway type needed to choose the 100 ft vs 1,000 ft closest-sign band is absent."
+    }
+  ],
+  "mutcd.Z-029": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode intersection/crossroad/driveway geometry and turning movements; traffic volume, capacity, vehicle mix, and operational assessment; roadway applicability, approach inventory, and warning-sign/closure associations required by Z-029 (Crossroad and driveway warning). Crossroad / major driveway inventory is absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.Z-030": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "This clause requires a site-specific engineering judgment/study or review; schema 1.0.0 has no record of that determination. The agency decision to use the termination sign and the accepted near-end placement depend on engineering judgment. Whether END ROAD WORK is used and where the termination area ends is engineering judgment."
+    }
+  ],
+  "mutcd.Z-033": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; operation duration, stationary/mobile status, and illumination conditions; roadway applicability, approach inventory, and warning-sign/closure associations required by Z-033 (Wide paved shoulder — advance warning)."
+    }
+  ],
+  "mutcd.Z-033-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; operation duration, stationary/mobile status, and illumination conditions; taper/device-to-lane associations and intended traffic-path geometry required by Z-033-B (Wide paved shoulder — advance channelization)."
+    }
+  ],
+  "mutcd.Z-034": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "This clause requires a site-specific engineering judgment/study or review; schema 1.0.0 has no record of that determination. Schema 1.0.0 does not encode bicycle-route geometry and bicycle/vehicle operating conditions; work/shadow-vehicle equipment, activity, location, and relationship to lanes; traffic volume, capacity, vehicle mix, and operational assessment required by Z-034 (Analyze partial-lane occupation)."
+    }
+  ],
+  "mutcd.Z-034-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode remaining lane width, vehicle mix, and encroachment geometry required by Z-034-B (Remaining lane width with encroachment)."
+    }
+  ],
+  "mutcd.Z-035": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "This clause requires a site-specific engineering judgment/study or review; schema 1.0.0 has no record of that determination. Schema 1.0.0 does not encode remaining lane width, vehicle mix, and encroachment geometry required by Z-035 (Truck off-tracking and minimum lane width)."
+    }
+  ],
+  "mutcd.Z-036": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; operation duration, stationary/mobile status, and illumination conditions; remaining lane width, vehicle mix, and encroachment geometry required by Z-036 (Federal reduced lane width option). Source reviewer note: Federal baseline retained for comparison; California narrows the option in CA-009."
+    }
+  ],
+  "mutcd.Z-037": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway applicability, approach inventory, and warning-sign/closure associations; taper/device-to-lane associations and intended traffic-path geometry required by Z-037 (Median work proximity threshold)."
+    }
+  ],
+  "mutcd.Z-038": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode mounting/support geometry and vertical clearances; traffic volume, capacity, vehicle mix, and operational assessment required by Z-038 (Additional interior-lane closure for lateral clearance). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-039": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode taper/device-to-lane associations and intended traffic-path geometry required by Z-039 (Centerline delineation for left-lane closure)."
+    }
+  ],
+  "mutcd.Z-040": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode work/shadow-vehicle equipment, activity, location, and relationship to lanes required by Z-040 (Adjacent lane closure consideration)."
+    }
+  ],
+  "mutcd.Z-041": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode intersection/crossroad/driveway geometry and turning movements; roadway applicability, approach inventory, and warning-sign/closure associations; pavement marking identity, condition, conflicts, and placement required by Z-041 (Intersection cross-street warning)."
+    }
+  ],
+  "mutcd.Z-041-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; intersection/crossroad/driveway geometry and turning movements; mounting/support geometry and vertical clearances required by Z-041-B (Intersection warning above 40 mph)."
+    }
+  ],
+  "mutcd.Z-042": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway applicability, approach inventory, and warning-sign/closure associations; taper/device-to-lane associations and intended traffic-path geometry required by Z-042 (Restricted near-side advance warning space)."
+    }
+  ],
+  "mutcd.Z-043": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode intersection/crossroad/driveway geometry and turning movements required by Z-043 (Far-side lane closure starts before intersection)."
+    }
+  ],
+  "mutcd.Z-044": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode work/shadow-vehicle equipment, activity, location, and relationship to lanes required by Z-044 (Near-side mandatory turn lane option)."
+    }
+  ],
+  "mutcd.Z-045": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership required by Z-045 (Assess freeway and expressway queues)."
+    }
+  ],
+  "mutcd.Z-045-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "This clause requires a site-specific engineering judgment/study or review; schema 1.0.0 has no record of that determination. Schema 1.0.0 does not encode roadway class and State-highway ownership; roadway applicability, approach inventory, and warning-sign/closure associations required by Z-045-B (Adjust freeway and expressway warning for queues)."
+    }
+  ],
+  "mutcd.Z-046": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The schema cannot identify normally divided roadway status or the opposing-flow separation method."
+    }
+  ],
+  "mutcd.Z-046-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The schema cannot identify the two-way divided-roadway operation or whether markings/signs are the only separation."
+    }
+  ],
+  "mutcd.Z-047": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Grade-crossing geometry and an actual queue crossing the tracks are not encoded; predictions are not compliance evidence."
+    }
+  ],
+  "mutcd.Z-047-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Unavoidable crossing queues and crossing-specific officer/flagger control are not encoded."
+    }
+  ],
+  "mutcd.Z-048": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode barrier identity, crashworthiness, delineation, and traffic-path relationship; roadway applicability, approach inventory, and warning-sign/closure associations required by Z-048 (TA-1 warning omission offset). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger. Work-space offset behind curb/barrier/roadway edge is absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.Z-049": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; roadway applicability, approach inventory, and warning-sign/closure associations required by Z-049 (TA-3 wide shoulder advance warning). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-049-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; taper/device-to-lane associations and intended traffic-path geometry required by Z-049-B (TA-3 wide shoulder channelization). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-050": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode operation duration, stationary/mobile status, and illumination conditions; roadway applicability, approach inventory, and warning-sign/closure associations required by Z-050 (TA-4 stationary warning distance). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-051": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway applicability, approach inventory, and warning-sign/closure associations required by Z-051 (TA-4 distance plaque range). Source reviewer note: The extraction identifies a California-added SHOULDER WORK AHEAD (C24(CA)) sign alternative; the 2-to-5-mile distance is unchanged. No separate classification for that added permission is supplied. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-052": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; remaining lane width, vehicle mix, and encroachment geometry; taper/device-to-lane associations and intended traffic-path geometry required by Z-052 (TA-6 lane width and measuring points). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-053": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; roadway class and State-highway ownership; remaining lane width, vehicle mix, and encroachment geometry required by Z-053 (TA-15 lane width and measuring points). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-054": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; roadway class and State-highway ownership; remaining lane width, vehicle mix, and encroachment geometry required by Z-054 (TA-16 lane width and measuring points). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-055": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; remaining lane width, vehicle mix, and encroachment geometry; taper/device-to-lane associations and intended traffic-path geometry required by Z-055 (TA-26 lane width and measuring points). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-056": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; remaining lane width, vehicle mix, and encroachment geometry; work/shadow-vehicle equipment, activity, location, and relationship to lanes required by Z-056 (TA-6 nine-foot lane option). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-057": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; operation duration, stationary/mobile status, and illumination conditions; remaining lane width, vehicle mix, and encroachment geometry required by Z-057 (TA-15 nine-foot lane option). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-058": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; remaining lane width, vehicle mix, and encroachment geometry; work/shadow-vehicle equipment, activity, location, and relationship to lanes required by Z-058 (TA-26 nine-foot lane option). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-059": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "TA-6 applicability, minor-road classification, and the low/higher-speed operating regime are absent; the source supplies no numerical low-speed threshold. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-060": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; remaining lane width, vehicle mix, and encroachment geometry; taper/device-to-lane associations and intended traffic-path geometry required by Z-060 (TA-6 shift onto suitable opposite shoulder). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-061": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode horizontal/vertical alignment, curve endpoints, and design criteria; roadway applicability, approach inventory, and warning-sign/closure associations required by Z-061 (TA-12 warning sign alignment). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-061-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode mounting/support geometry and vertical clearances; horizontal/vertical alignment, curve endpoints, and design criteria; signal/control configuration, stop-line geometry, and approach visibility required by Z-061-B (TA-12 signal-head height). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-063": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode device dimensions, materials, lighting, and retroreflective specifications required by Z-063 (TA-16 cone lateral offset). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-064": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode traffic volume, capacity, vehicle mix, and operational assessment required by Z-064 (TA-16 high-volume surveying closure). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-065": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; available approach sight distance and intended stopping-point geometry; work/shadow-vehicle equipment, activity, location, and relationship to lanes required by Z-065 (TA-17 shadow vehicle following). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-065-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; available approach sight distance and intended stopping-point geometry; horizontal/vertical alignment, curve endpoints, and design criteria required by Z-065-B (TA-17 shadow vehicle at curves). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-066": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode work/shadow-vehicle equipment, activity, location, and relationship to lanes required by Z-066 (TA-17 variable vehicle separation). Source reviewer note: CA-019 prohibits TA-17 on State highways and requires Caltrans Standard Plan T17, which is not supplied. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-067": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; traffic volume, capacity, vehicle mix, and operational assessment required by Z-067 (TA-18 limitation to low-speed low-volume streets). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-068": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; flagger operation, controls, staffing, equipment, and approach association; traffic volume, capacity, vehicle mix, and operational assessment required by Z-068 (TA-18 self-regulating one-lane traffic). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-069": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode flagger operation, controls, staffing, equipment, and approach association required by Z-069 (TA-18 flaggers when self-regulation fails). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-070": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode available approach sight distance and intended stopping-point geometry; work/shadow-vehicle equipment, activity, location, and relationship to lanes required by Z-070 (TA-35 shadow vehicle sight distance). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-071": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode work/shadow-vehicle equipment, activity, location, and relationship to lanes required by Z-071 (TA-35 vehicle separation). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-072": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode traffic volume, capacity, vehicle mix, and operational assessment required by Z-072 (TA-36 lane shift applicability). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-074": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "TA-36 identity and its three normal-geometry conditions (Z-073) are not encoded, so notes 4-17 cannot be selected reliably. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-075": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; remaining lane width, vehicle mix, and encroachment geometry required by Z-075 (TA-36 minimum shoulder-lane width). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-076": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; remaining lane width, vehicle mix, and encroachment geometry required by Z-076 (TA-37 shoulder used to retain traffic lanes). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-077": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; remaining lane width, vehicle mix, and encroachment geometry; work/shadow-vehicle equipment, activity, location, and relationship to lanes required by Z-077 (TA-38 federal shoulder-lane alternative). Source reviewer note: Federal baseline only for comparison on California freeways: CA-025 prohibits TA-38 there and replaces it with the adjacent-lane closure layout. Do not implement this federal alternative in that California scope. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-078": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; barrier identity, crashworthiness, delineation, and traffic-path relationship; taper/device-to-lane associations and intended traffic-path geometry required by Z-078 (TA-39 opposing-flow separation). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-079": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "External Green Book/Roadside Design Guide design criteria are not reproduced in the repository documents. Schema 1.0.0 does not encode horizontal/vertical alignment, curve endpoints, and design criteria required by Z-079 (TA-39 curved crossover design). Source reviewer note: The referenced AASHTO Green Book, 7th edition, 2018, is not supplied; alignment criteria cannot be completed from this extraction. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-080": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "TA-40 identity, the temporary acceleration lane, and its entrance-ramp/mainline merging geometry are not encoded. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-081": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode available approach sight distance and intended stopping-point geometry; ramp geometry, acceleration/deceleration lengths, and approach association; signal/control configuration, stop-line geometry, and approach visibility required by Z-081 (TA-40 entrance sign sight distance). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-081-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode signal/control configuration, stop-line geometry, and approach visibility required by Z-081-B (TA-40 acceleration lane beyond sign). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-081-C": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode ramp geometry, acceleration/deceleration lengths, and approach association; signal/control configuration, stop-line geometry, and approach visibility required by Z-081-C (TA-40 yield or stop lines). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-082": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode horizontal/vertical alignment, curve endpoints, and design criteria; ramp geometry, acceleration/deceleration lengths, and approach association required by Z-082 (TA-41 exit crossover applicability). Source reviewer note: The referenced AASHTO Green Book, 7th edition, 2018, is not supplied; alignment criteria cannot be completed from this extraction. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-082-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "External Green Book/Roadside Design Guide design criteria are not reproduced in the repository documents. Schema 1.0.0 does not encode horizontal/vertical alignment, curve endpoints, and design criteria required by Z-082-B (TA-41 curved alignment dependency). Source reviewer note: The referenced AASHTO Green Book, 7th edition, 2018, is not supplied; alignment criteria cannot be completed from this extraction. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-084": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "TA-44 identity, acceleration-lane geometry, and an engineering determination of sufficient acceleration length/feasibility are absent. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-085": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode ramp geometry, acceleration/deceleration lengths, and approach association; signal/control configuration, stop-line geometry, and approach visibility required by Z-085 (TA-44 inadequate acceleration distance control). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-086": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode available approach sight distance and intended stopping-point geometry; ramp geometry, acceleration/deceleration lengths, and approach association; signal/control configuration, stop-line geometry, and approach visibility required by Z-086 (TA-44 entrance sign sight distance). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-086-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode signal/control configuration, stop-line geometry, and approach visibility required by Z-086-B (TA-44 acceleration lane beyond sign). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-086-C": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "This clause requires a site-specific engineering judgment/study or review; schema 1.0.0 has no record of that determination. Schema 1.0.0 does not encode ramp geometry, acceleration/deceleration lengths, and approach association required by Z-086-C (TA-44 insufficient gaps). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-087": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "This clause requires a site-specific engineering judgment/study or review; schema 1.0.0 has no record of that determination. Schema 1.0.0 does not encode intersection/crossroad/driveway geometry and turning movements; work/shadow-vehicle equipment, activity, location, and relationship to lanes; traffic volume, capacity, vehicle mix, and operational assessment required by Z-087 (TA-54 heavy-vehicle turning radius). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-088": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; bicycle-route geometry and bicycle/vehicle operating conditions required by Z-088 (TA-51 bicycle-diversion trigger). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-089": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode bicycle-route geometry and bicycle/vehicle operating conditions required by Z-089 (TA-51 bicycle-speed advance warning distances). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-090": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode pedestrian/crosswalk geometry, accessible-route dimensions, and equipment; ramp geometry, acceleration/deceleration lengths, and approach association required by Z-090 (TA-28 temporary ramp slope and surface). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-090-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode pedestrian/crosswalk geometry, accessible-route dimensions, and equipment; ramp geometry, acceleration/deceleration lengths, and approach association required by Z-090-B (TA-28 ramp landing geometry). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-091": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode pedestrian/crosswalk geometry, accessible-route dimensions, and equipment required by Z-091 (TA-28 alternate pedestrian route width). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger. Pedestrian facility width and passing-space intervals are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.Z-092": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode taper/device-to-lane associations and intended traffic-path geometry required by Z-092 (Avoid abrupt geometric changes)."
+    }
+  ],
+  "mutcd.Z-093": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Permanent-road comparison geometry, roadside hazards, and the engineering assessment of comparable TTC safety are not encoded."
+    }
+  ],
+  "mutcd.Z-094": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode pedestrian/crosswalk geometry, accessible-route dimensions, and equipment required by Z-094 (Retain pedestrian traffic-space width)."
+    }
+  ],
+  "mutcd.Z-094-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode pedestrian/crosswalk geometry, accessible-route dimensions, and equipment required by Z-094-B (Keep pedestrian width clear)."
+    }
+  ],
+  "mutcd.Z-094-C": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode pedestrian/crosswalk geometry, accessible-route dimensions, and equipment required by Z-094-C (Pedestrian passing spaces)."
+    }
+  ],
+  "mutcd.Z-095": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode pedestrian/crosswalk geometry, accessible-route dimensions, and equipment; barrier identity, crashworthiness, delineation, and traffic-path relationship; work/shadow-vehicle equipment, activity, location, and relationship to lanes required by Z-095 (Pedestrian and vehicle routes moved closer)."
+    }
+  ],
+  "mutcd.Z-096": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode pedestrian/crosswalk geometry, accessible-route dimensions, and equipment; barrier identity, crashworthiness, delineation, and traffic-path relationship required by Z-096 (Pedestrian barrier adapted to site). Source reviewer note: The referenced AASHTO Roadside Design Guide, Chapter 9, is not supplied."
+    }
+  ],
+  "mutcd.Z-097": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; work/shadow-vehicle equipment, activity, location, and relationship to lanes required by Z-097 (One-lane two-way control points)."
+    }
+  ],
+  "mutcd.Z-098": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; traffic volume, capacity, vehicle mix, and operational assessment required by Z-098 (One-lane two-way self-regulation option)."
+    }
+  ],
+  "mutcd.Z-099": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; available approach sight distance and intended stopping-point geometry; flagger operation, controls, staffing, equipment, and approach association required by Z-099 (Single flagger visibility condition). End-to-end visibility and designated coordinator communication are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.Z-100": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; directional lane identities and one-lane/two-way operation; available approach sight distance and intended stopping-point geometry required by Z-100 (Single flagger station)."
+    }
+  ],
+  "mutcd.Z-100-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; available approach sight distance and intended stopping-point geometry; flagger operation, controls, staffing, equipment, and approach association required by Z-100-B (Use two flagger stations when needed)."
+    }
+  ],
+  "mutcd.Z-101": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; available approach sight distance and intended stopping-point geometry; work/shadow-vehicle equipment, activity, location, and relationship to lanes required by Z-101 (Stop or yield control visibility trigger)."
+    }
+  ],
+  "mutcd.Z-102": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; signal/control configuration, stop-line geometry, and approach visibility required by Z-102 (TA-12 stop-line-to-signal distance). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-102-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; pavement marking identity, condition, conflicts, and placement required by Z-102-B (TA-12 temporary-marking segment). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-103": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode signal/control configuration, stop-line geometry, and approach visibility; taper/device-to-lane associations and intended traffic-path geometry required by Z-103 (TA-11 yield station setback). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-104": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; ramp geometry, acceleration/deceleration lengths, and approach association required by Z-104 (TA-40 mainline warning geometry). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-105": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; horizontal/vertical alignment, curve endpoints, and design criteria; remaining lane width, vehicle mix, and encroachment geometry required by Z-105 (TA-41 upper warning interval). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-105-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; buffer occupancy, lateral width, grade, and intended stopping geometry; horizontal/vertical alignment, curve endpoints, and design criteria required by Z-105-B (TA-41 lower warning interval). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-106": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode ramp geometry, acceleration/deceleration lengths, and approach association; remaining lane width, vehicle mix, and encroachment geometry required by Z-106 (TA-43 remaining ramp width). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-106-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway applicability, approach inventory, and warning-sign/closure associations required by Z-106-B (TA-43 warning spacing). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.SIGN-08": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "No sign elements are present."
+    },
+    {
+      "fixture": "examples/w1/ARROW-01/compliant.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "S1: warning-sign facing direction is absent."
+    }
+  ],
+  "mutcd.Z-109": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; traffic volume, capacity, vehicle mix, and operational assessment required by Z-109 (Federal baseline — interior closure with spare capacity). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-109-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; traffic volume, capacity, vehicle mix, and operational assessment required by Z-109-B (Federal baseline — interior closure needing other-lane capacity). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-110": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode ramp geometry, acceleration/deceleration lengths, and approach association required by Z-110 (Maintain interchange ramp access)."
+    }
+  ],
+  "mutcd.Z-110-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode ramp geometry, acceleration/deceleration lengths, and approach association; taper/device-to-lane associations and intended traffic-path geometry required by Z-110-B (Delineate exit ramp access)."
+    }
+  ],
+  "mutcd.Z-110-C": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode ramp geometry, acceleration/deceleration lengths, and approach association; pavement marking identity, condition, conflicts, and placement required by Z-110-C (Replace conflicting ramp markings)."
+    }
+  ],
+  "mutcd.Z-110-D": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode intersection/crossroad/driveway geometry and turning movements; ramp geometry, acceleration/deceleration lengths, and approach association required by Z-110-D (Coordinate ramp closures)."
+    }
+  ],
+  "mutcd.Z-111": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode barricade type, rail dimensions/coverage, and permitted-use conditions; ramp geometry, acceleration/deceleration lengths, and approach association required by Z-111 (Ramp closure option)."
+    }
+  ],
+  "mutcd.Z-111-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode ramp geometry, acceleration/deceleration lengths, and approach association required by Z-111-B (Changing ramp access area). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-111-C": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode ramp geometry, acceleration/deceleration lengths, and approach association required by Z-111-C (Exit ramp TTC option). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-112": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; ramp geometry, acceleration/deceleration lengths, and approach association required by Z-112 (Entrance-ramp interference and mainline lane closure). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-113": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "External Green Book/Roadside Design Guide design criteria are not reproduced in the repository documents. Schema 1.0.0 does not encode horizontal/vertical alignment, curve endpoints, and design criteria; ramp geometry, acceleration/deceleration lengths, and approach association required by Z-113 (TA-42 exit-ramp alignment design dependency). Source reviewer note: The referenced AASHTO Green Book, 7th edition, 2018, is not supplied; alignment criteria cannot be completed from this extraction. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.Z-114": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; ramp geometry, acceleration/deceleration lengths, and approach association; taper/device-to-lane associations and intended traffic-path geometry required by Z-114 (TA-42 shoulder-route exit alternative). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-001": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode taper/device-to-lane associations and intended traffic-path geometry required by T-001 (Taper locations)."
+    }
+  ],
+  "mutcd.T-001-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode intersection/crossroad/driveway geometry and turning movements; horizontal/vertical alignment, curve endpoints, and design criteria; ramp geometry, acceleration/deceleration lengths, and approach association required by T-001-B (Local taper length adjustment). OPTION / engineering judgment: taper adjustments near ramps, crossroads, and curves."
+    }
+  ],
+  "mutcd.TAPER-01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "The input contains no merge taper elements."
+    },
+    {
+      "fixture": "examples/w1/CHAN-01/compliant.json",
+      "status": "fail",
+      "complete": true,
+      "reason": null
+    },
+    {
+      "fixture": "examples/w1/TAPER-01/compliant.json",
+      "status": "pass",
+      "complete": true,
+      "reason": null
+    }
+  ],
+  "mutcd.T-010.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Adequate advance warning, driver speed adjustment, and completing the merge before the transition ends require engineering review; numeric L alone does not establish them."
+    }
+  ],
+  "mutcd.TAPER-02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "Applicable downstream tapers are evaluated under T-013; exact 12-ft California merge/shift/shoulder tapers under CA-007."
+    },
+    {
+      "fixture": "examples/w1/ARROW-01/compliant.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "No shift, shoulder, or downstream taper elements to evaluate."
+    },
+    {
+      "fixture": "examples/w1/TAPER-02/compliant.json",
+      "status": "pass",
+      "complete": true,
+      "reason": null
+    },
+    {
+      "fixture": "examples/w1/TAPER-02/violating.json",
+      "status": "fail",
+      "complete": true,
+      "reason": null
+    }
+  ],
+  "mutcd.T-012-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; taper/device-to-lane associations and intended traffic-path geometry required by T-012-B (Shoulder used as a travel lane). Source reviewer note: Do not equate 0.33 L with exact ⅓ L for rounding. CA-007 uses L/3 and printed whole-foot values. Whether a shoulder is used as a travel lane is absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.T-013": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "fail",
+      "complete": true,
+      "reason": null
+    },
+    {
+      "fixture": "examples/taper-75ft.json",
+      "status": "pass",
+      "complete": true,
+      "reason": null
+    },
+    {
+      "fixture": "examples/w1/ARROW-01/compliant.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "The input contains no downstream taper elements."
+    }
+  ],
+  "mutcd.T-013-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Approximate 20-ft spacing has no authored acceptance tolerance, and device-to-taper association is absent."
+    }
+  ],
+  "mutcd.T-014": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The input taper_type enumeration has no one-lane/two-way entry-taper type or alternating-flow intent. One-lane two-way taper type is absent from schema 1.0.0; those subjects are not evaluated. Merge taper minima are evaluated under TAPER-01. Uses 0.5L and 0.33L table factors (not exact 1/2 or 1/3 prose)."
+    }
+  ],
+  "mutcd.T-014-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "One-lane/two-way taper identity, device association, and a tolerance for approximate 20-ft spacing are absent."
+    }
+  ],
+  "mutcd.T-014-C": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "One-lane/two-way operation and its original receiving lane are not encoded."
+    }
+  ],
+  "mutcd.T-018": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Low-speed urban applicability and the intended use of a barrier as a merging taper are not encoded. Temporary barrier use on a merging taper and low-speed urban classification are absent."
+    }
+  ],
+  "mutcd.T-019": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "External Green Book/Roadside Design Guide design criteria are not reproduced in the repository documents. Schema 1.0.0 does not encode roadway class and State-highway ownership; barrier identity, crashworthiness, delineation, and traffic-path relationship; taper/device-to-lane associations and intended traffic-path geometry required by T-019 (Barrier taper length in restricted geometry). Source reviewer note: Taper length is optimized for available geometry and operations; no fixed formula or minimum is supplied by this provision."
+    }
+  ],
+  "mutcd.T-020": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; barrier identity, crashworthiness, delineation, and traffic-path relationship; taper/device-to-lane associations and intended traffic-path geometry required by T-020 (Required delineation of a barrier taper)."
+    }
+  ],
+  "mutcd.CHAN-01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "The input contains no supported channelizing device_line elements."
+    },
+    {
+      "fixture": "examples/w1/CHAN-01/compliant.json",
+      "status": "pass",
+      "complete": true,
+      "reason": null
+    },
+    {
+      "fixture": "examples/w1/CHAN-01/violating.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "D1: longitudinal overlap does not establish taper association."
+    }
+  ],
+  "mutcd.T-022": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode taper/device-to-lane associations and intended traffic-path geometry required by T-022 (Channelization extension beyond transition). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger. Whether devices could lead traffic out of the intended path (Fig. 6P-39) is not a schema fact."
+    }
+  ],
+  "mutcd.T-023": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; AFAD equipment, traffic stopping points, attendance, and staffing; taper/device-to-lane associations and intended traffic-path geometry required by T-023 (AFAD position relative to taper)."
+    }
+  ],
+  "mutcd.T-024": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; operation duration, stationary/mobile status, and illumination conditions; arrow-board type, closed-lane identity, equipment, and placement association required by T-024 (Arrow board at stationary merging taper)."
+    }
+  ],
+  "mutcd.T-025": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; arrow-board type, closed-lane identity, equipment, and placement association; taper/device-to-lane associations and intended traffic-path geometry required by T-025 (Arrow board narrow-shoulder alternative)."
+    }
+  ],
+  "mutcd.T-026": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; arrow-board type, closed-lane identity, equipment, and placement association; taper/device-to-lane associations and intended traffic-path geometry required by T-026 (Second arrow board when first is on shoulder). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-026-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode arrow-board type, closed-lane identity, equipment, and placement association; taper/device-to-lane associations and intended traffic-path geometry required by T-026-B (Second arrow board when first is in closed lane)."
+    }
+  ],
+  "mutcd.T-027": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; roadway class and State-highway ownership required by T-027 (High-speed shoulder closure warning)."
+    }
+  ],
+  "mutcd.T-027-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; roadway class and State-highway ownership; taper/device-to-lane associations and intended traffic-path geometry required by T-027-B (High-speed shoulder closure taper)."
+    }
+  ],
+  "mutcd.T-028": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode operation duration, stationary/mobile status, and illumination conditions; taper/device-to-lane associations and intended traffic-path geometry required by T-028 (Mandatory merging taper for multi-lane closure)."
+    }
+  ],
+  "mutcd.T-029": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode work/shadow-vehicle equipment, activity, location, and relationship to lanes; traffic volume, capacity, vehicle mix, and operational assessment required by T-029 (Multiple-lane closure capacity analysis)."
+    }
+  ],
+  "mutcd.T-029-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode remaining lane width, vehicle mix, and encroachment geometry; taper/device-to-lane associations and intended traffic-path geometry required by T-029-B (Sequential multiple-lane tapers). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-030": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode taper/device-to-lane associations and intended traffic-path geometry required by T-030 (Continuous taper alternative at lower operating speeds)."
+    }
+  ],
+  "mutcd.T-031": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode horizontal/vertical alignment, curve endpoints, and design criteria; taper/device-to-lane associations and intended traffic-path geometry required by T-031 (Separate lane-drop taper from crossover). Source reviewer note: The extraction repeats “Preserve the site-condition exception for item B” for this record. Item B is the crossover-speed rule T-032; do not extend that exception to other crossover rules without review. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-032": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "External Green Book/Roadside Design Guide design criteria are not reproduced in the repository documents. Schema 1.0.0 does not encode horizontal/vertical alignment, curve endpoints, and design criteria required by T-032 (Crossover design speed)."
+    }
+  ],
+  "mutcd.T-033": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode horizontal/vertical alignment, curve endpoints, and design criteria; taper/device-to-lane associations and intended traffic-path geometry; pavement marking identity, condition, conflicts, and placement required by T-033 (Crossover travel-path delineation). Source reviewer note: The extraction repeats “Preserve the site-condition exception for item B” for this record. Item B is the crossover-speed rule T-032; do not extend that exception to other crossover rules without review."
+    }
+  ],
+  "mutcd.T-034": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode horizontal/vertical alignment, curve endpoints, and design criteria; work/shadow-vehicle equipment, activity, location, and relationship to lanes required by T-034 (Crossover vehicle accommodation). Source reviewer note: The extraction repeats “Preserve the site-condition exception for item B” for this record. Item B is the crossover-speed rule T-032; do not extend that exception to other crossover rules without review."
+    }
+  ],
+  "mutcd.T-036": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; barrier identity, crashworthiness, delineation, and traffic-path relationship; message-sign equipment, protection, storage state, and placement required by T-036 (Federal baseline — PCMS protected placement)."
+    }
+  ],
+  "mutcd.T-036-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; device dimensions, materials, lighting, and retroreflective specifications; message-sign equipment, protection, storage state, and placement required by T-036-B (Federal baseline — PCMS exposed placement)."
+    }
+  ],
+  "mutcd.T-037": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode barrier identity, crashworthiness, delineation, and traffic-path relationship; message-sign equipment, protection, storage state, and placement required by T-037 (Federal baseline — stored PCMS location)."
+    }
+  ],
+  "mutcd.T-037-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode device dimensions, materials, lighting, and retroreflective specifications; message-sign equipment, protection, storage state, and placement required by T-037-B (Federal baseline — stored PCMS delineation)."
+    }
+  ],
+  "mutcd.T-038": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode work/shadow-vehicle equipment, activity, location, and relationship to lanes; taper/device-to-lane associations and intended traffic-path geometry required by T-038 (TA-6 shadow vehicle omission with taper). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-039": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode operation duration, stationary/mobile status, and illumination conditions; work/shadow-vehicle equipment, activity, location, and relationship to lanes; taper/device-to-lane associations and intended traffic-path geometry required by T-039 (TA-6 short-duration taper omission). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-040": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode work/shadow-vehicle equipment, activity, location, and relationship to lanes; taper/device-to-lane associations and intended traffic-path geometry required by T-040 (TA-15 work vehicle instead of taper devices). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-041": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Near-side intersection geometry and receiving-lane identities are absent; lane counts cannot establish a dual-lane merge. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger. Near-side intersection geometry and dual-direction merge intent are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.T-042": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode work/shadow-vehicle equipment, activity, location, and relationship to lanes; taper/device-to-lane associations and intended traffic-path geometry required by T-042 (TA-21 taper direction and turning traffic). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-043": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode intersection/crossroad/driveway geometry and turning movements; taper/device-to-lane associations and intended traffic-path geometry required by T-043 (TA-22 insufficient space for temporary turn bay). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-044": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode intersection/crossroad/driveway geometry and turning movements; taper/device-to-lane associations and intended traffic-path geometry required by T-044 (TA-24 insufficient turn-bay space). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-045": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode pavement marking identity, condition, conflicts, and placement required by T-045 (TA-31 long-term conflicting markings). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-045-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode taper/device-to-lane associations and intended traffic-path geometry; pavement marking identity, condition, conflicts, and placement required by T-045-B (TA-31 devices at conflicting markings). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-045-C": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode pavement marking identity, condition, conflicts, and placement required by T-045-C (TA-31 temporary markings). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-046": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; taper/device-to-lane associations and intended traffic-path geometry required by T-046 (TA-32 shoulder closure before merging taper). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-047": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode taper/device-to-lane associations and intended traffic-path geometry; pavement marking identity, condition, conflicts, and placement required by T-047 (TA-32 devices instead of markings). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-048": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; taper/device-to-lane associations and intended traffic-path geometry required by T-048 (TA-33 shoulder closure before merging taper). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-049": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode barrier identity, crashworthiness, delineation, and traffic-path relationship; taper/device-to-lane associations and intended traffic-path geometry required by T-049 (TA-34 barrier exclusion). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-049-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode taper/device-to-lane associations and intended traffic-path geometry; pavement marking identity, condition, conflicts, and placement required by T-049-B (TA-34 initial channelization). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-050": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode operation duration, stationary/mobile status, and illumination conditions; barrier identity, crashworthiness, delineation, and traffic-path relationship; work/shadow-vehicle equipment, activity, location, and relationship to lanes required by T-050 (TA-34 movable-barrier closing sequence). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-050-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode operation duration, stationary/mobile status, and illumination conditions; barrier identity, crashworthiness, delineation, and traffic-path relationship; work/shadow-vehicle equipment, activity, location, and relationship to lanes required by T-050-B (TA-34 movable-barrier opening sequence). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-051": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode barrier identity, crashworthiness, delineation, and traffic-path relationship; pavement marking identity, condition, conflicts, and placement required by T-051 (TA-34 temporary edge line exclusion). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-051-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; taper/device-to-lane associations and intended traffic-path geometry required by T-051-B (TA-34 restored-lane signing and channelization). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-051-C": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; arrow-board type, closed-lane identity, equipment, and placement association; taper/device-to-lane associations and intended traffic-path geometry required by T-051-C (TA-34 restored-lane arrow board). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-052": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode barrier identity, crashworthiness, delineation, and traffic-path relationship; taper/device-to-lane associations and intended traffic-path geometry required by T-052 (TA-36 barrier exclusion). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-052-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode taper/device-to-lane associations and intended traffic-path geometry; pavement marking identity, condition, conflicts, and placement required by T-052-B (TA-36 initial channelization). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-053": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; mounting/support geometry and vertical clearances; arrow-board type, closed-lane identity, equipment, and placement association required by T-053 (TA-37 second arrow-board position). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-054": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode barrier identity, crashworthiness, delineation, and traffic-path relationship; taper/device-to-lane associations and intended traffic-path geometry required by T-054 (TA-38 barrier exclusion). Source reviewer note: Federal baseline only for comparison on California freeways: CA-025 prohibits TA-38 there and replaces it with the adjacent-lane closure layout. Do not implement this federal alternative in that California scope. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-054-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode taper/device-to-lane associations and intended traffic-path geometry; pavement marking identity, condition, conflicts, and placement required by T-054-B (TA-38 initial channelization). Source reviewer note: Federal baseline only for comparison on California freeways: CA-025 prohibits TA-38 there and replaces it with the adjacent-lane closure layout. Do not implement this federal alternative in that California scope. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-055": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode taper/device-to-lane associations and intended traffic-path geometry required by T-055 (Federal TA-38 right-lane approach alternative). Source reviewer note: Federal baseline only for comparison on California freeways: CA-025 prohibits TA-38 there and replaces it with the adjacent-lane closure layout. Do not implement this federal alternative in that California scope. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-055-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The schema does not identify the federal TA-38 layout, right lane-shift intent, or mirrored Interior Lane Shift Ahead symbol orientation. Source reviewer note: Federal baseline only for comparison on California freeways: CA-025 prohibits TA-38 there and replaces it with the adjacent-lane closure layout. Do not implement this federal alternative in that California scope. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-056": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode taper/device-to-lane associations and intended traffic-path geometry required by T-056 (TA-38 federal devices before traffic split). Source reviewer note: Federal baseline only for comparison on California freeways: CA-025 prohibits TA-38 there and replaces it with the adjacent-lane closure layout. Do not implement this federal alternative in that California scope. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-058": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode ramp geometry, acceleration/deceleration lengths, and approach association; taper/device-to-lane associations and intended traffic-path geometry required by T-058 (TA-41 mainline devices near exit). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-058-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode ramp geometry, acceleration/deceleration lengths, and approach association; taper/device-to-lane associations and intended traffic-path geometry; pavement marking identity, condition, conflicts, and placement required by T-058-B (TA-41 temporary ramp delineation). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-059": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode arrow-board type, closed-lane identity, equipment, and placement association; ramp geometry, acceleration/deceleration lengths, and approach association; taper/device-to-lane associations and intended traffic-path geometry required by T-059 (TA-44 mainline taper before entrance-ramp merge). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-060": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode operation duration, stationary/mobile status, and illumination conditions; barrier identity, crashworthiness, delineation, and traffic-path relationship; work/shadow-vehicle equipment, activity, location, and relationship to lanes required by T-060 (TA-45 exterior-lane closing sequence). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-060-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode operation duration, stationary/mobile status, and illumination conditions; work/shadow-vehicle equipment, activity, location, and relationship to lanes; taper/device-to-lane associations and intended traffic-path geometry required by T-060-B (TA-45 exterior-lane opening sequence). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-061": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode available approach sight distance and intended stopping-point geometry; taper/device-to-lane associations and intended traffic-path geometry required by T-061 (TA-53 transition sight distance). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-062": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode available approach sight distance and intended stopping-point geometry; taper/device-to-lane associations and intended traffic-path geometry required by T-062 (TA-54 transition sight distance). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-063": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode pavement marking identity, condition, conflicts, and placement required by T-063 (TA-53 long-term conflicting markings). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-063-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode taper/device-to-lane associations and intended traffic-path geometry; pavement marking identity, condition, conflicts, and placement required by T-063-B (TA-53 devices at conflicting markings). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-063-C": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode pavement marking identity, condition, conflicts, and placement required by T-063-C (TA-53 temporary markings). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-064": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode pavement marking identity, condition, conflicts, and placement required by T-064 (TA-54 long-term conflicting markings). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-064-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode taper/device-to-lane associations and intended traffic-path geometry; pavement marking identity, condition, conflicts, and placement required by T-064-B (TA-54 devices at conflicting markings). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-064-C": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode pavement marking identity, condition, conflicts, and placement required by T-064-C (TA-54 temporary markings). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-065": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The federal exception text is incomplete; missing words are unresolved. Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; operation duration, stationary/mobile status, and illumination conditions required by T-065 (Occupied shoulder advance warning — incomplete exception). Source reviewer note: The missing exception words cannot be reconstructed. CA §6N.04 para. 06a points to unavailable known errors; CA-032 is a separate addition, not a repair of this federal sentence."
+    }
+  ],
+  "mutcd.T-065-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The federal exception text is incomplete; missing words are unresolved. Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; operation duration, stationary/mobile status, and illumination conditions; taper/device-to-lane associations and intended traffic-path geometry required by T-065-B (Occupied paved shoulder taper — incomplete exception). Source reviewer note: The missing exception words cannot be reconstructed. CA §6N.04 para. 06a points to unavailable known errors; CA-032 is a separate addition, not a repair of this federal sentence."
+    }
+  ],
+  "mutcd.T-065-C": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The federal exception text is incomplete; missing words are unresolved. Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; pedestrian/crosswalk geometry, accessible-route dimensions, and equipment; operation duration, stationary/mobile status, and illumination conditions required by T-065-C (Occupied shoulder pedestrian passage — incomplete exception). Source reviewer note: The missing exception words cannot be reconstructed. CA §6N.04 para. 06a points to unavailable known errors; CA-032 is a separate addition, not a repair of this federal sentence."
+    }
+  ],
+  "mutcd.T-066": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "This clause requires a site-specific engineering judgment/study or review; schema 1.0.0 has no record of that determination. Schema 1.0.0 does not encode horizontal/vertical alignment, curve endpoints, and design criteria; roadway applicability, approach inventory, and warning-sign/closure associations; taper/device-to-lane associations and intended traffic-path geometry required by T-066 (Adapt more complex layouts)."
+    }
+  ],
+  "mutcd.T-067": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Referenced TA-3 notes 4-5 contain omission conditions not reproduced in the extraction. Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; taper/device-to-lane associations and intended traffic-path geometry required by T-067 (TA-3 shoulder taper geometry). Source reviewer note: TA-3 notes 4–5 are referenced for omissions but their conditions are not reproduced in this record. Confirm them before coding taper omission. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-068": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The figure flags a sign-spacing error; the referenced known-error list is unavailable. Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; roadway applicability, approach inventory, and warning-sign/closure associations; taper/device-to-lane associations and intended traffic-path geometry required by T-068 (TA-5 shoulder taper geometry). Source reviewer note: Figure 6P-5 flags A/B/C sign-spacing errors and reverses the normal table order. The 1/3 L label is preserved; no corrected spacing arrangement is asserted. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-069": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; operation duration, stationary/mobile status, and illumination conditions; buffer occupancy, lateral width, grade, and intended stopping geometry required by T-069 (TA-6 shoulder taper geometry). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-070": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; buffer occupancy, lateral width, grade, and intended stopping geometry; horizontal/vertical alignment, curve endpoints, and design criteria required by T-070 (TA-10 one-lane two-way taper geometry). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-071": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; available approach sight distance and intended stopping-point geometry; buffer occupancy, lateral width, grade, and intended stopping geometry required by T-071 (TA-11 one-lane two-way taper geometry). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-072": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway class and State-highway ownership; directional lane identities and one-lane/two-way operation; buffer occupancy, lateral width, grade, and intended stopping geometry required by T-072 (TA-18 one-lane two-way taper geometry). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-073": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; intersection/crossroad/driveway geometry and turning movements; flagger operation, controls, staffing, equipment, and approach association required by T-073 (TA-27 one-lane two-way taper geometry). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-074": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; grade-crossing geometry, actual queue extent, and crossing control; buffer occupancy, lateral width, grade, and intended stopping geometry required by T-074 (TA-46 one-lane two-way taper geometry). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-075": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; buffer occupancy, lateral width, grade, and intended stopping geometry; horizontal/vertical alignment, curve endpoints, and design criteria required by T-075 (TA-53 one-lane two-way taper geometry). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-076": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; remaining lane width, vehicle mix, and encroachment geometry; signal/control configuration, stop-line geometry, and approach visibility required by T-076 (TA-12 signal-controlled taper geometry). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-077": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode remaining lane width, vehicle mix, and encroachment geometry; work/shadow-vehicle equipment, activity, location, and relationship to lanes; taper/device-to-lane associations and intended traffic-path geometry required by T-077 (TA-15 center-work shifting tapers). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-078": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; taper/device-to-lane associations and intended traffic-path geometry required by T-078 (TA-21 merging taper geometry). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-079": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The source figure flags geometric/text errors; approved segment endpoints need source confirmation. Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; taper/device-to-lane associations and intended traffic-path geometry required by T-079 (TA-22 merging taper geometry). Source reviewer note: The associated figure has source-flagged text errors; Figure 6P-25 also flags geometric errors. The FHWA known-error list is not supplied; do not infer corrected geometry. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-080": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The source figure flags geometric/text errors; approved segment endpoints need source confirmation. Schema 1.0.0 does not encode responsible-agency approval and documented engineering decisions; taper/device-to-lane associations and intended traffic-path geometry required by T-080 (TA-23 merging taper geometry). Source reviewer note: Verify the Figure 6P-23 geometric erratum before using the depicted endpoints. The bracket appears to include the turn-bay segment; do not infer L minus 100 ft as an approved merging taper. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-081": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; taper/device-to-lane associations and intended traffic-path geometry required by T-081 (TA-30 merging taper geometry). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-082": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; taper/device-to-lane associations and intended traffic-path geometry required by T-082 (TA-33 merging taper). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-082-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode taper/device-to-lane associations and intended traffic-path geometry required by T-082-B (TA-33 downstream taper). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-082-C": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway applicability, approach inventory, and warning-sign/closure associations required by T-082-C (TA-33 termination sign station). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-083": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The source figure flags geometric/text errors; approved segment endpoints need source confirmation. Schema 1.0.0 does not encode intersection/crossroad/driveway geometry and turning movements; buffer occupancy, lateral width, grade, and intended stopping geometry; taper/device-to-lane associations and intended traffic-path geometry required by T-083 (TA-24 intersection taper geometry). Source reviewer note: The associated figure has source-flagged text errors; Figure 6P-25 also flags geometric errors. The FHWA known-error list is not supplied; do not infer corrected geometry. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-084": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The source figure flags geometric/text errors; approved segment endpoints need source confirmation. Schema 1.0.0 does not encode intersection/crossroad/driveway geometry and turning movements; taper/device-to-lane associations and intended traffic-path geometry required by T-084 (TA-25 multiple intersection closure tapers). Source reviewer note: The associated figure has source-flagged text errors; Figure 6P-25 also flags geometric errors. The FHWA known-error list is not supplied; do not infer corrected geometry. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-085": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode intersection/crossroad/driveway geometry and turning movements; remaining lane width, vehicle mix, and encroachment geometry; taper/device-to-lane associations and intended traffic-path geometry required by T-085 (TA-26 center-intersection shifts). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-086": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode taper/device-to-lane associations and intended traffic-path geometry required by T-086 (TA-31 entry and shifting tapers). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-086-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; taper/device-to-lane associations and intended traffic-path geometry required by T-086-B (TA-31 separation below shifting taper). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-086-C": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; taper/device-to-lane associations and intended traffic-path geometry required by T-086-C (TA-31 return taper and buffer depiction). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-087": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; buffer occupancy, lateral width, grade, and intended stopping geometry; taper/device-to-lane associations and intended traffic-path geometry required by T-087 (TA-32 half-road closure shift sequence). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-088": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode barrier identity, crashworthiness, delineation, and traffic-path relationship; buffer occupancy, lateral width, grade, and intended stopping geometry; taper/device-to-lane associations and intended traffic-path geometry required by T-088 (TA-34 lane-closure taper). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-088-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; roadway applicability, approach inventory, and warning-sign/closure associations required by T-088-B (TA-34 opposite-direction warning distance). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-089": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Referenced Figure 6P-36(CA) is absent; federal Figure 6P-36 is not a verified substitute. Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; roadway class and State-highway ownership; barrier identity, crashworthiness, delineation, and traffic-path relationship required by T-089 (TA-36 freeway shift geometry). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-090": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; work/shadow-vehicle equipment, activity, location, and relationship to lanes; taper/device-to-lane associations and intended traffic-path geometry required by T-090 (TA-37 double-lane closure geometry). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-091": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode taper/device-to-lane associations and intended traffic-path geometry required by T-091 (Federal TA-38 taper sequence). Source reviewer note: Federal baseline only for comparison on California freeways: CA-025 prohibits TA-38 there and replaces it with the adjacent-lane closure layout. Do not implement this federal alternative in that California scope. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-091-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; work/shadow-vehicle equipment, activity, location, and relationship to lanes required by T-091-B (Federal TA-38 traffic split opening). Source reviewer note: Federal baseline only for comparison on California freeways: CA-025 prohibits TA-38 there and replaces it with the adjacent-lane closure layout. Do not implement this federal alternative in that California scope. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-092": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "External Green Book/Roadside Design Guide design criteria are not reproduced in the repository documents. Schema 1.0.0 does not encode horizontal/vertical alignment, curve endpoints, and design criteria; taper/device-to-lane associations and intended traffic-path geometry required by T-092 (TA-39 median crossover geometry). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-093": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; horizontal/vertical alignment, curve endpoints, and design criteria; ramp geometry, acceleration/deceleration lengths, and approach association required by T-093 (TA-40 temporary ramp device spacing). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-093-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; taper/device-to-lane associations and intended traffic-path geometry required by T-093-B (TA-40 mainline separator spacing). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-094": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; horizontal/vertical alignment, curve endpoints, and design criteria; ramp geometry, acceleration/deceleration lengths, and approach association required by T-094 (TA-41 temporary ramp device spacing). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-094-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; taper/device-to-lane associations and intended traffic-path geometry required by T-094-B (TA-41 mainline separator spacing). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-095": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode ramp geometry, acceleration/deceleration lengths, and approach association; taper/device-to-lane associations and intended traffic-path geometry required by T-095 (TA-42 exit-access geometry). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-095-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; ramp geometry, acceleration/deceleration lengths, and approach association required by T-095-B (TA-42 EXIT OPEN sign station). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-096": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode ramp geometry, acceleration/deceleration lengths, and approach association; taper/device-to-lane associations and intended traffic-path geometry required by T-096 (TA-44 mainline and ramp tapers). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-096-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode ramp geometry, acceleration/deceleration lengths, and approach association required by T-096-B (TA-44 ramp warning spacing). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-097": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode barrier identity, crashworthiness, delineation, and traffic-path relationship; buffer occupancy, lateral width, grade, and intended stopping geometry; taper/device-to-lane associations and intended traffic-path geometry required by T-097 (TA-45 movable-barrier phase geometry). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-098": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "TA-47 shoulder-taper versus L figure labels and a sign-designation error remain unresolved. Schema 1.0.0 does not encode bicycle-route geometry and bicycle/vehicle operating conditions; work/shadow-vehicle equipment, activity, location, and relationship to lanes; taper/device-to-lane associations and intended traffic-path geometry required by T-098 (TA-47 bicycle-lane taper). Source reviewer note: CA-026 calls this a shoulder-taper calculation, while the figure labels L. Do not substitute L/3; the figure also has a sign-designation known-error notice. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-099": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; bicycle-route geometry and bicycle/vehicle operating conditions; work/shadow-vehicle equipment, activity, location, and relationship to lanes required by T-099 (Federal TA-51 shoulder-diversion taper). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-100": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The extracted STANDARD classification of the unheaded shall-note needs source confirmation. Schema 1.0.0 does not encode work/shadow-vehicle equipment, activity, location, and relationship to lanes; taper/device-to-lane associations and intended traffic-path geometry required by T-100 (TA-47 express speed instruction in figure note). Source reviewer note: The unheaded figure note says “shall”; the extraction assigns STANDARD but flags formal classification for confirmation under §§1A.04 and 6P.01. Do not extend this taper-speed instruction to A/B/C bicycle-speed guidance. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-101": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The extracted STANDARD classification of the unheaded shall-note needs source confirmation. Schema 1.0.0 does not encode work/shadow-vehicle equipment, activity, location, and relationship to lanes; taper/device-to-lane associations and intended traffic-path geometry required by T-101 (TA-51 express speed instruction in figure note). Source reviewer note: The unheaded figure note says “shall”; the extraction assigns STANDARD but flags formal classification for confirmation under §§1A.04 and 6P.01. Do not extend this taper-speed instruction to A/B/C bicycle-speed guidance. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-102": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode intersection/crossroad/driveway geometry and turning movements; available approach sight distance and intended stopping-point geometry; buffer occupancy, lateral width, grade, and intended stopping geometry required by T-102 (TA-54 circular intersection lane-closure tapers). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.T-103": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode horizontal/vertical alignment, curve endpoints, and design criteria required by T-103 (TA-39 reverse-curve crossover option). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.B-002": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Equipment/material/work occupancy cannot be established from zone intervals or modeled device positions alone. Work/storage occupancy of buffer space and lateral buffer width are not modeled; lateral width is judgment."
+    }
+  ],
+  "mutcd.B-003": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry required by B-003 (Longitudinal and lateral buffer placement)."
+    }
+  ],
+  "mutcd.B-004": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry required by B-004 (Upstream longitudinal buffer option)."
+    }
+  ],
+  "mutcd.B-007": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; buffer occupancy, lateral width, grade, and intended stopping geometry required by B-007 (Lateral buffer uses)."
+    }
+  ],
+  "mutcd.B-008": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "This clause requires a site-specific engineering judgment/study or review; schema 1.0.0 has no record of that determination. Lateral buffer width depends on engineering judgment and site traffic-space geometry absent from the schema. Source reviewer note: No numerical lateral-buffer width is supplied; engineering judgment is the stated selection method. Work/storage occupancy of buffer space and lateral buffer width are not modeled; lateral width is judgment."
+    }
+  ],
+  "mutcd.B-009": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; buffer occupancy, lateral width, grade, and intended stopping geometry required by B-009 (Federal opposing-flow longitudinal buffer option)."
+    }
+  ],
+  "mutcd.B-011": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry; taper/device-to-lane associations and intended traffic-path geometry required by B-011 (Downstream longitudinal buffer option)."
+    }
+  ],
+  "mutcd.BUFFER-01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "The input contains no upstream_buffer zones."
+    },
+    {
+      "fixture": "examples/w1/BUFFER-01/compliant.json",
+      "status": "pass",
+      "complete": true,
+      "reason": null
+    }
+  ],
+  "mutcd.B-014": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "This clause requires a site-specific engineering judgment/study or review; schema 1.0.0 has no record of that determination. Available approach stopping sight distance and intended stopping point are not encoded; distance to the work zone is insufficient. Schema 1.0.0 lacks available approach sight distance and the intended stopping point. Distance between a flagger and a work-zone boundary does not establish stopping sight distance."
+    }
+  ],
+  "mutcd.B-015": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "This clause requires a site-specific engineering judgment/study or review; schema 1.0.0 has no record of that determination. Schema 1.0.0 does not encode available approach sight distance and intended stopping-point geometry; flagger operation, controls, staffing, equipment, and approach association; responsible-agency approval and documented engineering decisions required by B-015 (Flagger location exception for inadequate sight distance). Source reviewer note: The station-location exception expressly depends on engineering judgment; no replacement stopping-distance threshold is supplied. Schema 1.0.0 lacks available approach sight distance and the intended stopping point. Distance between a flagger and a work-zone boundary does not establish stopping sight distance."
+    }
+  ],
+  "mutcd.B-016": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The intended stopping point and available stopping sight distance are absent; the optional table is not a mandatory threshold. Schema 1.0.0 lacks available approach sight distance and the intended stopping point. Distance between a flagger and a work-zone boundary does not establish stopping sight distance."
+    }
+  ],
+  "mutcd.B-016-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Road grade and other conditions affecting stopping distance are not encoded."
+    }
+  ],
+  "mutcd.B-017": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode flagger operation, controls, staffing, equipment, and approach association; work/shadow-vehicle equipment, activity, location, and relationship to lanes required by B-017 (Flagger recovery space)."
+    }
+  ],
+  "mutcd.B-017-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode flagger operation, controls, staffing, equipment, and approach association; work/shadow-vehicle equipment, activity, location, and relationship to lanes required by B-017-B (Flagger escape route)."
+    }
+  ],
+  "mutcd.B-018": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; available approach sight distance and intended stopping-point geometry; flagger operation, controls, staffing, equipment, and approach association required by B-018 (TA-10 buffer extension before curves). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger. Horizontal/crest curve location relative to the one-lane taper is absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.B-019": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; buffer occupancy, lateral width, grade, and intended stopping geometry required by B-019 (TA-24 buffer between opposing directions). Source reviewer note: The retained federal OPTION is distinct from CA-002, which recommends a buffer when opposing flows use portions of the same lane. Review the actual trigger; do not downgrade the California “should.” Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.B-020": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; buffer occupancy, lateral width, grade, and intended stopping geometry required by B-020 (TA-31 opposing-flow longitudinal buffer). Source reviewer note: The retained federal OPTION is distinct from CA-002, which recommends a buffer when opposing flows use portions of the same lane. Review the actual trigger; do not downgrade the California “should.” Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.B-021": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode barrier identity, crashworthiness, delineation, and traffic-path relationship required by B-021 (Federal TA-38 long-term barrier). Source reviewer note: Federal baseline only for comparison on California freeways: CA-025 prohibits TA-38 there and replaces it with the adjacent-lane closure layout. Do not implement this federal alternative in that California scope. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.B-021-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry required by B-021-B (Federal TA-38 upstream buffer). Source reviewer note: Federal baseline only for comparison on California freeways: CA-025 prohibits TA-38 there and replaces it with the adjacent-lane closure layout. Do not implement this federal alternative in that California scope. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.B-022": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode mounting/support geometry and vertical clearances; buffer occupancy, lateral width, grade, and intended stopping geometry; work/shadow-vehicle equipment, activity, location, and relationship to lanes required by B-022 (TA-38 federal vehicle position after buffer). Source reviewer note: Federal baseline only for comparison on California freeways: CA-025 prohibits TA-38 there and replaces it with the adjacent-lane closure layout. Do not implement this federal alternative in that California scope. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.B-023": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; buffer occupancy, lateral width, grade, and intended stopping geometry required by B-023 (TA-45 opposing-flow longitudinal buffer option). Source reviewer note: The retained federal OPTION is distinct from CA-002, which recommends a buffer when opposing flows use portions of the same lane. Review the actual trigger; do not downgrade the California “should.” Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.B-024": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode grade-crossing geometry, actual queue extent, and crossing control; buffer occupancy, lateral width, grade, and intended stopping geometry required by B-024 (TA-46 buffer extended upstream of railroad crossing). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.B-025": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode directional lane identities and one-lane/two-way operation; available approach sight distance and intended stopping-point geometry; flagger operation, controls, staffing, equipment, and approach association required by B-025 (TA-53 buffer extension before curves). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.B-026": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode buffer occupancy, lateral width, grade, and intended stopping geometry required by B-026 (TA-13 temporary road closure buffers). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.B-027": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode paved-shoulder width, roadway-edge position, and shoulder occupation; device dimensions, materials, lighting, and retroreflective specifications; buffer occupancy, lateral width, grade, and intended stopping geometry required by B-027 (TA-16 survey work buffers). Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.CA-001": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-002": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-003": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-004": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-005": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-006": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-007": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-008": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-008-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-009": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-010": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-012": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-013": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-013-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-014": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-015": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-016": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-017": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-017-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-018": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-019": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-022": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-023": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-024": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-024-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-025": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-026": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-027": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-028": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-029": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-030": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-030-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-031": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-032": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-032-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-032-C": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-033": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-034": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-035": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-036": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-036-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-037": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-038": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-039": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-040": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-041": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-042": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-043": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-044": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-045": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.CA-046": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "California-only provision; site.state is not CA."
+    }
+  ],
+  "mutcd.D-008": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The selected typical application and jurisdiction/site conditions justifying a deviation are not encoded."
+    }
+  ],
+  "mutcd.D-009": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The selected typical application, added devices/spacing adjustments, and field judgment of additional reaction time or delineation are not encoded."
+    }
+  ],
+  "mutcd.D-009-B": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The selected typical application and field-condition decision permitting fewer devices are not encoded."
+    }
+  ],
+  "mutcd.D-010": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The selected typical application, actual site conditions, and engineering determination of necessary layout changes are not encoded."
+    }
+  ],
+  "mutcd.D-011": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode roadway applicability, approach inventory, and warning-sign/closure associations; taper/device-to-lane associations and intended traffic-path geometry required by D-011 (Increase warning spacing and taper length)."
+    }
+  ],
+  "mutcd.D-012": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The schema does not identify the selected typical application or which devices that source figure labels optional."
+    }
+  ],
+  "mutcd.D-014": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 does not encode responsible-agency approval and documented engineering decisions required by D-014 (Federal modified TTC plan approval). Source reviewer note: Federal baseline retained for comparison; California replaces the approval provision in CA-041."
+    }
+  ],
+  "mutcd.SIGN-10": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Work-road vs detour-road association for W20-1 is absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.SIGN-11": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "The input contains no sign elements."
+    },
+    {
+      "fixture": "examples/w1/ARROW-01/compliant.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Every sign needs an explicit facing direction matching one approach."
+    }
+  ],
+  "mutcd.SIGN-12": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "OPTION: dual-side, in-roadway portable, and barricade mounting are allowed, not required."
+    }
+  ],
+  "mutcd.SIGN-13": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Sign mounting height above pavement is absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.SIGN-14": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Sign mounting height and sidewalk/curb context are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.SIGN-15.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Portable-support mounting height is absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.SIGN-15.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Portable-support mounting height is absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.SIGN-16": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Roadway category (rural/urban with or without curb) needed for lateral offset bands is absent."
+    }
+  ],
+  "mutcd.SIGN-17.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Sidewalk / bicycle-facility polygons and ADA clear-width facts are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.SIGN-17.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The referenced 2010 ADA Standards section 307 is not reproduced; sidewalk/support geometry is also absent."
+    }
+  ],
+  "mutcd.SIGN-18.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Installation duration and Part 2 mounting-height compliance are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.SIGN-18.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Installation duration and Part 2 mounting-height compliance are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.SIGN-19.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Barricade rail coverage ratios and ground clearance for large signs are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.SIGN-19.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Barricade rail coverage ratios and ground clearance for large signs are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.SIGN-20": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 lacks through-lane identity and roadway/closure classification sufficient to establish applicability. Sign code presence alone does not establish the required variant, association, or advance placement."
+    }
+  ],
+  "mutcd.SIGN-21": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "The input contains no flagger elements."
+    },
+    {
+      "fixture": "examples/w1/FLAG-02/compliant.json",
+      "status": "fail",
+      "complete": true,
+      "reason": null
+    },
+    {
+      "fixture": "examples/w1/SIGN-21/compliant.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "F1: candidate W20-7 facing direction is absent."
+    }
+  ],
+  "mutcd.SIGN-21.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The schema does not record whether optional W3-4 supplementation has been chosen or its association with a particular flagger approach."
+    }
+  ],
+  "mutcd.SIGN-21.c03": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "TA-10/TA-13 layout identity and sign-to-approach/flagger associations are not encoded; sign presence cannot establish the application-specific W3-4 placement."
+    }
+  ],
+  "mutcd.SIGN-22": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Whether both directions share a single lane is not established beyond optional free text."
+    }
+  ],
+  "mutcd.SIGN-23.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Full roadway closure vs reduced-lane operation distinction needs facts beyond type alone for R11-2 placement."
+    }
+  ],
+  "mutcd.SIGN-23.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Full roadway closure vs reduced-lane operation distinction needs facts beyond type alone for R11-2 placement."
+    }
+  ],
+  "mutcd.SIGN-23.c03": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Full roadway closure vs reduced-lane operation distinction needs facts beyond type alone for R11-2 placement."
+    }
+  ],
+  "mutcd.SIGN-24.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Shoulder-work legend variants and freeway sequence ordering need sign-schedule facts not fully modeled."
+    }
+  ],
+  "mutcd.SIGN-24.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Shoulder-work legend variants and freeway sequence ordering need sign-schedule facts not fully modeled."
+    }
+  ],
+  "mutcd.SIGN-25.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Whether END ROAD WORK is used and where the termination area ends is engineering judgment."
+    }
+  ],
+  "mutcd.SIGN-26.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "TTC zone length in miles is not a first-class schema field."
+    }
+  ],
+  "mutcd.SIGN-26.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "No supported subjects are present for this check."
+    }
+  ],
+  "mutcd.SIGN-26.c03": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The same source sentence also requires rounding the actual TTC-zone length: complete zone-limit endpoints and the association of this G20-1 inscription with those limits are not encoded. Its source quote intentionally overlaps c02."
+    }
+  ],
+  "mutcd.SIGN-27": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Sidewalk closure geometry and parallel-sidewalk facts are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.SIGN-28": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Audible information device presence is absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.SIGN-29": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Curb parking restriction extents are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.SIGN-30": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Advisory plaque pairing and agency speed determination are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.SIGN-31": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Schema 1.0.0 lacks the road tier needed to select conventional/freeway-expressway/minimum size rows. Dimensions are not rejected solely because they differ from the conventional table row."
+    }
+  ],
+  "mutcd.SHLD-02.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Operation duration (≤60 minutes) and vehicle lighting equipment facts are absent from schema 1.0.0. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.SHLD-02.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Operation duration (≤60 minutes) and vehicle lighting equipment facts are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.SHLD-02.c03": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Operation duration (≤60 minutes) and vehicle lighting equipment facts are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.TAPER-03": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "The source gives approximate 20-ft spacing, not a numeric acceptance tolerance. Schema 1.0.0 has no authored tolerance or unambiguous device-to-taper association; no pass/fail band is invented."
+    }
+  ],
+  "mutcd.CHAN-03": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Cone height, night/high-speed context, and retroreflectorization are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.CHAN-04.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Tubular marker dimensions and pavement attachment are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.CHAN-04.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Tubular marker dimensions and pavement attachment are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.CHAN-04.c03": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Tubular marker dimensions and pavement attachment are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.CHAN-05": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Vertical panel stripe geometry is absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.CHAN-06": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Drum dimensions and stripe pattern are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.CHAN-07": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Barricade rail length/stripe and retroreflective area are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.CHAN-08.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Barricade type selection and permitted-use legend requirements lack typed schema fields."
+    }
+  ],
+  "mutcd.CHAN-08.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Barricade type selection and permitted-use legend requirements lack typed schema fields."
+    }
+  ],
+  "mutcd.CHAN-08.c03": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Barricade type selection and permitted-use legend requirements lack typed schema fields."
+    }
+  ],
+  "mutcd.CHAN-09.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Direction Indicator Barricade series placement is absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.CHAN-09.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Direction Indicator Barricade series placement is absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.CHAN-10.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Temporary barrier use on a merging taper and low-speed urban classification are absent."
+    }
+  ],
+  "mutcd.CHAN-10.c03": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Temporary barrier use on a merging taper and low-speed urban classification are absent."
+    }
+  ],
+  "mutcd.CHAN-11.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Lane-separator base dimensions and pedestrian opening width are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.CHAN-11.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Lane-separator base dimensions and pedestrian opening width are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.CHAN-12.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Warning-light mode, flash rate, and mounting height are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.CHAN-12.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Warning-light mode, flash rate, and mounting height are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.PED-01.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Pedestrian facility width and passing-space intervals are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.PED-02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Detectable closure-plate and hand-trailing dimensions are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.PED-03": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Temporary ramp slope and landing dimensions are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.PED-04": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Pedestrian diversion routing and signal covering are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.PED-05": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Crosswalk occupancy by the work space is absent from schema 1.0.0. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.SHLD-01.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Paved shoulder width (≥8 ft) is absent from schema 1.0.0. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.SHLD-01.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Paved shoulder width (≥8 ft) is absent from schema 1.0.0. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.ARROW-01.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Major multi-lane / heavy-volume / limited-sight classification for arrow mode is absent."
+    }
+  ],
+  "mutcd.ARROW-01.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Major multi-lane / heavy-volume / limited-sight classification for arrow mode is absent."
+    }
+  ],
+  "mutcd.ARROW-02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "A single closed lane requires freeway applicability, which is absent from schema 1.0.0. Multiple closed lanes require distinct board-to-closed-lane associations; schema 1.0.0 provides no lane identity."
+    }
+  ],
+  "mutcd.ARROW-03": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_applicable",
+      "complete": true,
+      "reason": "The input contains no arrow_board elements."
+    },
+    {
+      "fixture": "examples/w1/ARROW-02/compliant.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Explicit shoulder_closure supports the caution-mode check. Two lanes alone do not establish a two-way road; other operation types remain not evaluable when boards exist. The schema lacks lane-shift intent and cannot establish the source prohibition on arrow boards indicating lane shifts."
+    },
+    {
+      "fixture": "examples/w1/ARROW-03/compliant.json",
+      "status": "pass",
+      "complete": true,
+      "reason": null
+    },
+    {
+      "fixture": "examples/w1/ARROW-03/violating.json",
+      "status": "fail",
+      "complete": true,
+      "reason": null
+    }
+  ],
+  "mutcd.ARROW-03.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Explicit shoulder_closure supports the caution-mode check. Two lanes alone do not establish a two-way road; other operation types remain not evaluable when boards exist. The schema lacks lane-shift intent and cannot establish the source prohibition on arrow boards indicating lane shifts."
+    }
+  ],
+  "mutcd.ARROW-04": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Shoulder width and precise 'beginning of merging taper' placement need richer geometry than schema 1.0.0. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.ARROW-05": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Relative board placement across sequential tapers needs closed-lane identity facts not in schema 1.0.0. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ],
+  "mutcd.ARROW-06": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Arrow board type/size/legibility/element count are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.ARROW-07.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Mounting height, flash rate, dimming, and vehicle warning lights are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.ARROW-07.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Mounting height, flash rate, dimming, and vehicle warning lights are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.ARROW-07.c03": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Mounting height, flash rate, dimming, and vehicle warning lights are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.FLAG-01.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Flagger control device (paddle/flag/AFAD) is absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.FLAG-01.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Flagger control device (paddle/flag/AFAD) is absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.FLAG-03": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Escape route, isolation from equipment, and in-lane timing are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.FLAG-04": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Night illumination and emergency exception flags are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.FLAG-05.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "End-to-end visibility and designated coordinator communication are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.FLAG-05.c03": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "One-lane/two-way operation, shoulder/constriction relationships, and end-to-end/traffic visibility are not encoded; they determine single versus dual flagger placement."
+    }
+  ],
+  "mutcd.FLAG-06": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Flag-transfer method and one-way segment length are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.FLAG-08.c01": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "AFAD equipment, attendance, and Method 1/2 staffing are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.FLAG-08.c02": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "AFAD equipment, attendance, and Method 1/2 staffing are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.FLAG-08.c03": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "AFAD equipment, attendance, and Method 1/2 staffing are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.FLAG-09": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "STOP/SLOW AFAD sign height and size are absent from schema 1.0.0."
+    }
+  ],
+  "mutcd.FLAG-10": [
+    {
+      "fixture": "examples/taper-125ft.json",
+      "status": "not_evaluable",
+      "complete": false,
+      "reason": "Planned closure duration (≤20 minutes) and daytime-only constraint are absent from schema 1.0.0. Schema 1.0.0 has no numbered typical-application/layout identifier; closure type alone does not establish this source trigger."
+    }
+  ]
+}

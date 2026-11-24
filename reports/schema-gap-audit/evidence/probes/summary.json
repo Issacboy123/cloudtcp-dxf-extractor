@@ -1,0 +1,33 @@
+{
+  "assertion_failures": [],
+  "counterexample_pairs": 5,
+  "focused_result_rows": 92,
+  "full_partial_evaluator_keys": [
+    "ARROW-03",
+    "BUFFER-01",
+    "CA-007",
+    "CA-008",
+    "CHAN-01",
+    "SIGN-08",
+    "SIGN-11",
+    "SIGN-21",
+    "TAPER-01",
+    "TAPER-02"
+  ],
+  "full_partial_keys_probed": [
+    "ARROW-03",
+    "BUFFER-01",
+    "CA-007",
+    "CA-008",
+    "CHAN-01",
+    "SIGN-08",
+    "SIGN-11",
+    "SIGN-21",
+    "TAPER-01",
+    "TAPER-02"
+  ],
+  "registry_executions": 106,
+  "rejected_extension_probes": 14,
+  "schema_sha256": "2109f24ef1659389dbfb72da650efe03767cdd9635a145afab86b2dfe000eba6",
+  "valid_probe_documents": 53
+}

@@ -1,0 +1,6 @@
+{
+  "command": "/private/tmp/cloudtcp-schema-audit-ef5e474/venv/bin/python reports/schema-gap-audit/evidence/probes/run_probes.py --repo /private/tmp/cloudtcp-schema-audit-ef5e474/cloudtcp-python-verifier",
+  "working_directory": "/Users/issacwoo/Documents/cloudtcp-dxf-extractor",
+  "exit_code": 0,
+  "stdout": {"valid_probes": 53, "rejected_extensions": 14, "assertion_failures": []}
+}

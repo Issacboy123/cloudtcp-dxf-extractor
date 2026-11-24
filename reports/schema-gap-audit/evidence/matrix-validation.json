@@ -1,0 +1,61 @@
+{
+  "source_entries": 457,
+  "clauses": 504,
+  "canonical_checks": 419,
+  "clauses_by_document": {
+    "TCP Rules Document.md": 384,
+    "TCP-W1-1 Rules.md": 120
+  },
+  "blocker_categories_overlapping": {
+    "informational": 56,
+    "implementation": 445,
+    "schema": 451,
+    "engineering_judgment": 40,
+    "source_policy": 80,
+    "missing_input": 22
+  },
+  "confidence": {
+    "high": 229,
+    "medium": 275
+  },
+  "families": 37,
+  "schema_mapped_clauses": 451,
+  "schema_classified_without_family": [],
+  "canonical_checks_with_rule_specific_evaluator": 12,
+  "canonical_placeholder_checks": 407,
+  "root_adjustments": [
+    {
+      "source_key": [
+        "TCP-W1-1 Rules.md",
+        "TAPER-01",
+        "c01"
+      ],
+      "reason": "Cross-document reconciliation of permitted alternative speed bases; conditional schema need, not a blocker to the supported posted-speed subset."
+    },
+    {
+      "source_key": [
+        "TCP-W1-1 Rules.md",
+        "TAPER-02",
+        "c01"
+      ],
+      "reason": "Cross-document reconciliation of permitted alternative speed bases; conditional schema need, not a blocker to the supported posted-speed subset."
+    },
+    {
+      "source_key": [
+        "TCP-W1-1 Rules.md",
+        "TAPER-02",
+        "c02"
+      ],
+      "reason": "Cross-document reconciliation of permitted alternative speed bases; conditional schema need, not a blocker to the supported posted-speed subset."
+    },
+    {
+      "source_key": [
+        "TCP-W1-1 Rules.md",
+        "TAPER-02",
+        "c03"
+      ],
+      "reason": "Cross-document reconciliation of permitted alternative speed bases; conditional schema need, not a blocker to the supported posted-speed subset."
+    }
+  ],
+  "assertions_passed": true
+}

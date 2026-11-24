@@ -1,0 +1,251 @@
+{
+  "automated_rule_ids": [
+    "mutcd.T-013"
+  ],
+  "coverage_scope": "implemented_rules_only",
+  "errors": [],
+  "evaluation_complete": false,
+  "findings": [],
+  "implemented_rule_ids": [
+    "mutcd.Z-026",
+    "mutcd.Z-020",
+    "mutcd.Z-022",
+    "mutcd.Z-022-B",
+    "mutcd.T-013"
+  ],
+  "input_valid": true,
+  "limitations": [
+    "Coverage includes only the registered Python rules; it is not comprehensive MUTCD compliance.",
+    "mutcd.Z-026: Roadway category and agency/site-road-owner low/high urban speed classification are absent from schema 1.0.0.",
+    "mutcd.Z-026: CA-005 \u2014 GUIDANCE \u2014 California replacement \u2014 advance warning sign spacing is unimplemented; the federal table is not applied to California. CA-005 cites CA MUTCD \u00a76B.04 para. 07; Table 6B-1; PDF p. 133, 140; printed p. 1223, 1230. Its between-band interpolation and flagged footnote error remain unresolved.",
+    "mutcd.Z-026: Spacing recommendations are approximate guidance subject to engineering judgment and field adjustment.",
+    "mutcd.Z-020: Urban-street applicability is absent from schema 1.0.0; names, highway numbers, speed, and free text do not establish it.",
+    "mutcd.Z-022: Rural-highway applicability is absent from schema 1.0.0.",
+    "mutcd.Z-022: The 'first warning sign' endpoint is ambiguous: first encountered upstream versus Table 6B-1's nearest sign. No endpoint is selected for the 8S\u201312S recommendation.",
+    "mutcd.Z-022-B: Open-highway conditions, where two or more advance warning signs are normally used, are absent from schema 1.0.0. The 1,500 ft recommendation is not a universal rural requirement.",
+    "mutcd.T-013: Checks longitudinal length against the inclusive 50\u2013100 ft advisory range only; engineering justification and field adjustment are not assessed.",
+    "mutcd.Z-026: Roadway category and agency/site-road-owner low/high urban speed classification are absent from schema 1.0.0. CA-005 \u2014 GUIDANCE \u2014 California replacement \u2014 advance warning sign spacing is unimplemented; the federal table is not applied to California. CA-005 cites CA MUTCD \u00a76B.04 para. 07; Table 6B-1; PDF p. 133, 140; printed p. 1223, 1230. Its between-band interpolation and flagged footnote error remain unresolved. Spacing recommendations are approximate guidance subject to engineering judgment and field adjustment.",
+    "mutcd.Z-020: Urban-street applicability is absent from schema 1.0.0; names, highway numbers, speed, and free text do not establish it.",
+    "mutcd.Z-022: Rural-highway applicability is absent from schema 1.0.0. The 'first warning sign' endpoint is ambiguous: first encountered upstream versus Table 6B-1's nearest sign. No endpoint is selected for the 8S\u201312S recommendation.",
+    "mutcd.Z-022-B: Open-highway conditions, where two or more advance warning signs are normally used, are absent from schema 1.0.0. The 1,500 ft recommendation is not a universal rural requirement."
+  ],
+  "registered_rule_ids": [
+    "mutcd.Z-026",
+    "mutcd.Z-020",
+    "mutcd.Z-022",
+    "mutcd.Z-022-B",
+    "mutcd.T-013"
+  ],
+  "rule_metadata": [
+    {
+      "citations": [
+        {
+          "local_reference": "Z-026 \u2014 GUIDANCE \u2014 Federal baseline \u2014 advance warning sign spacing",
+          "mutcd_reference": "Federal MUTCD \u00a76B.04 para. 07; Table 6B-1; \u00a76H.02 para. 01; PDF p. 133, 140, 171; printed p. 1223, 1230, 1261.",
+          "source_document": "CA MUTCD"
+        }
+      ],
+      "classification": "GUIDANCE",
+      "limitations": [
+        "Roadway category and agency/site-road-owner low/high urban speed classification are absent from schema 1.0.0.",
+        "CA-005 \u2014 GUIDANCE \u2014 California replacement \u2014 advance warning sign spacing is unimplemented; the federal table is not applied to California. CA-005 cites CA MUTCD \u00a76B.04 para. 07; Table 6B-1; PDF p. 133, 140; printed p. 1223, 1230. Its between-band interpolation and flagged footnote error remain unresolved.",
+        "Spacing recommendations are approximate guidance subject to engineering judgment and field adjustment."
+      ],
+      "rule_id": "mutcd.Z-026",
+      "title": "Federal baseline \u2014 advance warning sign spacing"
+    },
+    {
+      "citations": [
+        {
+          "local_reference": "Z-020 \u2014 GUIDANCE \u2014 Urban nearest warning sign placement",
+          "mutcd_reference": "Federal MUTCD \u00a76B.04, para. 04; PDF p. 133; printed p. 1223.",
+          "source_document": "CA MUTCD"
+        }
+      ],
+      "classification": "GUIDANCE",
+      "limitations": [
+        "Urban-street applicability is absent from schema 1.0.0; names, highway numbers, speed, and free text do not establish it."
+      ],
+      "rule_id": "mutcd.Z-020",
+      "title": "Urban nearest warning sign placement"
+    },
+    {
+      "citations": [
+        {
+          "local_reference": "Z-022 \u2014 GUIDANCE \u2014 Rural first warning sign placement",
+          "mutcd_reference": "Federal MUTCD \u00a76B.04, para. 06; PDF p. 133; printed p. 1223.",
+          "source_document": "CA MUTCD"
+        }
+      ],
+      "classification": "GUIDANCE",
+      "limitations": [
+        "Rural-highway applicability is absent from schema 1.0.0.",
+        "The 'first warning sign' endpoint is ambiguous: first encountered upstream versus Table 6B-1's nearest sign. No endpoint is selected for the 8S\u201312S recommendation."
+      ],
+      "rule_id": "mutcd.Z-022",
+      "title": "Rural first warning sign placement"
+    },
+    {
+      "citations": [
+        {
+          "local_reference": "Z-022-B \u2014 GUIDANCE \u2014 Open-highway advance warning extent",
+          "mutcd_reference": "Federal MUTCD \u00a76B.04, para. 06; PDF p. 133; printed p. 1223.",
+          "source_document": "CA MUTCD"
+        }
+      ],
+      "classification": "GUIDANCE",
+      "limitations": [
+        "Open-highway conditions, where two or more advance warning signs are normally used, are absent from schema 1.0.0. The 1,500 ft recommendation is not a universal rural requirement."
+      ],
+      "rule_id": "mutcd.Z-022-B",
+      "title": "Open-highway advance warning extent"
+    },
+    {
+      "citations": [
+        {
+          "local_reference": "T-013 \u2014 GUIDANCE \u2014 Downstream taper length",
+          "mutcd_reference": "Federal MUTCD \u00a76B.08, para. 12; PDF p. 135; printed p. 1225 / Table 6B-3, PDF 142; Figure 6B-3, PDF 139.",
+          "source_document": "CA MUTCD"
+        }
+      ],
+      "classification": "GUIDANCE",
+      "limitations": [
+        "Checks longitudinal length against the inclusive 50\u2013100 ft advisory range only; engineering justification and field adjustment are not assessed."
+      ],
+      "rule_id": "mutcd.T-013",
+      "title": "Downstream taper length"
+    }
+  ],
+  "rule_results": [
+    {
+      "complete": false,
+      "errors": [],
+      "findings": [],
+      "reason": "Roadway category and agency/site-road-owner low/high urban speed classification are absent from schema 1.0.0. CA-005 \u2014 GUIDANCE \u2014 California replacement \u2014 advance warning sign spacing is unimplemented; the federal table is not applied to California. CA-005 cites CA MUTCD \u00a76B.04 para. 07; Table 6B-1; PDF p. 133, 140; printed p. 1223, 1230. Its between-band interpolation and flagged footnote error remain unresolved. Spacing recommendations are approximate guidance subject to engineering judgment and field adjustment.",
+      "rule_id": "mutcd.Z-026",
+      "score": 0,
+      "status": "not_evaluable"
+    },
+    {
+      "complete": false,
+      "errors": [],
+      "findings": [],
+      "reason": "Urban-street applicability is absent from schema 1.0.0; names, highway numbers, speed, and free text do not establish it.",
+      "rule_id": "mutcd.Z-020",
+      "score": 0,
+      "status": "not_evaluable"
+    },
+    {
+      "complete": false,
+      "errors": [],
+      "findings": [],
+      "reason": "Rural-highway applicability is absent from schema 1.0.0. The 'first warning sign' endpoint is ambiguous: first encountered upstream versus Table 6B-1's nearest sign. No endpoint is selected for the 8S\u201312S recommendation.",
+      "rule_id": "mutcd.Z-022",
+      "score": 0,
+      "status": "not_evaluable"
+    },
+    {
+      "complete": false,
+      "errors": [],
+      "findings": [],
+      "reason": "Open-highway conditions, where two or more advance warning signs are normally used, are absent from schema 1.0.0. The 1,500 ft recommendation is not a universal rural requirement.",
+      "rule_id": "mutcd.Z-022-B",
+      "score": 0,
+      "status": "not_evaluable"
+    },
+    {
+      "complete": true,
+      "errors": [],
+      "findings": [],
+      "reason": null,
+      "rule_id": "mutcd.T-013",
+      "score": 1,
+      "status": "pass"
+    }
+  ],
+  "source_coverage": [
+    {
+      "canonical_rule_id": "mutcd.Z-026",
+      "citation": "Federal MUTCD \u00a76B.04 para. 07; Table 6B-1; \u00a76H.02 para. 01; PDF p. 133, 140, 171; printed p. 1223, 1230, 1261\\.",
+      "classification": "GUIDANCE",
+      "clause_id": "c01",
+      "disposition": "review_required",
+      "heading": "Z-026 \u2014 GUIDANCE \u2014 Federal baseline \u2014 advance warning sign spacing",
+      "limitations": [
+        "This clause requires a site-specific engineering judgment/study or review; schema 1.0.0 has no record of that determination.",
+        "Schema 1.0.0 does not encode roadway class and State-highway ownership; responsible-agency approval and documented engineering decisions; roadway applicability, approach inventory, and warning-sign/closure associations required by Z-026 (Federal baseline \u2014 advance warning sign spacing).",
+        "Roadway category and agency/site-road-owner low/high urban speed classification are absent from schema 1.0.0.",
+        "CA-005 \u2014 GUIDANCE \u2014 California replacement \u2014 advance warning sign spacing is unimplemented; the federal table is not applied to California. CA-005 cites CA MUTCD \u00a76B.04 para. 07; Table 6B-1; PDF p. 133, 140; printed p. 1223, 1230. Its between-band interpolation and flagged footnote error remain unresolved.",
+        "Spacing recommendations are approximate guidance subject to engineering judgment and field adjustment.",
+        "This registry has no executable comparison for this clause."
+      ],
+      "source_document": "TCP Rules Document.md",
+      "source_rule_id": "Z-026",
+      "text": "The following sign spacings should be used, subject to engineering judgment and field adjustment; they are not universal mandatory minima. The highway agency or site-road owner determines the federal low/high speed category.\n\n| Roadway | A (ft) | B (ft) | C (ft) |\n| :---- | :---- | :---- | :---- |\n| Urban, low speed | 100 | 100 | 100 |\n| Urban, high speed | 350 | 350 | 350 |\n| Rural | 500 | 500 | 500 |\n| Expressway/freeway | 1,000 | 1,500 | 2,640 |\n\nA is the distance from the transition or point of restriction to the nearest sign; B is from the nearest to the second sign; C is from the second to the third sign. In this table, \u201cfirst\u201d means closest to the TTC zone and \u201cthird\u201d means farthest upstream. California replaces the speed categories and adds rows in CA-005."
+    },
+    {
+      "canonical_rule_id": "mutcd.Z-020",
+      "citation": "Federal MUTCD \u00a76B.04, para. 04; PDF p. 133; printed p. 1223\\.",
+      "classification": "GUIDANCE",
+      "clause_id": "c01",
+      "disposition": "input_blocked",
+      "heading": "Z-020 \u2014 GUIDANCE \u2014 Urban nearest warning sign placement",
+      "limitations": [
+        "Schema 1.0.0 does not encode roadway class and State-highway ownership; roadway applicability, approach inventory, and warning-sign/closure associations required by Z-020 (Urban nearest warning sign placement).",
+        "Urban-street applicability is absent from schema 1.0.0; names, highway numbers, speed, and free text do not establish it.",
+        "This registry has no executable comparison for this clause."
+      ],
+      "source_document": "TCP Rules Document.md",
+      "source_rule_id": "Z-020",
+      "text": "On urban streets, the distance in feet from the TTC zone to the nearest warning sign should be 4 to 8 times the speed limit in mph. The high end should be used when speeds are relatively high."
+    },
+    {
+      "canonical_rule_id": "mutcd.Z-022",
+      "citation": "Federal MUTCD \u00a76B.04, para. 06; PDF p. 133; printed p. 1223\\.",
+      "classification": "GUIDANCE",
+      "clause_id": "c01",
+      "disposition": "input_blocked",
+      "heading": "Z-022 \u2014 GUIDANCE \u2014 Rural first warning sign placement",
+      "limitations": [
+        "Schema 1.0.0 does not encode roadway class and State-highway ownership; roadway applicability, approach inventory, and warning-sign/closure associations required by Z-022 (Rural first warning sign placement).",
+        "Rural-highway applicability is absent from schema 1.0.0.",
+        "The 'first warning sign' endpoint is ambiguous: first encountered upstream versus Table 6B-1's nearest sign. No endpoint is selected for the 8S\u201312S recommendation.",
+        "This registry has no executable comparison for this clause."
+      ],
+      "source_document": "TCP Rules Document.md",
+      "source_rule_id": "Z-022",
+      "text": "On rural highways, the effective placement of the first warning sign, in feet, should be 8 to 12 times the speed limit in mph. The source wording \u201cfirst warning sign\u201d is retained; Table 6B-1 separately defines A, B, and C."
+    },
+    {
+      "canonical_rule_id": "mutcd.Z-022-B",
+      "citation": "Federal MUTCD \u00a76B.04, para. 06; PDF p. 133; printed p. 1223\\.",
+      "classification": "GUIDANCE",
+      "clause_id": "c01",
+      "disposition": "input_blocked",
+      "heading": "Z-022-B \u2014 GUIDANCE \u2014 Open-highway advance warning extent",
+      "limitations": [
+        "Schema 1.0.0 does not encode roadway applicability, approach inventory, and warning-sign/closure associations required by Z-022-B (Open-highway advance warning extent).",
+        "Open-highway conditions, where two or more advance warning signs are normally used, are absent from schema 1.0.0. The 1,500 ft recommendation is not a universal rural requirement.",
+        "This registry has no executable comparison for this clause."
+      ],
+      "source_document": "TCP Rules Document.md",
+      "source_rule_id": "Z-022-B",
+      "text": "For open-highway conditions, where two or more advance warning signs are normally used, the advance warning area should extend 1,500 feet or more (Table 6B-1)."
+    },
+    {
+      "canonical_rule_id": "mutcd.T-013",
+      "citation": "Federal MUTCD \u00a76B.08, para. 12; PDF p. 135; printed p. 1225 / Table 6B-3, PDF 142; Figure 6B-3, PDF 139\\.",
+      "classification": "GUIDANCE",
+      "clause_id": "c01",
+      "disposition": "automated",
+      "heading": "T-013 \u2014 GUIDANCE \u2014 Downstream taper length",
+      "limitations": [
+        "Checks longitudinal length against the inclusive 50\u2013100 ft advisory range only; engineering justification and field adjustment are not assessed."
+      ],
+      "source_document": "TCP Rules Document.md",
+      "source_rule_id": "T-013",
+      "text": "If a downstream taper is used, it should be at least 50 feet and no more than 100 feet long."
+    }
+  ],
+  "version": "2.0.0"
+}

@@ -1,0 +1,157 @@
+{
+  "blocker_categories": [],
+  "expected": {
+    "full": [
+      "fail",
+      true
+    ]
+  },
+  "explanation": "",
+  "name": "ca_taper_short",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 1,
+      "focused_rule_results": [
+        {
+          "complete": true,
+          "errors": [],
+          "findings": [
+            {
+              "citations": [
+                {
+                  "local_reference": "CA-007 — GUIDANCE — California addition — 12-foot-offset taper lookup",
+                  "mutcd_reference": "CA MUTCD §6B.08 paras. 04, 08 and 10; Table 6B-3(CA); PDF p. 135, 142; printed p. 1225, 1232\\.",
+                  "source_document": "TCP Rules Document.md"
+                },
+                {
+                  "local_reference": "T-009 — GUIDANCE — Taper length selection",
+                  "mutcd_reference": "Federal MUTCD §6B.08, para. 04; PDF p. 135; printed p. 1225 / Tables 6B-3 and 6B-4 (PDF 142-143; printed 1232-1233); CA supplement Table 6B-3(CA) (PDF 142; printed 1232).",
+                  "source_document": "TCP Rules Document.md"
+                },
+                {
+                  "local_reference": "T-010 — GUIDANCE — Merging taper length",
+                  "mutcd_reference": "Federal MUTCD §6B.08, para. 06; PDF p. 135; printed p. 1225 / Table 6B-3, PDF 142, printed 1232; Table 6B-4, PDF 143, printed 1233; Figure 6B-2, PDF 138\\.",
+                  "source_document": "TCP Rules Document.md"
+                },
+                {
+                  "local_reference": "T-015 — GUIDANCE — Low-speed taper formula",
+                  "mutcd_reference": "Federal MUTCD §6B.08 para. 04; Table 6B-4; PDF p. 135, 143; printed p. 1225, 1233 / Tables 6B-3 and 6B-4 (PDF 142-143; printed 1232-1233); CA supplement Table 6B-3(CA) (PDF 142; printed 1232).",
+                  "source_document": "TCP Rules Document.md"
+                },
+                {
+                  "local_reference": "T-016 — GUIDANCE — High-speed taper formula",
+                  "mutcd_reference": "Federal MUTCD §6B.08 para. 04; Table 6B-4; PDF p. 135, 143; printed p. 1225, 1233 / Tables 6B-3 and 6B-4 (PDF 142-143; printed 1232-1233); CA supplement Table 6B-3(CA) (PDF 142; printed 1232).",
+                  "source_document": "TCP Rules Document.md"
+                },
+                {
+                  "local_reference": "TAPER-01 — GUIDANCE — Taper length L formulas",
+                  "mutcd_reference": "Table 6B-4; Sec. 6B.08 ¶04, p. 775",
+                  "source_document": "TCP-W1-1 Rules.md"
+                },
+                {
+                  "local_reference": "TAPER-02 — GUIDANCE — Taper type lengths merging L, shifting 0.5L, shoulder 0.33L, one-lane/downstream 50-100",
+                  "mutcd_reference": "Table 6B-3; Sec. 6B.08 ¶08,10, p. 775-776",
+                  "source_document": "TCP-W1-1 Rules.md"
+                },
+                {
+                  "local_reference": "T-011 — GUIDANCE — Shifting taper length",
+                  "mutcd_reference": "Federal MUTCD §6B.08, para. 08; PDF p. 135; printed p. 1225 / Tables 6B-3 and 6B-4 (PDF 142-143; printed 1232-1233); CA supplement Table 6B-3(CA) (PDF 142; printed 1232).",
+                  "source_document": "TCP Rules Document.md"
+                },
+                {
+                  "local_reference": "T-012 — GUIDANCE — Shoulder taper length",
+                  "mutcd_reference": "Federal MUTCD §6B.08, para. 10; PDF p. 135; printed p. 1225 / Tables 6B-3 and 6B-4 (PDF 142-143; printed 1232-1233); CA supplement Table 6B-3(CA) (PDF 142; printed 1232).",
+                  "source_document": "TCP Rules Document.md"
+                }
+              ],
+              "classification": "GUIDANCE",
+              "element_ids": [
+                "T1"
+              ],
+              "message": "Merge taper T1 length 600 ft is below the printed California 12-ft-offset minimum 660 ft.",
+              "paths": [
+                "/elements/0",
+                "/typical_application/posted_speed_mph"
+              ],
+              "rule_id": "mutcd.CA-007",
+              "severity": "warning",
+              "units": "feet",
+              "values": {
+                "S_mph": 55,
+                "W_ft": 12.0,
+                "length_ft": 600,
+                "minimum_ft": 660
+              },
+              "zone_ids": []
+            }
+          ],
+          "reason": null,
+          "rule_id": "mutcd.CA-007",
+          "score": 0,
+          "status": "fail"
+        }
+      ],
+      "incomplete_count": 403,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": true,
+        "errors": [],
+        "findings": [
+          {
+            "citations": [
+              {
+                "local_reference": "CA-007",
+                "mutcd_reference": "Source citations supplied by the complete registry.",
+                "source_document": "TCP Rules Document.md"
+              }
+            ],
+            "classification": "GUIDANCE",
+            "element_ids": [
+              "T1"
+            ],
+            "message": "Merge taper T1 length 600 ft is below the printed California 12-ft-offset minimum 660 ft.",
+            "paths": [
+              "/elements/0",
+              "/typical_application/posted_speed_mph"
+            ],
+            "rule_id": "mutcd.CA-007",
+            "severity": "warning",
+            "units": "feet",
+            "values": {
+              "S_mph": 55,
+              "W_ft": 12.0,
+              "length_ft": 600,
+              "minimum_ft": 660
+            },
+            "zone_ids": []
+          }
+        ],
+        "reason": null,
+        "rule_id": "mutcd.CA-007",
+        "score": null,
+        "status": "fail"
+      },
+      "status_counts": {
+        "fail": 1,
+        "not_applicable": 15,
+        "not_evaluable": 403
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 1,
+      "focused_rule_results": [],
+      "incomplete_count": 66,
+      "input_valid": true,
+      "raw_evaluator_result": null,
+      "status_counts": {
+        "fail": 1,
+        "not_applicable": 9,
+        "not_evaluable": 66
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "CA-007"
+}

@@ -1,0 +1,1222 @@
+[
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "merge_formula_boundary",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.TAPER-01",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "merge_formula_boundary",
+    "reason": null,
+    "registry": "w1",
+    "rule_id": "mutcd.TAPER-01",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "merge_formula_short",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.TAPER-01",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "merge_formula_short",
+    "reason": null,
+    "registry": "w1",
+    "rule_id": "mutcd.TAPER-01",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [
+      "source_policy"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "merge_formula_speed_gap",
+    "reason": "T1: No Table 6B-4 formula branch is supplied for 40 < S < 45 mph.",
+    "registry": "full",
+    "rule_id": "mutcd.TAPER-01",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "source_policy"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "merge_formula_speed_gap",
+    "reason": "T1: No Table 6B-4 formula branch is supplied for 40 < S < 45 mph.",
+    "registry": "w1",
+    "rule_id": "mutcd.TAPER-01",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "shift_formula_boundary",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.TAPER-02",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "shift_formula_boundary",
+    "reason": null,
+    "registry": "w1",
+    "rule_id": "mutcd.TAPER-02",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [
+      "source_policy"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "shift_formula_speed_gap",
+    "reason": "T1: No Table 6B-4 formula branch is supplied for 40 < S < 45 mph.",
+    "registry": "full",
+    "rule_id": "mutcd.TAPER-02",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "source_policy"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "shift_formula_speed_gap",
+    "reason": "T1: No Table 6B-4 formula branch is supplied for 40 < S < 45 mph.",
+    "registry": "w1",
+    "rule_id": "mutcd.TAPER-02",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "implementation"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "zero_offset_width_lane_width_fallback",
+    "reason": "T1: Taper offset width W cannot be established.",
+    "registry": "full",
+    "rule_id": "mutcd.TAPER-01",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "implementation"
+    ],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "zero_offset_width_lane_width_fallback",
+    "reason": null,
+    "registry": "w1",
+    "rule_id": "mutcd.TAPER-01",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [
+      "implementation"
+    ],
+    "complete": false,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "known_taper_failure_plus_unknown_taper",
+    "reason": "T2: Taper offset width W cannot be established.",
+    "registry": "full",
+    "rule_id": "mutcd.TAPER-01",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [
+      "implementation"
+    ],
+    "complete": true,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "known_taper_failure_plus_unknown_taper",
+    "reason": null,
+    "registry": "w1",
+    "rule_id": "mutcd.TAPER-01",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [
+      "schema",
+      "source_policy"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "downstream_approximate_spacing",
+    "reason": "The source gives approximate 20-ft spacing, not a numeric acceptance tolerance. Schema 1.0.0 has no authored tolerance or unambiguous device-to-taper association; no pass/fail band is invented.",
+    "registry": "full",
+    "rule_id": "mutcd.TAPER-03",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema",
+      "source_policy"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "downstream_approximate_spacing",
+    "reason": "The source gives approximate 20-ft spacing, not a numeric acceptance tolerance. Schema 1.0.0 has no authored tolerance or unambiguous device-to-taper association; no pass/fail band is invented.",
+    "registry": "w1",
+    "rule_id": "mutcd.TAPER-03",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "federal_spacing_20",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.CHAN-01",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "federal_spacing_20",
+    "reason": null,
+    "registry": "w1",
+    "rule_id": "mutcd.CHAN-01",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "federal_spacing_60",
+    "reason": "D1: longitudinal overlap does not establish taper association.",
+    "registry": "full",
+    "rule_id": "mutcd.CHAN-01",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "federal_spacing_60",
+    "reason": "D1: longitudinal overlap does not establish taper association.",
+    "registry": "w1",
+    "rule_id": "mutcd.CHAN-01",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "federal_spacing_100",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.CHAN-01",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "federal_spacing_100",
+    "reason": null,
+    "registry": "w1",
+    "rule_id": "mutcd.CHAN-01",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "federal_spacing_failure_plus_unknown",
+    "reason": "D1: longitudinal overlap does not establish taper association.",
+    "registry": "full",
+    "rule_id": "mutcd.CHAN-01",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "federal_spacing_failure_plus_unknown",
+    "reason": "D1: longitudinal overlap does not establish taper association.",
+    "registry": "w1",
+    "rule_id": "mutcd.CHAN-01",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "buffer_at_suggested_length",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.BUFFER-01",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "buffer_at_suggested_length",
+    "reason": null,
+    "registry": "w1",
+    "rule_id": "mutcd.BUFFER-01",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "buffer_short_optional_buffer",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.BUFFER-01",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "buffer_short_optional_buffer",
+    "reason": null,
+    "registry": "w1",
+    "rule_id": "mutcd.BUFFER-01",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [
+      "source_policy"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "buffer_unlisted_speed",
+    "reason": "Posted speed 42 mph is not a Table 6B-2 key; no interpolation.",
+    "registry": "full",
+    "rule_id": "mutcd.BUFFER-01",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "source_policy"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "buffer_unlisted_speed",
+    "reason": "Posted speed 42 mph is not a Table 6B-2 key; no interpolation.",
+    "registry": "w1",
+    "rule_id": "mutcd.BUFFER-01",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_side_explicit_facing",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-11",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_side_explicit_facing",
+    "reason": null,
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-11",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [
+      "missing_input"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_side_missing_facing",
+    "reason": "Every sign needs an explicit facing direction matching one approach.",
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-11",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "missing_input"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_side_missing_facing",
+    "reason": "Every sign needs an explicit facing direction matching one approach.",
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-11",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema",
+      "engineering_judgment"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_side_exception_unmodeled",
+    "reason": "Left/center placement exceptions cannot be established from schema 1.0.0.",
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-11",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema",
+      "engineering_judgment"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_side_exception_unmodeled",
+    "reason": "Left/center placement exceptions cannot be established from schema 1.0.0.",
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-11",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_side_both_directions",
+    "reason": "Every sign needs an explicit facing direction matching one approach.",
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-11",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_side_both_directions",
+    "reason": "Every sign needs an explicit facing direction matching one approach.",
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-11",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_side_multiple_approaches",
+    "reason": "A single advance-warning/transition pair is required.",
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-11",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_side_multiple_approaches",
+    "reason": "A single advance-warning/transition pair is required.",
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-11",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "input_quality"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_side_warning_zone_zero_length",
+    "reason": "Advance-warning and transition zones must be nondegenerate.",
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-11",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "input_quality"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_side_warning_zone_zero_length",
+    "reason": "Advance-warning and transition zones must be nondegenerate.",
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-11",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "input_quality"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_side_warning_zone_overlap",
+    "reason": "Advance-warning and transition zones overlap.",
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-11",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "input_quality"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_side_warning_zone_overlap",
+    "reason": "Advance-warning and transition zones overlap.",
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-11",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "flagger_warning_complete",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-21",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "flagger_warning_complete",
+    "reason": null,
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-21",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [
+      "missing_input"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "flagger_warning_missing_controls",
+    "reason": "F1: controls must explicitly match the single approach.",
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-21",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "missing_input"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "flagger_warning_missing_controls",
+    "reason": "F1: controls must explicitly match the single approach.",
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-21",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "missing_input"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "flagger_warning_missing_facing",
+    "reason": "F1: candidate W20-7 facing direction is absent.",
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-21",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "missing_input"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "flagger_warning_missing_facing",
+    "reason": "F1: candidate W20-7 facing direction is absent.",
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-21",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "flagger_warning_absent",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-21",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "flagger_warning_absent",
+    "reason": null,
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-21",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [
+      "missing_input"
+    ],
+    "complete": false,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "flagger_warning_failure_plus_unknown",
+    "reason": "F2: controls must explicitly match the single approach.",
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-21",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [
+      "missing_input"
+    ],
+    "complete": false,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "flagger_warning_failure_plus_unknown",
+    "reason": "F2: controls must explicitly match the single approach.",
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-21",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 1,
+    "findings": 0,
+    "probe": "flagger_sight_distance_unmodeled",
+    "reason": "Schema 1.0.0 lacks available approach sight distance and the intended stopping point. Distance between a flagger and a work-zone boundary does not establish stopping sight distance.",
+    "registry": "w1",
+    "rule_id": "mutcd.FLAG-02",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_through_lane_applicability_unmodeled",
+    "reason": "Schema 1.0.0 lacks through-lane identity and roadway/closure classification sufficient to establish applicability. Sign code presence alone does not establish the required variant, association, or advance placement.",
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-20",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_through_lane_applicability_unmodeled",
+    "reason": "Schema 1.0.0 lacks through-lane identity and roadway/closure classification sufficient to establish applicability. Sign code presence alone does not establish the required variant, association, or advance placement.",
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-20",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_size_road_tier_unmodeled",
+    "reason": "Schema 1.0.0 lacks the road tier needed to select conventional/freeway-expressway/minimum size rows. Dimensions are not rejected solely because they differ from the conventional table row.",
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-31",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "sign_size_road_tier_unmodeled",
+    "reason": "Schema 1.0.0 lacks the road tier needed to select conventional/freeway-expressway/minimum size rows. Dimensions are not rejected solely because they differ from the conventional table row.",
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-31",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "arrow_shoulder_caution",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.ARROW-03",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "arrow_shoulder_caution",
+    "reason": null,
+    "registry": "w1",
+    "rule_id": "mutcd.ARROW-03",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "arrow_shoulder_arrow_mode",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.ARROW-03",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "arrow_shoulder_arrow_mode",
+    "reason": null,
+    "registry": "w1",
+    "rule_id": "mutcd.ARROW-03",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "arrow_two_lanes_no_traffic_pattern",
+    "reason": "Explicit shoulder_closure supports the caution-mode check. Two lanes alone do not establish a two-way road; other operation types remain not evaluable when boards exist. The schema lacks lane-shift intent and cannot establish the source prohibition on arrow boards indicating lane shifts.",
+    "registry": "full",
+    "rule_id": "mutcd.ARROW-03",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "arrow_two_lanes_no_traffic_pattern",
+    "reason": "Explicit shoulder_closure supports the caution-mode check. Two lanes alone do not establish a two-way road; other operation types remain not evaluable when boards exist. The schema lacks lane-shift intent and cannot establish the source prohibition on arrow boards indicating lane shifts.",
+    "registry": "w1",
+    "rule_id": "mutcd.ARROW-03",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "arrow_boards_no_lane_identity",
+    "reason": "A single closed lane requires freeway applicability, which is absent from schema 1.0.0. Multiple closed lanes require distinct board-to-closed-lane associations; schema 1.0.0 provides no lane identity.",
+    "registry": "full",
+    "rule_id": "mutcd.ARROW-02",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "arrow_boards_no_lane_identity",
+    "reason": "A single closed lane requires freeway applicability, which is absent from schema 1.0.0. Multiple closed lanes require distinct board-to-closed-lane associations; schema 1.0.0 provides no lane identity.",
+    "registry": "w1",
+    "rule_id": "mutcd.ARROW-02",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "ca_taper_660_or",
+    "reason": "California-only provision; site.state is not CA.",
+    "registry": "full",
+    "rule_id": "mutcd.CA-007",
+    "schema_valid": true,
+    "status": "not_applicable"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "ca_taper_660_ca",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.CA-007",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "ca_taper_short",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.CA-007",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [
+      "source_policy"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "ca_taper_no_exact_speed_row",
+    "reason": "T1: speed 52 mph has no exact CA-007 table row.",
+    "registry": "full",
+    "rule_id": "mutcd.CA-007",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "ca_spacing_20",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.CA-008",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "ca_spacing_20_01",
+    "reason": "D1: taper/tangent association, conflict-spacing applicability, and the CA-008-B 20-ft taper cap cannot be established by schema 1.0.0.",
+    "registry": "full",
+    "rule_id": "mutcd.CA-008",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "ca_spacing_100",
+    "reason": "D1: taper/tangent association, conflict-spacing applicability, and the CA-008-B 20-ft taper cap cannot be established by schema 1.0.0.",
+    "registry": "full",
+    "rule_id": "mutcd.CA-008",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "ca_spacing_100_01",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.CA-008",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [
+      "source_policy"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "ca_spacing_no_exact_speed_row",
+    "reason": "D1: speed 52 mph has no exact CA-008 table row.",
+    "registry": "full",
+    "rule_id": "mutcd.CA-008",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "warning_sequence_ordered",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-08",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "warning_sequence_ordered",
+    "reason": "Requires ordered advance-warning sign identification and approach direction; supported warning-code policy and unique approach geometry are not established for production findings.",
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-08",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "warning_sequence_reversed",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-08",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "warning_sequence_reversed",
+    "reason": "Requires ordered advance-warning sign identification and approach direction; supported warning-code policy and unique approach geometry are not established for production findings.",
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-08",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "missing_input"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "warning_sequence_missing_facing",
+    "reason": "S1: warning-sign facing direction is absent.",
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-08",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "missing_input"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "warning_sequence_missing_facing",
+    "reason": "Requires ordered advance-warning sign identification and approach direction; supported warning-code policy and unique approach geometry are not established for production findings.",
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-08",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "implementation"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "warning_sequence_unknown_code",
+    "reason": "S2: warning code W999-999 is outside the supported series policy.",
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-08",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "implementation"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "warning_sequence_unknown_code",
+    "reason": "Requires ordered advance-warning sign identification and approach direction; supported warning-code policy and unique approach geometry are not established for production findings.",
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-08",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema",
+      "implementation"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "warning_sequence_tied_station",
+    "reason": "Warning signs at the same station do not establish a unique encounter order.",
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-08",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "schema",
+      "implementation"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "warning_sequence_tied_station",
+    "reason": "Requires ordered advance-warning sign identification and approach direction; supported warning-code policy and unique approach geometry are not established for production findings.",
+    "registry": "w1",
+    "rule_id": "mutcd.SIGN-08",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "mileage_integer",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-26.c02",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 1,
+    "findings": 1,
+    "probe": "mileage_fraction",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-26.c02",
+    "schema_valid": true,
+    "status": "fail"
+  },
+  {
+    "blocker_categories": [
+      "implementation"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "mileage_words",
+    "reason": "S1: legend does not establish a supported explicit ROAD WORK NEXT nonnegative numeric MILE(S) distance.",
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-26.c02",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [
+      "missing_input"
+    ],
+    "complete": false,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "mileage_absent",
+    "reason": "S1: legend does not establish a supported explicit ROAD WORK NEXT nonnegative numeric MILE(S) distance.",
+    "registry": "full",
+    "rule_id": "mutcd.SIGN-26.c02",
+    "schema_valid": true,
+    "status": "not_evaluable"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "merge_formula_boundary_meters",
+    "reason": null,
+    "registry": "full",
+    "rule_id": "mutcd.TAPER-01",
+    "schema_valid": true,
+    "status": "pass"
+  },
+  {
+    "blocker_categories": [],
+    "complete": true,
+    "exit_code": 3,
+    "findings": 0,
+    "probe": "merge_formula_boundary_meters",
+    "reason": null,
+    "registry": "w1",
+    "rule_id": "mutcd.TAPER-01",
+    "schema_valid": true,
+    "status": "pass"
+  }
+]

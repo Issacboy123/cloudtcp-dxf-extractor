@@ -1,0 +1,106 @@
+{
+  "blocker_categories": [],
+  "expected": {
+    "full": [
+      "fail",
+      true
+    ]
+  },
+  "explanation": "",
+  "name": "mileage_fraction",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 1,
+      "focused_rule_results": [
+        {
+          "complete": true,
+          "errors": [],
+          "findings": [
+            {
+              "citations": [
+                {
+                  "local_reference": "SIGN-26 — GUIDANCE — ROAD WORK NEXT XX MILES >2 mi; whole mile STANDARD",
+                  "mutcd_reference": "Sec. 6H.35 ¶01-03, p. 810",
+                  "source_document": "TCP-W1-1 Rules.md"
+                }
+              ],
+              "classification": "STANDARD",
+              "element_ids": [
+                "S1"
+              ],
+              "message": "ROAD WORK NEXT sign S1 states 2.5 miles rather than a whole-mile value.",
+              "paths": [
+                "/elements/0/legend"
+              ],
+              "rule_id": "mutcd.SIGN-26.c02",
+              "severity": "error",
+              "units": null,
+              "values": {},
+              "zone_ids": []
+            }
+          ],
+          "reason": null,
+          "rule_id": "mutcd.SIGN-26.c02",
+          "score": 0,
+          "status": "fail"
+        }
+      ],
+      "incomplete_count": 358,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": true,
+        "errors": [],
+        "findings": [
+          {
+            "citations": [
+              {
+                "local_reference": "SIGN-26.c02",
+                "mutcd_reference": "Source citations supplied by the complete registry.",
+                "source_document": "TCP-W1-1 Rules.md"
+              }
+            ],
+            "classification": "STANDARD",
+            "element_ids": [
+              "S1"
+            ],
+            "message": "ROAD WORK NEXT sign S1 states 2.5 miles rather than a whole-mile value.",
+            "paths": [
+              "/elements/0/legend"
+            ],
+            "rule_id": "mutcd.SIGN-26.c02",
+            "severity": "error",
+            "units": null,
+            "values": {},
+            "zone_ids": []
+          }
+        ],
+        "reason": null,
+        "rule_id": "mutcd.SIGN-26.c02",
+        "score": null,
+        "status": "fail"
+      },
+      "status_counts": {
+        "fail": 1,
+        "not_applicable": 59,
+        "not_evaluable": 358,
+        "pass": 1
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [],
+      "incomplete_count": 67,
+      "input_valid": true,
+      "raw_evaluator_result": null,
+      "status_counts": {
+        "not_applicable": 8,
+        "not_evaluable": 67,
+        "pass": 1
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "SIGN-26.c02"
+}

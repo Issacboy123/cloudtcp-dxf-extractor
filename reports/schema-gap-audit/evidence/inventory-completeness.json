@@ -1,0 +1,142 @@
+{
+  "input": {
+    "format_version": "1.0.0",
+    "site": {
+      "name": "Downstream taper example",
+      "coordinate_system": "local station",
+      "units": "feet",
+      "road_name": "Example Road",
+      "state": "OR"
+    },
+    "typical_application": {
+      "type": "lane_closure",
+      "direction": "NB",
+      "posted_speed_mph": 35,
+      "lanes_total": 2,
+      "lanes_closed": 1
+    },
+    "zones": [
+      {
+        "zone_id": "termination-1",
+        "type": "termination",
+        "start_station": 1000,
+        "end_station": 1200
+      }
+    ],
+    "elements": []
+  },
+  "input_valid": true,
+  "evaluation_complete": false,
+  "exit_code": 3,
+  "rule_specific_results": [
+    {
+      "rule_id": "mutcd.SIGN-08",
+      "status": "not_applicable",
+      "complete": true,
+      "score": 0,
+      "findings": [],
+      "reason": "No sign elements are present.",
+      "errors": []
+    },
+    {
+      "rule_id": "mutcd.TAPER-01",
+      "status": "not_applicable",
+      "complete": true,
+      "score": 0,
+      "findings": [],
+      "reason": "The input contains no merge taper elements.",
+      "errors": []
+    },
+    {
+      "rule_id": "mutcd.TAPER-02",
+      "status": "not_applicable",
+      "complete": true,
+      "score": 0,
+      "findings": [],
+      "reason": "No shift, shoulder, or downstream taper elements to evaluate.",
+      "errors": []
+    },
+    {
+      "rule_id": "mutcd.T-013",
+      "status": "not_applicable",
+      "complete": true,
+      "score": 0,
+      "findings": [],
+      "reason": "The input contains no downstream taper elements.",
+      "errors": []
+    },
+    {
+      "rule_id": "mutcd.CHAN-01",
+      "status": "not_applicable",
+      "complete": true,
+      "score": 0,
+      "findings": [],
+      "reason": "The input contains no supported channelizing device_line elements.",
+      "errors": []
+    },
+    {
+      "rule_id": "mutcd.BUFFER-01",
+      "status": "not_applicable",
+      "complete": true,
+      "score": 0,
+      "findings": [],
+      "reason": "The input contains no upstream_buffer zones.",
+      "errors": []
+    },
+    {
+      "rule_id": "mutcd.CA-007",
+      "status": "not_applicable",
+      "complete": true,
+      "score": 0,
+      "findings": [],
+      "reason": "California-only provision; site.state is not CA.",
+      "errors": []
+    },
+    {
+      "rule_id": "mutcd.CA-008",
+      "status": "not_applicable",
+      "complete": true,
+      "score": 0,
+      "findings": [],
+      "reason": "California-only provision; site.state is not CA.",
+      "errors": []
+    },
+    {
+      "rule_id": "mutcd.SIGN-11",
+      "status": "not_applicable",
+      "complete": true,
+      "score": 0,
+      "findings": [],
+      "reason": "The input contains no sign elements.",
+      "errors": []
+    },
+    {
+      "rule_id": "mutcd.SIGN-21",
+      "status": "not_applicable",
+      "complete": true,
+      "score": 0,
+      "findings": [],
+      "reason": "The input contains no flagger elements.",
+      "errors": []
+    },
+    {
+      "rule_id": "mutcd.SIGN-26.c02",
+      "status": "not_applicable",
+      "complete": true,
+      "score": 0,
+      "findings": [],
+      "reason": "No supported subjects are present for this check.",
+      "errors": []
+    },
+    {
+      "rule_id": "mutcd.ARROW-03",
+      "status": "not_applicable",
+      "complete": true,
+      "score": 0,
+      "findings": [],
+      "reason": "The input contains no arrow_board elements.",
+      "errors": []
+    }
+  ],
+  "interpretation": "Absent subjects can yield not_applicable. The contract has no scoped inventory-completeness evidence distinguishing true absence from partial extraction; this is an evidence-contract concern, not proof that any device is legally required."
+}

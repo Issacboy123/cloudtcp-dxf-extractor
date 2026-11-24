@@ -1,0 +1,212 @@
+[
+  {
+    "actual_schema_valid": false,
+    "expected_schema_valid": false,
+    "probe": "road_classification",
+    "rules_executed": 0,
+    "validation_errors": [
+      {
+        "message": "Additional properties are not allowed ('road_classification' was unexpected)",
+        "path": "/typical_application",
+        "validator": "additionalProperties"
+      }
+    ],
+    "verifier_exit_code": 2,
+    "verifier_input_valid": false
+  },
+  {
+    "actual_schema_valid": false,
+    "expected_schema_valid": false,
+    "probe": "operation_duration",
+    "rules_executed": 0,
+    "validation_errors": [
+      {
+        "message": "Additional properties are not allowed ('duration_hours' was unexpected)",
+        "path": "/typical_application",
+        "validator": "additionalProperties"
+      }
+    ],
+    "verifier_exit_code": 2,
+    "verifier_input_valid": false
+  },
+  {
+    "actual_schema_valid": false,
+    "expected_schema_valid": false,
+    "probe": "one_lane_two_way_operation",
+    "rules_executed": 0,
+    "validation_errors": [
+      {
+        "message": "Additional properties are not allowed ('one_lane_two_way' was unexpected)",
+        "path": "/typical_application",
+        "validator": "additionalProperties"
+      }
+    ],
+    "verifier_exit_code": 2,
+    "verifier_input_valid": false
+  },
+  {
+    "actual_schema_valid": false,
+    "expected_schema_valid": false,
+    "probe": "approach_inventory",
+    "rules_executed": 0,
+    "validation_errors": [
+      {
+        "message": "Additional properties are not allowed ('approaches' was unexpected)",
+        "path": "/",
+        "validator": "additionalProperties"
+      }
+    ],
+    "verifier_exit_code": 2,
+    "verifier_input_valid": false
+  },
+  {
+    "actual_schema_valid": false,
+    "expected_schema_valid": false,
+    "probe": "device_taper_association",
+    "rules_executed": 0,
+    "validation_errors": [
+      {
+        "message": "{'element_id': 'D1', 'type': 'device_line', 'device': 'cone', 'start_station': 500, 'end_station': 1000, 'start_offset': 0, 'end_offset': 12, 'spacing_ft': 60, 'taper_id': 'T1'} is not valid under any of the given schemas",
+        "path": "/elements/0",
+        "validator": "oneOf"
+      }
+    ],
+    "verifier_exit_code": 2,
+    "verifier_input_valid": false
+  },
+  {
+    "actual_schema_valid": false,
+    "expected_schema_valid": false,
+    "probe": "one_lane_two_way_taper",
+    "rules_executed": 0,
+    "validation_errors": [
+      {
+        "message": "{'element_id': 'T1', 'type': 'taper', 'taper_type': 'one_lane_two_way', 'start_station': 500, 'end_station': 1040, 'start_offset': 0, 'end_offset': 12, 'lane_width_ft': 12} is not valid under any of the given schemas",
+        "path": "/elements/0",
+        "validator": "oneOf"
+      }
+    ],
+    "verifier_exit_code": 2,
+    "verifier_input_valid": false
+  },
+  {
+    "actual_schema_valid": false,
+    "expected_schema_valid": false,
+    "probe": "flagger_sight_distance",
+    "rules_executed": 0,
+    "validation_errors": [
+      {
+        "message": "{'element_id': 'F1', 'type': 'flagger', 'controls': 'NB', 'position': {'station': 700, 'offset': 8, 'side': 'right'}, 'available_sight_distance_ft': 495} is not valid under any of the given schemas",
+        "path": "/elements/0",
+        "validator": "oneOf"
+      }
+    ],
+    "verifier_exit_code": 2,
+    "verifier_input_valid": false
+  },
+  {
+    "actual_schema_valid": false,
+    "expected_schema_valid": false,
+    "probe": "board_lane_association",
+    "rules_executed": 0,
+    "validation_errors": [
+      {
+        "message": "{'element_id': 'A1', 'type': 'arrow_board', 'mode': 'flashing', 'position': {'station': 500, 'offset': 8, 'side': 'right'}, 'closed_lane_id': 'L1'} is not valid under any of the given schemas",
+        "path": "/elements/0",
+        "validator": "oneOf"
+      }
+    ],
+    "verifier_exit_code": 2,
+    "verifier_input_valid": false
+  },
+  {
+    "actual_schema_valid": false,
+    "expected_schema_valid": false,
+    "probe": "sign_mounting_height",
+    "rules_executed": 0,
+    "validation_errors": [
+      {
+        "message": "{'element_id': 'S1', 'type': 'sign', 'mutcd_code': 'W20-1', 'face_direction': 'NB', 'position': {'station': 100, 'offset': 10, 'side': 'right'}, 'mounting_height_ft': 7} is not valid under any of the given schemas",
+        "path": "/elements/0",
+        "validator": "oneOf"
+      }
+    ],
+    "verifier_exit_code": 2,
+    "verifier_input_valid": false
+  },
+  {
+    "actual_schema_valid": false,
+    "expected_schema_valid": false,
+    "probe": "sign_placement_exception",
+    "rules_executed": 0,
+    "validation_errors": [
+      {
+        "message": "{'element_id': 'S1', 'type': 'sign', 'mutcd_code': 'W20-1', 'face_direction': 'NB', 'position': {'station': 100, 'offset': 10, 'side': 'right'}, 'placement_exception_approval': 'approved'} is not valid under any of the given schemas",
+        "path": "/elements/0",
+        "validator": "oneOf"
+      }
+    ],
+    "verifier_exit_code": 2,
+    "verifier_input_valid": false
+  },
+  {
+    "actual_schema_valid": false,
+    "expected_schema_valid": false,
+    "probe": "channelizer_physical_specification",
+    "rules_executed": 0,
+    "validation_errors": [
+      {
+        "message": "{'element_id': 'D1', 'type': 'device_line', 'device': 'cone', 'start_station': 500, 'end_station': 1000, 'start_offset': 0, 'end_offset': 12, 'spacing_ft': 60, 'device_height_inches': 28} is not valid under any of the given schemas",
+        "path": "/elements/0",
+        "validator": "oneOf"
+      }
+    ],
+    "verifier_exit_code": 2,
+    "verifier_input_valid": false
+  },
+  {
+    "actual_schema_valid": false,
+    "expected_schema_valid": false,
+    "probe": "barricade_type",
+    "rules_executed": 0,
+    "validation_errors": [
+      {
+        "message": "{'element_id': 'D1', 'type': 'device_line', 'device': 'barricade', 'start_station': 500, 'end_station': 1000, 'start_offset': 0, 'end_offset': 12, 'spacing_ft': 60} is not valid under any of the given schemas",
+        "path": "/elements/0",
+        "validator": "oneOf"
+      }
+    ],
+    "verifier_exit_code": 2,
+    "verifier_input_valid": false
+  },
+  {
+    "actual_schema_valid": false,
+    "expected_schema_valid": false,
+    "probe": "afad_element_type",
+    "rules_executed": 0,
+    "validation_errors": [
+      {
+        "message": "{'element_id': 'AFAD1', 'type': 'afad', 'position': {'station': 500, 'offset': 8, 'side': 'right'}} is not valid under any of the given schemas",
+        "path": "/elements/0",
+        "validator": "oneOf"
+      }
+    ],
+    "verifier_exit_code": 2,
+    "verifier_input_valid": false
+  },
+  {
+    "actual_schema_valid": false,
+    "expected_schema_valid": false,
+    "probe": "accessible_route_geometry",
+    "rules_executed": 0,
+    "validation_errors": [
+      {
+        "message": "Additional properties are not allowed ('accessible_route_width_ft' was unexpected)",
+        "path": "/zones/0",
+        "validator": "additionalProperties"
+      }
+    ],
+    "verifier_exit_code": 2,
+    "verifier_input_valid": false
+  }
+]

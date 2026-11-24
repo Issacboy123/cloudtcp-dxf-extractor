@@ -1,0 +1,61 @@
+{
+  "blocker_categories": [
+    "source_policy"
+  ],
+  "expected": {
+    "full": [
+      "not_evaluable",
+      false
+    ]
+  },
+  "explanation": "",
+  "name": "ca_taper_no_exact_speed_row",
+  "registries": {
+    "full": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [
+        {
+          "complete": false,
+          "errors": [],
+          "findings": [],
+          "reason": "T1: speed 52 mph has no exact CA-007 table row.",
+          "rule_id": "mutcd.CA-007",
+          "score": 0,
+          "status": "not_evaluable"
+        }
+      ],
+      "incomplete_count": 404,
+      "input_valid": true,
+      "raw_evaluator_result": {
+        "complete": false,
+        "errors": [],
+        "findings": [],
+        "reason": "T1: speed 52 mph has no exact CA-007 table row.",
+        "rule_id": "mutcd.CA-007",
+        "score": null,
+        "status": "not_evaluable"
+      },
+      "status_counts": {
+        "not_applicable": 14,
+        "not_evaluable": 404,
+        "pass": 1
+      }
+    },
+    "w1": {
+      "evaluation_complete": false,
+      "exit_code": 3,
+      "focused_rule_results": [],
+      "incomplete_count": 66,
+      "input_valid": true,
+      "raw_evaluator_result": null,
+      "status_counts": {
+        "not_applicable": 9,
+        "not_evaluable": 66,
+        "pass": 1
+      }
+    }
+  },
+  "schema_valid": true,
+  "target": "CA-007"
+}

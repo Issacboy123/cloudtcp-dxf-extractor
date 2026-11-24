@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/private/tmp/cloudtcp-schema-audit-ef5e474/venv/bin/python",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "cwd": "/private/tmp/cloudtcp-schema-audit-ef5e474/cloudtcp-python-verifier",
+  "exit_code": 0,
+  "duration_seconds": 11.544,
+  "stdout": "pytest.stdout.txt",
+  "stderr": "pytest.stderr.txt"
+}
