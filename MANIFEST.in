@@ -1,2 +1,8 @@
 include tcp-intermediate-format.schema.json
 include tcp-field-reference.md
+recursive-include schemas *.json
+recursive-include src/cloudtcp_dxf/schemas *.json
+recursive-include docs/schema-v2 *.md
+recursive-include examples/v2 *.json
+include tools/sync_schemas.py
+include tools/check_v2_wheel.py

@@ -1,0 +1,65 @@
+{
+  "package_path": "/private/tmp/cloudtcp-v2-installed-complete/cloudtcp_dxf/__init__.py",
+  "resource_equality": true,
+  "original_v1_unchanged": true,
+  "converted": 3,
+  "unmapped": 1,
+  "commands": [
+    {
+      "command": [
+        "/private/tmp/cloudtcp-v2-installed-complete/bin/cloudtcp-dxf",
+        "/var/folders/q_/5ff0by7x2s73chdqs91075wr0000gn/T/cloudtcp-v2-smoke-p_vf4wf7/plan.dxf",
+        "--if-config",
+        "/Users/issacwoo/Documents/cloudtcp-dxf-extractor/examples/if-config.example.json",
+        "-o",
+        "/var/folders/q_/5ff0by7x2s73chdqs91075wr0000gn/T/cloudtcp-v2-smoke-p_vf4wf7/original.if.json",
+        "--log",
+        "/var/folders/q_/5ff0by7x2s73chdqs91075wr0000gn/T/cloudtcp-v2-smoke-p_vf4wf7/v1.log.json"
+      ],
+      "returncode": 0,
+      "stdout": "Wrote /var/folders/q_/5ff0by7x2s73chdqs91075wr0000gn/T/cloudtcp-v2-smoke-p_vf4wf7/original.if.json",
+      "stderr": "Cannot create cache home directory: '/Users/issacwoo/.cache/ezdxf', cache files will not be saved.\nSee also issue https://github.com/mozman/ezdxf/issues/923."
+    },
+    {
+      "command": [
+        "/private/tmp/cloudtcp-v2-installed-complete/bin/cloudtcp-dxf",
+        "/var/folders/q_/5ff0by7x2s73chdqs91075wr0000gn/T/cloudtcp-v2-smoke-p_vf4wf7/plan.dxf",
+        "--format-version",
+        "2.0.0",
+        "--if-config",
+        "/Users/issacwoo/Documents/cloudtcp-dxf-extractor/examples/v2/if-config.example.json"
+      ],
+      "returncode": 0,
+      "stdout": "Wrote /var/folders/q_/5ff0by7x2s73chdqs91075wr0000gn/T/cloudtcp-v2-smoke-p_vf4wf7/plan.v2.if.json",
+      "stderr": "Cannot create cache home directory: '/Users/issacwoo/.cache/ezdxf', cache files will not be saved.\nSee also issue https://github.com/mozman/ezdxf/issues/923."
+    },
+    {
+      "command": [
+        "/private/tmp/cloudtcp-v2-installed-complete/bin/cloudtcp-validate-v2",
+        "/var/folders/q_/5ff0by7x2s73chdqs91075wr0000gn/T/cloudtcp-v2-smoke-p_vf4wf7/plan.v2.if.json"
+      ],
+      "returncode": 0,
+      "stdout": "{\"valid\": true, \"diagnostics\": []}",
+      "stderr": "Cannot create cache home directory: '/Users/issacwoo/.cache/ezdxf', cache files will not be saved.\nSee also issue https://github.com/mozman/ezdxf/issues/923."
+    },
+    {
+      "command": [
+        "/private/tmp/cloudtcp-v2-installed-complete/bin/cloudtcp-migrate-v1",
+        "/var/folders/q_/5ff0by7x2s73chdqs91075wr0000gn/T/cloudtcp-v2-smoke-p_vf4wf7/original.if.json"
+      ],
+      "returncode": 0,
+      "stdout": "Wrote /var/folders/q_/5ff0by7x2s73chdqs91075wr0000gn/T/cloudtcp-v2-smoke-p_vf4wf7/original.if.v2.json; original retained at /var/folders/q_/5ff0by7x2s73chdqs91075wr0000gn/T/cloudtcp-v2-smoke-p_vf4wf7/original.if.json",
+      "stderr": "Cannot create cache home directory: '/Users/issacwoo/.cache/ezdxf', cache files will not be saved.\nSee also issue https://github.com/mozman/ezdxf/issues/923."
+    },
+    {
+      "command": [
+        "/private/tmp/cloudtcp-v2-installed-complete/bin/cloudtcp-validate-v2",
+        "/var/folders/q_/5ff0by7x2s73chdqs91075wr0000gn/T/cloudtcp-v2-smoke-p_vf4wf7/original.if.v2.json"
+      ],
+      "returncode": 0,
+      "stdout": "{\"valid\": true, \"diagnostics\": []}",
+      "stderr": "Cannot create cache home directory: '/Users/issacwoo/.cache/ezdxf', cache files will not be saved.\nSee also issue https://github.com/mozman/ezdxf/issues/923."
+    }
+  ],
+  "wheel_sha256": "0e88116f56790733f4d164a4488fd5815efb9abdbad31cb0cc53196a545470b6"
+}

@@ -316,7 +316,7 @@ def test_cli_if_success_without_schema_flag(tmp_path):
     cfg_path = tmp_path / "config.json"
     cfg_path.write_text(json.dumps(config()))
     output, log = tmp_path / "out.if.json", tmp_path / "log.json"
-    assert main([str(path), "--if-config", str(cfg_path), "-o", str(output), "--log", str(log)]) == 0
+    assert main([str(path), "--format-version", "1.0.0", "--if-config", str(cfg_path), "-o", str(output), "--log", str(log)]) == 0
     validate_if(json.loads(output.read_text()))
     assert json.loads(log.read_text())["converted_elements"] == 1
 
@@ -331,7 +331,7 @@ def test_cli_failure_keeps_existing_output_and_writes_diagnostics(tmp_path, fail
     cfg_path.write_text("{" if failure == "bad_config_json" else json.dumps(cfg))
     output, log = tmp_path / "out.if.json", tmp_path / "log.json"
     output.write_text("previous export")
-    args = [str(path), "--if-config", str(cfg_path), "-o", str(output), "--log", str(log)]
+    args = [str(path), "--format-version", "1.0.0", "--if-config", str(cfg_path), "-o", str(output), "--log", str(log)]
     if failure == "additional_schema":
         schema = tmp_path / "additional.json"
         schema.write_text(json.dumps({"properties": {"elements": {"maxItems": 0}}}))

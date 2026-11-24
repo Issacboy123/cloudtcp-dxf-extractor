@@ -1,0 +1,222 @@
+{
+  "document": {
+    "format_version": "2.0.0",
+    "document_id": "doc",
+    "project_id": "project",
+    "revision": "a",
+    "created_at": "2026-11-19T20:00:00Z",
+    "site": {
+      "name": "Synthetic partial"
+    },
+    "reference_frames": [
+      {
+        "id": "station",
+        "kind": "station",
+        "units": "feet"
+      },
+      {
+        "id": "plan",
+        "kind": "planar",
+        "units": "feet"
+      }
+    ],
+    "phases": [
+      {
+        "id": "work",
+        "name": "Work",
+        "phase_type": "work",
+        "light_condition": "mixed"
+      }
+    ],
+    "entities": [
+      {
+        "id": "road",
+        "kind": "road"
+      },
+      {
+        "id": "north",
+        "kind": "approach",
+        "road_ref": "road",
+        "frame_ref": "station",
+        "travel_sign": 1
+      },
+      {
+        "id": "south",
+        "kind": "approach",
+        "road_ref": "road",
+        "frame_ref": "station",
+        "travel_sign": -1
+      },
+      {
+        "id": "lane-a",
+        "kind": "lane",
+        "road_ref": "road",
+        "approach_ref": "north"
+      },
+      {
+        "id": "lane-b",
+        "kind": "lane",
+        "road_ref": "road",
+        "approach_ref": "north"
+      },
+      {
+        "id": "path",
+        "kind": "path",
+        "approach_ref": "north",
+        "lane_refs": [
+          "lane-a"
+        ]
+      },
+      {
+        "id": "closure",
+        "kind": "closure",
+        "closure_type": "lane",
+        "lane_refs": [
+          "lane-a",
+          "lane-b"
+        ]
+      },
+      {
+        "id": "zone-n",
+        "kind": "zone",
+        "zone_type": "work",
+        "approach_ref": "north",
+        "extent": {
+          "frame_ref": "station",
+          "start_station": 0,
+          "end_station": 100
+        }
+      },
+      {
+        "id": "zone-s",
+        "kind": "zone",
+        "zone_type": "work",
+        "approach_ref": "south",
+        "extent": {
+          "frame_ref": "station",
+          "start_station": 0,
+          "end_station": 100
+        }
+      },
+      {
+        "id": "taper",
+        "kind": "taper",
+        "taper_type": "one_lane_two_way",
+        "approach_ref": "north",
+        "device_run_refs": [
+          "run"
+        ],
+        "from_path_refs": [
+          "path"
+        ],
+        "length": {
+          "value": 0,
+          "unit": "ft"
+        }
+      },
+      {
+        "id": "run",
+        "kind": "device_run",
+        "device_type": "cone",
+        "segment_role": "taper",
+        "taper_ref": "taper",
+        "path_refs": [
+          "path"
+        ],
+        "spacing": {
+          "value": 60,
+          "unit": "ft"
+        }
+      },
+      {
+        "id": "control",
+        "kind": "control",
+        "control_type": "alternating",
+        "controlled_path_refs": [
+          "path"
+        ]
+      },
+      {
+        "id": "board-a",
+        "kind": "device",
+        "device_type": "arrow_board",
+        "lane_refs": [
+          "lane-a"
+        ],
+        "specification": {
+          "mode": "arrow"
+        }
+      },
+      {
+        "id": "board-b",
+        "kind": "device",
+        "device_type": "arrow_board",
+        "lane_refs": [
+          "lane-b"
+        ],
+        "specification": {
+          "mode": "caution"
+        }
+      }
+    ],
+    "evidence": [
+      {
+        "id": "source",
+        "source_type": "manual_inspection",
+        "locator": {
+          "record_key": "inspection"
+        }
+      }
+    ],
+    "assertions": [],
+    "completeness": []
+  },
+  "stationing": {
+    "frame_ref": "station",
+    "origin": [
+      0,
+      0
+    ],
+    "endpoint": [
+      100,
+      0
+    ]
+  },
+  "source_units": "feet",
+  "block_mappings": {
+    "W20_1": {
+      "kind": "device",
+      "device_type": "sign",
+      "specification": {
+        "mutcd_code": "W20-1"
+      },
+      "approach_refs": [
+        "north"
+      ],
+      "phase_refs": [
+        "work"
+      ]
+    },
+    "FLAGGER": {
+      "kind": "actor",
+      "role": "flagger",
+      "phase_refs": [
+        "work"
+      ]
+    },
+    "ARROW_BOARD": {
+      "kind": "device",
+      "device_type": "arrow_board",
+      "specification": {
+        "mode": "arrow",
+        "arrow_direction": "left"
+      },
+      "lane_refs": [
+        "lane-a"
+      ],
+      "phase_refs": [
+        "work"
+      ]
+    }
+  }
+}

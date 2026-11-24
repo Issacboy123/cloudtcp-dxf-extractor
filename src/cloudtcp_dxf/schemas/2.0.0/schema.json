@@ -1,0 +1,5680 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cloudtcp.io/schemas/tcp-intermediate-format/v2.0.0/schema.json",
+  "title": "CloudTCP IF v2.0.0",
+  "description": "Partial plan facts and provenance. Validation establishes supplied data integrity only. x-targets annotations name semantic reference constraints.",
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^\\S(?:[\\s\\S]*\\S)?(?![\\s\\S])"
+    },
+    "length": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "m",
+            "ft",
+            "in"
+          ]
+        },
+        "uncertainty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "measurement_method": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ]
+    },
+    "area": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "m2",
+            "ft2",
+            "in2"
+          ]
+        },
+        "uncertainty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "measurement_method": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ]
+    },
+    "speed": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "mph",
+            "km/h",
+            "m/s"
+          ]
+        },
+        "uncertainty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "measurement_method": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ]
+    },
+    "duration": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "s",
+            "min",
+            "h"
+          ]
+        },
+        "uncertainty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "measurement_method": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ]
+    },
+    "angle": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "deg"
+          ]
+        },
+        "uncertainty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "measurement_method": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ]
+    },
+    "ratio": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "ratio",
+            "%"
+          ]
+        },
+        "uncertainty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "measurement_method": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ]
+    },
+    "flow": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "veh/h"
+          ]
+        },
+        "uncertainty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "measurement_method": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ]
+    },
+    "frequency": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "Hz",
+            "flashes/min"
+          ]
+        },
+        "uncertainty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "measurement_method": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ]
+    },
+    "slope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "number"
+        },
+        "unit": {
+          "const": "ratio"
+        },
+        "uncertainty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "measurement_method": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ]
+    },
+    "signed_ratio": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "ratio",
+            "%"
+          ]
+        },
+        "uncertainty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "measurement_method": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ]
+    },
+    "usable_width": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "m",
+            "ft",
+            "in"
+          ]
+        },
+        "uncertainty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "measurement_method": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ]
+    },
+    "point": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "frame_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "frame:planar"
+          ]
+        },
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "z": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "frame_ref",
+        "x",
+        "y"
+      ]
+    },
+    "station_location": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "frame_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "frame:station"
+          ]
+        },
+        "station": {
+          "type": "number"
+        },
+        "offset": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "frame_ref",
+        "station",
+        "offset"
+      ]
+    },
+    "location": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/point"
+        },
+        {
+          "$ref": "#/$defs/station_location"
+        }
+      ]
+    },
+    "line": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "points": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/point"
+          },
+          "minItems": 2
+        }
+      },
+      "required": [
+        "points"
+      ]
+    },
+    "polygon": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rings": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/point"
+            },
+            "minItems": 4
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "rings"
+      ]
+    },
+    "range": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "frame_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "frame:station"
+          ]
+        },
+        "start_station": {
+          "type": "number"
+        },
+        "end_station": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "frame_ref",
+        "start_station",
+        "end_station"
+      ]
+    },
+    "ranged_footprint": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "frame_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "frame:station"
+          ]
+        },
+        "start_station": {
+          "type": "number"
+        },
+        "end_station": {
+          "type": "number"
+        },
+        "left_offset": {
+          "type": "number"
+        },
+        "right_offset": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "frame_ref",
+        "start_station",
+        "end_station"
+      ]
+    },
+    "footprint": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/polygon"
+        },
+        {
+          "$ref": "#/$defs/ranged_footprint"
+        }
+      ]
+    },
+    "surface_geometry": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/line"
+        },
+        {
+          "$ref": "#/$defs/polygon"
+        }
+      ]
+    },
+    "station_pair": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start_location": {
+          "$ref": "#/$defs/station_location"
+        },
+        "end_location": {
+          "$ref": "#/$defs/station_location"
+        }
+      },
+      "required": [
+        "start_location",
+        "end_location"
+      ]
+    },
+    "run_geometry": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/line"
+        },
+        {
+          "$ref": "#/$defs/station_pair"
+        }
+      ]
+    },
+    "locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "uri": {
+          "type": "string"
+        },
+        "file_name": {
+          "type": "string"
+        },
+        "record_key": {
+          "type": "string"
+        },
+        "page": {
+          "type": "string"
+        },
+        "section": {
+          "type": "string"
+        },
+        "layer": {
+          "type": "string"
+        },
+        "handle": {
+          "type": "string"
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "uri"
+          ]
+        },
+        {
+          "required": [
+            "file_name"
+          ]
+        },
+        {
+          "required": [
+            "record_key"
+          ]
+        }
+      ]
+    },
+    "frame": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "kind": {
+              "const": "planar"
+            },
+            "units": {
+              "type": "string",
+              "enum": [
+                "feet",
+                "meters"
+              ]
+            },
+            "vertical_datum": {
+              "type": "string"
+            },
+            "crs": {
+              "type": "string"
+            },
+            "origin_description": {
+              "type": "string"
+            },
+            "axis_description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "units"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "kind": {
+              "const": "station"
+            },
+            "units": {
+              "type": "string",
+              "enum": [
+                "feet",
+                "meters"
+              ]
+            },
+            "vertical_datum": {
+              "type": "string"
+            },
+            "alignment_ref": {
+              "$ref": "#/$defs/id",
+              "x-targets": [
+                "alignment"
+              ]
+            },
+            "datum_description": {
+              "type": "string"
+            },
+            "increasing_direction_description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "units"
+          ]
+        }
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "cad",
+            "survey",
+            "manual_inspection",
+            "plan_document",
+            "publication",
+            "agency_record",
+            "sensor",
+            "model",
+            "legacy_import"
+          ]
+        },
+        "locator": {
+          "$ref": "#/$defs/locator"
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "author": {
+          "type": "string"
+        },
+        "edition": {
+          "type": "string"
+        },
+        "content_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "authority": {
+          "type": "string"
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "source_type",
+        "locator"
+      ]
+    },
+    "assertion_scope": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "phase_refs": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id",
+                "x-targets": [
+                  "phase"
+                ]
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "phase_refs"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "phase_independent": {
+              "const": true
+            }
+          },
+          "required": [
+            "phase_independent"
+          ]
+        }
+      ]
+    },
+    "assertion": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "subject_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "entity",
+            "phase",
+            "frame",
+            "observation",
+            "decision"
+          ]
+        },
+        "path": {
+          "type": "string",
+          "pattern": "^(?:/(?:[^~]|~[01])*)*$"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "supported",
+            "disputed",
+            "withdrawn"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "method": {
+          "type": "string",
+          "enum": [
+            "authored",
+            "measured",
+            "extracted",
+            "derived"
+          ]
+        },
+        "scope": {
+          "$ref": "#/$defs/assertion_scope"
+        },
+        "valid_from": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "valid_to": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "decision_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "decision"
+          ]
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "value": {},
+              "evidence_refs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/id",
+                  "x-targets": [
+                    "evidence"
+                  ]
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "value",
+              "evidence_refs"
+            ]
+          },
+          "minItems": 1
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "id",
+        "subject_ref",
+        "path",
+        "status",
+        "evidence_refs",
+        "method",
+        "scope"
+      ]
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "type": "string",
+          "enum": [
+            "install",
+            "remove",
+            "activate",
+            "deactivate",
+            "open",
+            "close",
+            "cover",
+            "uncover"
+          ]
+        },
+        "subject_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "entity"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "action",
+        "subject_refs"
+      ]
+    },
+    "phase": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "phase_type": {
+          "type": "string",
+          "enum": [
+            "installation",
+            "work",
+            "removal",
+            "idle"
+          ]
+        },
+        "start_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "end_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "duration": {
+          "$ref": "#/$defs/duration"
+        },
+        "mobility": {
+          "type": "string",
+          "enum": [
+            "stationary",
+            "mobile",
+            "intermittent"
+          ]
+        },
+        "light_condition": {
+          "type": "string",
+          "enum": [
+            "daylight",
+            "night",
+            "mixed"
+          ]
+        },
+        "predecessor_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "actions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/action"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "phase_type"
+      ]
+    },
+    "parameter": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "value": {
+          "type": [
+            "number",
+            "string"
+          ]
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "m",
+            "ft",
+            "in",
+            "m2",
+            "ft2",
+            "in2",
+            "mph",
+            "km/h",
+            "m/s",
+            "s",
+            "min",
+            "h",
+            "deg",
+            "ratio",
+            "%",
+            "veh/h",
+            "Hz",
+            "flashes/min"
+          ]
+        },
+        "source_locator": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "value",
+        "source_locator"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "value": {
+                "type": "number"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "unit"
+            ]
+          }
+        }
+      ]
+    },
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "decision_type": {
+          "type": "string",
+          "enum": [
+            "engineering_assessment",
+            "exception",
+            "approval",
+            "policy_selection",
+            "coordination",
+            "conflict_resolution"
+          ]
+        },
+        "subject_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "entity",
+              "phase",
+              "observation",
+              "assertion"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "rule_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "outcome": {
+          "type": "string",
+          "enum": [
+            "approved",
+            "rejected",
+            "conditional",
+            "information"
+          ]
+        },
+        "authority": {
+          "type": "string"
+        },
+        "rationale": {
+          "type": "string"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "valid_from": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "valid_to": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "parameters": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/parameter"
+          }
+        },
+        "notified_parties": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "acknowledgements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "decision_type",
+        "subject_refs",
+        "outcome",
+        "authority",
+        "rationale",
+        "evidence_refs"
+      ]
+    },
+    "metric_value": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "metric": {
+          "type": "string",
+          "enum": [
+            "posted_speed",
+            "work_zone_speed",
+            "design_speed",
+            "calculation_speed",
+            "observed_speed",
+            "volume",
+            "capacity",
+            "occupancy",
+            "heavy_vehicle_share",
+            "headway",
+            "delay",
+            "queue_length",
+            "clear_width",
+            "shoulder_width",
+            "stopping_sight_distance",
+            "passing_sight_distance",
+            "curve_radius",
+            "maximum_device_gap",
+            "grade",
+            "cross_slope",
+            "queue_occupancy"
+          ]
+        },
+        "value": {}
+      },
+      "required": [
+        "metric",
+        "value"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "type": "string",
+                "enum": [
+                  "posted_speed",
+                  "work_zone_speed",
+                  "design_speed",
+                  "calculation_speed",
+                  "observed_speed"
+                ]
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "$ref": "#/$defs/speed"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "type": "string",
+                "enum": [
+                  "volume",
+                  "capacity"
+                ]
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "$ref": "#/$defs/flow"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "type": "string",
+                "enum": [
+                  "occupancy",
+                  "heavy_vehicle_share"
+                ]
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "$ref": "#/$defs/ratio"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "type": "string",
+                "enum": [
+                  "headway",
+                  "delay"
+                ]
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "$ref": "#/$defs/duration"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "type": "string",
+                "enum": [
+                  "queue_length",
+                  "clear_width",
+                  "shoulder_width",
+                  "stopping_sight_distance",
+                  "passing_sight_distance",
+                  "curve_radius",
+                  "maximum_device_gap"
+                ]
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "$ref": "#/$defs/length"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "type": "string",
+                "enum": [
+                  "grade",
+                  "cross_slope"
+                ]
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "$ref": "#/$defs/slope"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "type": "string",
+                "enum": [
+                  "queue_occupancy"
+                ]
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "const": "clear_width"
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "$ref": "#/$defs/usable_width"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "interval": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "end_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "start_at",
+        "end_at"
+      ]
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "metric": {
+          "type": "string",
+          "enum": [
+            "posted_speed",
+            "work_zone_speed",
+            "design_speed",
+            "calculation_speed",
+            "observed_speed",
+            "volume",
+            "capacity",
+            "occupancy",
+            "heavy_vehicle_share",
+            "headway",
+            "delay",
+            "queue_length",
+            "clear_width",
+            "shoulder_width",
+            "stopping_sight_distance",
+            "passing_sight_distance",
+            "curve_radius",
+            "maximum_device_gap",
+            "grade",
+            "cross_slope",
+            "queue_occupancy"
+          ]
+        },
+        "value": {},
+        "subject_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "entity"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "observed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "interval": {
+          "$ref": "#/$defs/interval"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "location": {
+          "$ref": "#/$defs/location"
+        },
+        "range": {
+          "$ref": "#/$defs/range"
+        },
+        "reference_locations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/location"
+          }
+        },
+        "footprint": {
+          "$ref": "#/$defs/footprint"
+        },
+        "basis": {
+          "type": "string",
+          "enum": [
+            "posted",
+            "work_zone_posted",
+            "prework_offpeak_85th_percentile",
+            "anticipated_operating",
+            "measured_snapshot",
+            "design_criterion"
+          ]
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "motor",
+            "bicycle",
+            "pedestrian",
+            "mixed"
+          ]
+        },
+        "input_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "observation",
+              "entity"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "derivation": {
+          "type": "string"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "subject_refs",
+        "metric",
+        "value"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "type": "string",
+                "enum": [
+                  "posted_speed",
+                  "work_zone_speed",
+                  "design_speed",
+                  "calculation_speed",
+                  "observed_speed"
+                ]
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "$ref": "#/$defs/speed"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "type": "string",
+                "enum": [
+                  "volume",
+                  "capacity"
+                ]
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "$ref": "#/$defs/flow"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "type": "string",
+                "enum": [
+                  "occupancy",
+                  "heavy_vehicle_share"
+                ]
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "$ref": "#/$defs/ratio"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "type": "string",
+                "enum": [
+                  "headway",
+                  "delay"
+                ]
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "$ref": "#/$defs/duration"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "type": "string",
+                "enum": [
+                  "queue_length",
+                  "clear_width",
+                  "shoulder_width",
+                  "stopping_sight_distance",
+                  "passing_sight_distance",
+                  "curve_radius",
+                  "maximum_device_gap"
+                ]
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "$ref": "#/$defs/length"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "type": "string",
+                "enum": [
+                  "grade",
+                  "cross_slope"
+                ]
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "$ref": "#/$defs/slope"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "type": "string",
+                "enum": [
+                  "queue_occupancy"
+                ]
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "metric": {
+                "const": "clear_width"
+              }
+            },
+            "required": [
+              "metric"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "$ref": "#/$defs/usable_width"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "recommendation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "type": "string"
+        },
+        "priority": {
+          "type": "string",
+          "enum": [
+            "info",
+            "low",
+            "medium",
+            "high",
+            "urgent"
+          ]
+        },
+        "subject_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "entity"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "action",
+        "priority"
+      ]
+    },
+    "prediction": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "model_version": {
+          "type": "string"
+        },
+        "predicted_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "horizon": {
+          "$ref": "#/$defs/duration"
+        },
+        "subject_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "entity"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "metrics": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/metric_value"
+          }
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "risk_level": {
+          "type": "string",
+          "enum": [
+            "low",
+            "moderate",
+            "high",
+            "critical"
+          ]
+        },
+        "recommendations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/recommendation"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "model_version",
+        "predicted_at",
+        "horizon",
+        "subject_refs"
+      ]
+    },
+    "legacy_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "source_path": {
+          "type": "string"
+        },
+        "value": {},
+        "reason": {
+          "type": "string"
+        },
+        "source_evidence_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "evidence"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "source_path",
+        "value",
+        "reason",
+        "source_evidence_ref"
+      ]
+    },
+    "road": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "road"
+        },
+        "road_name": {
+          "type": "string"
+        },
+        "route_number": {
+          "type": "string"
+        },
+        "jurisdiction": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "country": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "agency": {
+              "type": "string"
+            },
+            "ownership": {
+              "type": "string"
+            }
+          }
+        },
+        "classification": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "functional_class": {
+              "type": "string"
+            },
+            "environment": {
+              "type": "string",
+              "enum": [
+                "urban",
+                "rural"
+              ]
+            },
+            "access_control": {
+              "type": "string",
+              "enum": [
+                "full",
+                "partial",
+                "none"
+              ]
+            },
+            "divided": {
+              "type": "boolean"
+            },
+            "facility_class": {
+              "type": "string",
+              "enum": [
+                "conventional",
+                "freeway",
+                "expressway",
+                "other"
+              ]
+            }
+          }
+        },
+        "alignment_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "alignment"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "posted_speed_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "observation:posted_speed"
+          ]
+        },
+        "work_zone_speed_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "observation:work_zone_speed"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind"
+      ]
+    },
+    "alignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "alignment"
+        },
+        "frame_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "frame:station"
+          ]
+        },
+        "road_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "road"
+          ]
+        },
+        "plan_geometry": {
+          "$ref": "#/$defs/line"
+        },
+        "profile": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "station": {
+                "type": "number"
+              },
+              "elevation": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "station",
+              "elevation"
+            ]
+          }
+        },
+        "grade_segments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "range": {
+                "$ref": "#/$defs/range"
+              },
+              "grade": {
+                "$ref": "#/$defs/slope"
+              }
+            },
+            "required": [
+              "range",
+              "grade"
+            ]
+          }
+        },
+        "station_mapping": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "station": {
+                "type": "number"
+              },
+              "point_index": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "distance_along_segment": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "station",
+              "point_index",
+              "distance_along_segment"
+            ]
+          }
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "frame_ref"
+      ]
+    },
+    "approach": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "approach"
+        },
+        "road_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "road"
+          ]
+        },
+        "frame_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "frame:station"
+          ]
+        },
+        "travel_sign": {
+          "type": "integer",
+          "enum": [
+            -1,
+            1
+          ]
+        },
+        "travel_heading": {
+          "$ref": "#/$defs/angle"
+        },
+        "path_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "path"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "junction_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "junction"
+          ]
+        },
+        "calculation_speed_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "observation:calculation_speed"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "road_ref",
+        "frame_ref",
+        "travel_sign"
+      ]
+    },
+    "lane": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "lane"
+        },
+        "road_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "road"
+          ]
+        },
+        "approach_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "approach"
+          ]
+        },
+        "role": {
+          "type": "string",
+          "enum": [
+            "through",
+            "turn",
+            "shoulder",
+            "auxiliary",
+            "bicycle",
+            "shared"
+          ]
+        },
+        "traffic_mode": {
+          "type": "string",
+          "enum": [
+            "motor",
+            "bicycle",
+            "mixed"
+          ]
+        },
+        "travel_sign": {
+          "type": "integer",
+          "enum": [
+            -1,
+            1
+          ]
+        },
+        "boundary_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "boundary"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "clear_width": {
+          "$ref": "#/$defs/usable_width"
+        },
+        "width_measurement_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "observation:clear_width"
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "road_ref"
+      ]
+    },
+    "path": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "path"
+        },
+        "approach_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "approach"
+          ]
+        },
+        "lane_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "lane"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "geometry": {
+          "$ref": "#/$defs/line"
+        },
+        "station_range": {
+          "$ref": "#/$defs/range"
+        },
+        "use": {
+          "type": "string",
+          "enum": [
+            "normal",
+            "temporary",
+            "receiving",
+            "detour",
+            "escape"
+          ]
+        },
+        "traffic_modes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "motor",
+              "bicycle",
+              "pedestrian"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "successor_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "path"
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "approach_ref"
+      ]
+    },
+    "junction": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "junction"
+        },
+        "junction_type": {
+          "type": "string",
+          "enum": [
+            "intersection",
+            "driveway",
+            "roundabout"
+          ]
+        },
+        "road_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "road"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "approach_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "approach"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "footprint": {
+          "$ref": "#/$defs/polygon"
+        },
+        "movements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "from_path_ref": {
+                "$ref": "#/$defs/id",
+                "x-targets": [
+                  "path"
+                ]
+              },
+              "to_path_ref": {
+                "$ref": "#/$defs/id",
+                "x-targets": [
+                  "path"
+                ]
+              },
+              "movement": {
+                "type": "string",
+                "enum": [
+                  "through",
+                  "left",
+                  "right",
+                  "u_turn"
+                ]
+              }
+            },
+            "required": [
+              "from_path_ref",
+              "to_path_ref",
+              "movement"
+            ]
+          }
+        }
+      },
+      "required": [
+        "id",
+        "kind"
+      ]
+    },
+    "ramp": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "ramp"
+        },
+        "road_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "road"
+          ]
+        },
+        "ramp_type": {
+          "type": "string",
+          "enum": [
+            "entrance",
+            "exit",
+            "temporary"
+          ]
+        },
+        "from_path_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "path"
+          ]
+        },
+        "to_path_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "path"
+          ]
+        },
+        "acceleration_range": {
+          "$ref": "#/$defs/range"
+        },
+        "deceleration_range": {
+          "$ref": "#/$defs/range"
+        },
+        "available_length": {
+          "$ref": "#/$defs/length"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "road_ref"
+      ]
+    },
+    "boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "boundary"
+        },
+        "road_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "road"
+          ]
+        },
+        "boundary_type": {
+          "type": "string",
+          "enum": [
+            "pavement_edge",
+            "traveled_way_edge",
+            "curb_face",
+            "median_edge",
+            "shoulder_edge",
+            "lane_edge"
+          ]
+        },
+        "geometry": {
+          "$ref": "#/$defs/line"
+        },
+        "station_offsets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/station_location"
+          }
+        },
+        "surface": {
+          "type": "string",
+          "enum": [
+            "paved",
+            "unpaved"
+          ]
+        },
+        "load_suitability_decision_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "decision"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "road_ref",
+        "boundary_type"
+      ]
+    },
+    "application": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "application"
+        },
+        "jurisdiction": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "country": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "agency": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "country"
+          ]
+        },
+        "source_evidence_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "evidence"
+          ]
+        },
+        "layout_id": {
+          "type": "string"
+        },
+        "edition": {
+          "type": "string"
+        },
+        "variant": {
+          "type": "string"
+        },
+        "closure_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "closure"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "approach_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "approach"
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "jurisdiction",
+        "source_evidence_ref",
+        "layout_id"
+      ]
+    },
+    "closure": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "closure"
+        },
+        "closure_type": {
+          "type": "string",
+          "enum": [
+            "lane",
+            "shoulder",
+            "road",
+            "intersection",
+            "ramp",
+            "median_crossover",
+            "other"
+          ]
+        },
+        "lane_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "lane"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "path_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "path"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "approach_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "approach"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "extent": {
+          "$ref": "#/$defs/footprint"
+        },
+        "access_policy": {
+          "type": "string",
+          "enum": [
+            "none",
+            "local_only",
+            "controlled"
+          ]
+        },
+        "receiving_path_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "path"
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "closure_type"
+      ]
+    },
+    "zone": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "zone"
+        },
+        "zone_type": {
+          "type": "string",
+          "enum": [
+            "advance_warning",
+            "transition",
+            "upstream_buffer",
+            "work",
+            "downstream_buffer",
+            "termination"
+          ]
+        },
+        "approach_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "approach"
+          ]
+        },
+        "path_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "path"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "extent": {
+          "$ref": "#/$defs/footprint"
+        },
+        "closure_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "closure"
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "zone_type"
+      ]
+    },
+    "taper": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "taper"
+        },
+        "taper_type": {
+          "type": "string",
+          "enum": [
+            "merge",
+            "shift",
+            "shoulder",
+            "downstream",
+            "one_lane_two_way"
+          ]
+        },
+        "approach_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "approach"
+          ]
+        },
+        "from_path_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "path"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "to_path_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "path"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "start_location": {
+          "$ref": "#/$defs/location"
+        },
+        "end_location": {
+          "$ref": "#/$defs/location"
+        },
+        "length": {
+          "$ref": "#/$defs/length"
+        },
+        "offset_width": {
+          "$ref": "#/$defs/length"
+        },
+        "zone_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "zone"
+          ]
+        },
+        "closure_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "closure"
+          ]
+        },
+        "device_run_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "device_run"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "calculation_speed_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "observation:calculation_speed"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "taper_type"
+      ]
+    },
+    "buffer": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "buffer"
+        },
+        "buffer_role": {
+          "type": "string",
+          "enum": [
+            "longitudinal_upstream",
+            "longitudinal_downstream",
+            "lateral"
+          ]
+        },
+        "extent": {
+          "$ref": "#/$defs/footprint"
+        },
+        "width": {
+          "$ref": "#/$defs/length"
+        },
+        "length": {
+          "$ref": "#/$defs/length"
+        },
+        "protected_path_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "path"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "opposing_path_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "path"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "work_area_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "work_area"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "occupant_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "actor",
+              "vehicle",
+              "device",
+              "work_area"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "zone_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "zone"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "buffer_role"
+      ]
+    },
+    "work_area": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "work_area"
+        },
+        "activity": {
+          "type": "string",
+          "enum": [
+            "active_work",
+            "storage",
+            "staging",
+            "idle"
+          ]
+        },
+        "extent": {
+          "$ref": "#/$defs/footprint"
+        },
+        "closure_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "closure"
+          ]
+        },
+        "occupant_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "actor",
+              "vehicle",
+              "device"
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "activity"
+      ]
+    },
+    "ttc_extent": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "ttc_extent"
+        },
+        "definition": {
+          "type": "string",
+          "enum": [
+            "first_warning_to_last_device",
+            "agency_project_limits"
+          ]
+        },
+        "path_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "path"
+          ]
+        },
+        "start_location": {
+          "$ref": "#/$defs/location"
+        },
+        "end_location": {
+          "$ref": "#/$defs/location"
+        },
+        "length": {
+          "$ref": "#/$defs/length"
+        },
+        "boundary_device_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "device",
+              "device_run"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "mileage_sign_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "device:sign"
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "definition"
+      ]
+    },
+    "facility": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "facility"
+        },
+        "facility_type": {
+          "type": "string",
+          "enum": [
+            "sidewalk",
+            "pedestrian_route",
+            "bikeway",
+            "shared_path",
+            "curb_ramp",
+            "landing",
+            "passing_space"
+          ]
+        },
+        "path_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "path"
+          ]
+        },
+        "geometry": {
+          "$ref": "#/$defs/surface_geometry"
+        },
+        "clear_width": {
+          "$ref": "#/$defs/usable_width"
+        },
+        "running_slope": {
+          "$ref": "#/$defs/slope"
+        },
+        "cross_slope": {
+          "$ref": "#/$defs/slope"
+        },
+        "surface": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "firm": {
+              "type": "boolean"
+            },
+            "stable": {
+              "type": "boolean"
+            },
+            "slip_resistant": {
+              "type": "boolean"
+            }
+          }
+        },
+        "parent_facility_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "facility"
+          ]
+        },
+        "obstruction_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "device",
+              "vehicle",
+              "work_area"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "alternate_facility_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "facility"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "facility_type"
+      ]
+    },
+    "crossing": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "crossing"
+        },
+        "crossing_type": {
+          "type": "string",
+          "enum": [
+            "crosswalk",
+            "railroad"
+          ]
+        },
+        "geometry": {
+          "$ref": "#/$defs/surface_geometry"
+        },
+        "path_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "path"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "state": {
+          "type": "string",
+          "enum": [
+            "open",
+            "closed",
+            "diverted"
+          ]
+        },
+        "control_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "control"
+          ]
+        },
+        "rail_clearance_extent": {
+          "$ref": "#/$defs/footprint"
+        },
+        "audible_device_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "device:audible_device"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "diversion_facility_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "facility"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "crossing_type"
+      ]
+    },
+    "marking": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "marking"
+        },
+        "marking_type": {
+          "type": "string",
+          "enum": [
+            "centerline",
+            "edge_line",
+            "lane_line",
+            "stop_line",
+            "yield_line",
+            "crosswalk",
+            "other"
+          ]
+        },
+        "geometry": {
+          "$ref": "#/$defs/surface_geometry"
+        },
+        "lane_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "lane"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "state": {
+          "type": "string",
+          "enum": [
+            "existing",
+            "temporary",
+            "covered",
+            "removed"
+          ]
+        },
+        "conflict_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "marking",
+              "path"
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "marking_type"
+      ]
+    },
+    "restriction": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "restriction"
+        },
+        "restriction_type": {
+          "type": "string",
+          "enum": [
+            "parking",
+            "access"
+          ]
+        },
+        "extent": {
+          "$ref": "#/$defs/footprint"
+        },
+        "approach_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "approach"
+          ]
+        },
+        "boundary_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "boundary"
+          ]
+        },
+        "crossing_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "crossing"
+          ]
+        },
+        "sign_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "device:sign"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "state": {
+          "type": "string",
+          "enum": [
+            "active",
+            "inactive"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "restriction_type"
+      ]
+    },
+    "dimensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "width": {
+          "$ref": "#/$defs/length"
+        },
+        "height": {
+          "$ref": "#/$defs/length"
+        },
+        "depth": {
+          "$ref": "#/$defs/length"
+        },
+        "diameter": {
+          "$ref": "#/$defs/length"
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "width",
+            "height"
+          ]
+        },
+        {
+          "required": [
+            "diameter"
+          ]
+        }
+      ]
+    },
+    "band": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "width": {
+          "$ref": "#/$defs/length"
+        },
+        "bottom_height": {
+          "$ref": "#/$defs/length"
+        },
+        "color": {
+          "type": "string"
+        },
+        "reflective": {
+          "type": "boolean"
+        }
+      }
+    },
+    "stripes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "width": {
+          "$ref": "#/$defs/length"
+        },
+        "orientation": {
+          "type": "string",
+          "enum": [
+            "left",
+            "right"
+          ]
+        },
+        "colors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "reflective": {
+          "type": "boolean"
+        }
+      }
+    },
+    "mount": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mount_type": {
+          "type": "string",
+          "enum": [
+            "ground",
+            "portable",
+            "overhead",
+            "vehicle",
+            "barricade"
+          ]
+        },
+        "bottom_height": {
+          "$ref": "#/$defs/length"
+        },
+        "top_height": {
+          "$ref": "#/$defs/length"
+        },
+        "reference_surface_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "boundary",
+            "facility"
+          ]
+        },
+        "reference_description": {
+          "type": "string"
+        },
+        "support_type": {
+          "type": "string"
+        },
+        "support_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "breakaway": {
+          "type": "boolean"
+        },
+        "support_footprint": {
+          "$ref": "#/$defs/footprint"
+        },
+        "supporting_device_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "device"
+          ]
+        }
+      }
+    },
+    "spec_sign": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mutcd_code": {
+          "type": "string"
+        },
+        "legend": {
+          "type": "string"
+        },
+        "dimensions": {
+          "$ref": "#/$defs/dimensions"
+        },
+        "shape": {
+          "type": "string",
+          "enum": [
+            "rectangle",
+            "diamond",
+            "circle",
+            "other"
+          ]
+        },
+        "face_heading": {
+          "$ref": "#/$defs/angle"
+        },
+        "assembly_parent_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "device:sign"
+          ]
+        },
+        "assembly_role": {
+          "type": "string",
+          "enum": [
+            "primary",
+            "plaque",
+            "secondary"
+          ]
+        },
+        "symbol_orientation": {
+          "type": "string",
+          "enum": [
+            "left",
+            "right",
+            "both"
+          ]
+        },
+        "ttc_extent_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "ttc_extent"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "shape": {
+                "enum": [
+                  "rectangle",
+                  "diamond"
+                ]
+              }
+            },
+            "required": [
+              "shape",
+              "dimensions"
+            ]
+          },
+          "then": {
+            "properties": {
+              "dimensions": {
+                "required": [
+                  "width",
+                  "height"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "shape": {
+                "const": "circle"
+              }
+            },
+            "required": [
+              "shape",
+              "dimensions"
+            ]
+          },
+          "then": {
+            "properties": {
+              "dimensions": {
+                "required": [
+                  "diameter"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "spec_cone": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "height": {
+          "$ref": "#/$defs/length"
+        },
+        "base_width": {
+          "$ref": "#/$defs/length"
+        },
+        "color": {
+          "type": "string"
+        },
+        "reflective_bands": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/band"
+          }
+        },
+        "lighting_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "device:warning_light"
+          ]
+        }
+      }
+    },
+    "spec_drum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "height": {
+          "$ref": "#/$defs/length"
+        },
+        "diameter": {
+          "$ref": "#/$defs/length"
+        },
+        "material": {
+          "type": "string"
+        },
+        "bands": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/band"
+          }
+        },
+        "ballast": {
+          "type": "string"
+        }
+      }
+    },
+    "spec_vertical_panel": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "dimensions": {
+          "$ref": "#/$defs/dimensions"
+        },
+        "stripes": {
+          "$ref": "#/$defs/stripes"
+        },
+        "color": {
+          "type": "string"
+        }
+      }
+    },
+    "spec_tubular_marker": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "height": {
+          "$ref": "#/$defs/length"
+        },
+        "diameter": {
+          "$ref": "#/$defs/length"
+        },
+        "color": {
+          "type": "string"
+        },
+        "bands": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/band"
+          }
+        }
+      }
+    },
+    "spec_barrier": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "barrier_type": {
+          "type": "string",
+          "enum": [
+            "temporary",
+            "movable",
+            "permanent"
+          ]
+        },
+        "height": {
+          "$ref": "#/$defs/length"
+        },
+        "crashworthiness_evidence_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "evidence"
+          ]
+        },
+        "protected_entity_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "entity"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "delineator_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "device"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "deflection_clearance": {
+          "$ref": "#/$defs/length"
+        }
+      }
+    },
+    "spec_barricade": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "barricade_type": {
+          "type": "string",
+          "enum": [
+            "I",
+            "II",
+            "III"
+          ]
+        },
+        "rail_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rail_dimensions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/dimensions"
+          }
+        },
+        "rail_area": {
+          "$ref": "#/$defs/area"
+        },
+        "covered_area": {
+          "$ref": "#/$defs/area"
+        },
+        "stripes": {
+          "$ref": "#/$defs/stripes"
+        },
+        "support_count": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "spec_arrow_board": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "board_class": {
+          "type": "string"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "caution",
+            "arrow",
+            "chevron",
+            "double_arrow"
+          ]
+        },
+        "arrow_direction": {
+          "type": "string",
+          "enum": [
+            "left",
+            "right",
+            "both"
+          ]
+        },
+        "sequence": {
+          "type": "string",
+          "enum": [
+            "flashing",
+            "sequential"
+          ]
+        },
+        "dimensions": {
+          "$ref": "#/$defs/dimensions"
+        },
+        "display_height": {
+          "$ref": "#/$defs/length"
+        },
+        "legibility_distance": {
+          "$ref": "#/$defs/length"
+        },
+        "dimming": {
+          "type": "boolean"
+        },
+        "active": {
+          "type": "boolean"
+        }
+      }
+    },
+    "spec_message_sign": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "messages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "active": {
+          "type": "boolean"
+        },
+        "dimensions": {
+          "$ref": "#/$defs/dimensions"
+        },
+        "lateral_overhang": {
+          "$ref": "#/$defs/length"
+        },
+        "legibility_distance": {
+          "$ref": "#/$defs/length"
+        },
+        "protective_device_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "device"
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "spec_afad": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "afad_type": {
+          "type": "string",
+          "enum": [
+            "stop_slow",
+            "red_yellow_lens"
+          ]
+        },
+        "display_dimensions": {
+          "$ref": "#/$defs/dimensions"
+        },
+        "gate_arm": {
+          "type": "boolean"
+        },
+        "gate_clearance": {
+          "$ref": "#/$defs/length"
+        },
+        "detection": {
+          "type": "boolean"
+        },
+        "operator_actor_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "actor"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "warning_light_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "device:warning_light"
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "spec_signal": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "signal_role": {
+          "type": "string",
+          "enum": [
+            "vehicular",
+            "pedestrian"
+          ]
+        },
+        "state": {
+          "type": "string",
+          "enum": [
+            "active",
+            "covered",
+            "deactivated"
+          ]
+        },
+        "stop_line_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "marking:stop_line"
+          ]
+        },
+        "head_height": {
+          "$ref": "#/$defs/length"
+        }
+      }
+    },
+    "spec_audible_device": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "communication_mode": {
+          "type": "string",
+          "enum": [
+            "audible",
+            "tactile",
+            "both"
+          ]
+        },
+        "active": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        },
+        "crossing_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "crossing"
+          ]
+        },
+        "assessment_decision_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "decision"
+          ]
+        }
+      }
+    },
+    "spec_warning_light": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "light_type": {
+          "type": "string"
+        },
+        "color": {
+          "type": "string"
+        },
+        "active": {
+          "type": "boolean"
+        },
+        "flash_rate": {
+          "$ref": "#/$defs/frequency"
+        },
+        "visibility_distance": {
+          "$ref": "#/$defs/length"
+        },
+        "mount_height": {
+          "$ref": "#/$defs/length"
+        }
+      }
+    },
+    "device": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "device"
+        },
+        "device_type": {
+          "type": "string",
+          "enum": [
+            "sign",
+            "cone",
+            "drum",
+            "vertical_panel",
+            "tubular_marker",
+            "barrier",
+            "barricade",
+            "arrow_board",
+            "message_sign",
+            "afad",
+            "signal",
+            "audible_device",
+            "warning_light"
+          ]
+        },
+        "location": {
+          "$ref": "#/$defs/location"
+        },
+        "footprint": {
+          "$ref": "#/$defs/footprint"
+        },
+        "state": {
+          "type": "string",
+          "enum": [
+            "deployed",
+            "stored",
+            "inactive",
+            "removed"
+          ]
+        },
+        "approach_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "approach"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "path_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "path"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "lane_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "lane"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "closure_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "closure"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "zone_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "zone"
+          ]
+        },
+        "taper_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "taper"
+          ]
+        },
+        "vehicle_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "vehicle"
+          ]
+        },
+        "specification": {},
+        "mount": {
+          "$ref": "#/$defs/mount"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "device_type"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "sign"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_sign"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "cone"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_cone"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "drum"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_drum"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "vertical_panel"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_vertical_panel"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "tubular_marker"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_tubular_marker"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "barrier"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_barrier"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "barricade"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_barricade"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "arrow_board"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_arrow_board"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "message_sign"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_message_sign"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "afad"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_afad"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "signal"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_signal"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "audible_device"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_audible_device"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "warning_light"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_warning_light"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "device_run": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "device_run"
+        },
+        "device_type": {
+          "type": "string",
+          "enum": [
+            "cone",
+            "drum",
+            "vertical_panel",
+            "tubular_marker",
+            "barrier",
+            "barricade"
+          ]
+        },
+        "segment_role": {
+          "type": "string",
+          "enum": [
+            "taper",
+            "tangent",
+            "conflict",
+            "other"
+          ]
+        },
+        "taper_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "taper"
+          ]
+        },
+        "closure_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "closure"
+          ]
+        },
+        "zone_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "zone"
+          ]
+        },
+        "path_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "path"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "lane_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "lane"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "geometry": {
+          "$ref": "#/$defs/run_geometry"
+        },
+        "spacing": {
+          "$ref": "#/$defs/length"
+        },
+        "individual_device_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "device"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "gap_measurements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "from_device_ref": {
+                "$ref": "#/$defs/id",
+                "x-targets": [
+                  "device"
+                ]
+              },
+              "to_device_ref": {
+                "$ref": "#/$defs/id",
+                "x-targets": [
+                  "device"
+                ]
+              },
+              "gap": {
+                "$ref": "#/$defs/length"
+              }
+            },
+            "required": [
+              "from_device_ref",
+              "to_device_ref",
+              "gap"
+            ]
+          }
+        },
+        "specification": {},
+        "uniformity": {
+          "type": "string",
+          "enum": [
+            "uniform",
+            "variable",
+            "unknown"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "device_type"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "cone"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_cone"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "drum"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_drum"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "vertical_panel"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_vertical_panel"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "tubular_marker"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_tubular_marker"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "barrier"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_barrier"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "device_type": {
+                "const": "barricade"
+              }
+            },
+            "required": [
+              "device_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "specification": {
+                "$ref": "#/$defs/spec_barricade"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "actor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "actor"
+        },
+        "role": {
+          "type": "string",
+          "enum": [
+            "flagger",
+            "law_enforcement",
+            "worker",
+            "operator",
+            "other"
+          ]
+        },
+        "location": {
+          "$ref": "#/$defs/location"
+        },
+        "control_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "control"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "equipment_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "device"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "visibility_distance": {
+          "$ref": "#/$defs/length"
+        },
+        "escape_path_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "path"
+          ]
+        },
+        "communications": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "role"
+      ]
+    },
+    "vehicle": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "vehicle"
+        },
+        "vehicle_role": {
+          "type": "string",
+          "enum": [
+            "work",
+            "shadow",
+            "transfer",
+            "pilot",
+            "other"
+          ]
+        },
+        "location": {
+          "$ref": "#/$defs/location"
+        },
+        "footprint": {
+          "$ref": "#/$defs/footprint"
+        },
+        "lane_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "lane"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "mounted_device_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "device"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "lights": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "active": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "type",
+              "active"
+            ]
+          }
+        },
+        "attenuator_evidence_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "evidence"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "vehicle_role"
+      ]
+    },
+    "control": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "kind": {
+          "const": "control"
+        },
+        "control_type": {
+          "type": "string",
+          "enum": [
+            "flagger",
+            "afad",
+            "signal",
+            "pilot",
+            "yield",
+            "stop",
+            "alternating"
+          ]
+        },
+        "controlled_path_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "path"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "actor_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "actor"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "device_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "device"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "stopping_locations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/location"
+          }
+        },
+        "stop_line_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "marking:stop_line",
+              "marking:yield_line"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "communication_method": {
+          "type": "string"
+        },
+        "mutual_visibility": {
+          "type": "boolean"
+        },
+        "schedule_evidence_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "evidence"
+          ]
+        },
+        "attendance": {
+          "type": "string",
+          "enum": [
+            "attended",
+            "unattended"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "control_type"
+      ]
+    },
+    "entity": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/road"
+        },
+        {
+          "$ref": "#/$defs/alignment"
+        },
+        {
+          "$ref": "#/$defs/approach"
+        },
+        {
+          "$ref": "#/$defs/lane"
+        },
+        {
+          "$ref": "#/$defs/path"
+        },
+        {
+          "$ref": "#/$defs/junction"
+        },
+        {
+          "$ref": "#/$defs/ramp"
+        },
+        {
+          "$ref": "#/$defs/boundary"
+        },
+        {
+          "$ref": "#/$defs/application"
+        },
+        {
+          "$ref": "#/$defs/closure"
+        },
+        {
+          "$ref": "#/$defs/zone"
+        },
+        {
+          "$ref": "#/$defs/taper"
+        },
+        {
+          "$ref": "#/$defs/buffer"
+        },
+        {
+          "$ref": "#/$defs/work_area"
+        },
+        {
+          "$ref": "#/$defs/ttc_extent"
+        },
+        {
+          "$ref": "#/$defs/facility"
+        },
+        {
+          "$ref": "#/$defs/crossing"
+        },
+        {
+          "$ref": "#/$defs/marking"
+        },
+        {
+          "$ref": "#/$defs/restriction"
+        },
+        {
+          "$ref": "#/$defs/device"
+        },
+        {
+          "$ref": "#/$defs/device_run"
+        },
+        {
+          "$ref": "#/$defs/actor"
+        },
+        {
+          "$ref": "#/$defs/vehicle"
+        },
+        {
+          "$ref": "#/$defs/control"
+        }
+      ]
+    },
+    "completeness_scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "subject_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "road",
+              "approach",
+              "path",
+              "closure",
+              "zone",
+              "facility"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "phase"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "entity_kinds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "road",
+              "alignment",
+              "approach",
+              "lane",
+              "path",
+              "junction",
+              "ramp",
+              "boundary",
+              "application",
+              "closure",
+              "zone",
+              "taper",
+              "buffer",
+              "work_area",
+              "ttc_extent",
+              "facility",
+              "crossing",
+              "marking",
+              "restriction",
+              "device",
+              "device_run",
+              "actor",
+              "vehicle",
+              "control"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "device_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "sign",
+              "cone",
+              "drum",
+              "vertical_panel",
+              "tubular_marker",
+              "barrier",
+              "barricade",
+              "arrow_board",
+              "message_sign",
+              "afad",
+              "signal",
+              "audible_device",
+              "warning_light"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "range": {
+          "$ref": "#/$defs/range"
+        }
+      },
+      "required": [
+        "subject_refs",
+        "phase_refs"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "device_types"
+            ]
+          },
+          "then": {
+            "required": [
+              "entity_kinds"
+            ],
+            "properties": {
+              "entity_kinds": {
+                "contains": {
+                  "type": "string",
+                  "enum": [
+                    "device",
+                    "device_run"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "completeness": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "scope": {
+          "$ref": "#/$defs/completeness_scope"
+        },
+        "state": {
+          "type": "string",
+          "enum": [
+            "complete",
+            "partial",
+            "unknown"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "method": {
+          "type": "string",
+          "enum": [
+            "exhaustive_inspection",
+            "configured_extraction",
+            "manual_inventory",
+            "legacy_import"
+          ]
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "excluded_source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id",
+            "x-targets": [
+              "evidence"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "scope",
+        "state",
+        "evidence_refs",
+        "method"
+      ]
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "format_version": {
+      "const": "2.0.0"
+    },
+    "document_id": {
+      "$ref": "#/$defs/id"
+    },
+    "project_id": {
+      "$ref": "#/$defs/id"
+    },
+    "revision": {
+      "$ref": "#/$defs/id"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "previous_document_id": {
+      "$ref": "#/$defs/id"
+    },
+    "site": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "project_number": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "contact_evidence_ref": {
+          "$ref": "#/$defs/id",
+          "x-targets": [
+            "evidence"
+          ]
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "reference_frames": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/frame"
+      }
+    },
+    "phases": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/phase"
+      }
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entity"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidence"
+      }
+    },
+    "assertions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/assertion"
+      }
+    },
+    "completeness": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/completeness"
+      }
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/decision"
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/observation"
+      }
+    },
+    "predictions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/prediction"
+      }
+    },
+    "legacy_records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/legacy_record"
+      }
+    }
+  },
+  "required": [
+    "format_version",
+    "document_id",
+    "project_id",
+    "revision",
+    "created_at",
+    "site",
+    "reference_frames",
+    "phases",
+    "entities",
+    "evidence",
+    "assertions",
+    "completeness"
+  ]
+}

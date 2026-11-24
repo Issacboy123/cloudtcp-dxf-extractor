@@ -1,0 +1,983 @@
+{
+  "format_version": "2.0.0",
+  "document_id": "doc",
+  "project_id": "project",
+  "revision": "a",
+  "created_at": "2026-11-19T20:00:00Z",
+  "site": {
+    "name": "Synthetic partial"
+  },
+  "reference_frames": [
+    {
+      "id": "station",
+      "kind": "station",
+      "units": "feet",
+      "alignment_ref": "alignment"
+    },
+    {
+      "id": "plan",
+      "kind": "planar",
+      "units": "feet"
+    }
+  ],
+  "phases": [
+    {
+      "id": "work",
+      "name": "Work",
+      "phase_type": "work",
+      "light_condition": "mixed"
+    }
+  ],
+  "entities": [
+    {
+      "id": "road",
+      "kind": "road"
+    },
+    {
+      "id": "north",
+      "kind": "approach",
+      "road_ref": "road",
+      "frame_ref": "station",
+      "travel_sign": 1
+    },
+    {
+      "id": "south",
+      "kind": "approach",
+      "road_ref": "road",
+      "frame_ref": "station",
+      "travel_sign": -1
+    },
+    {
+      "id": "lane-a",
+      "kind": "lane",
+      "road_ref": "road",
+      "approach_ref": "north"
+    },
+    {
+      "id": "lane-b",
+      "kind": "lane",
+      "road_ref": "road",
+      "approach_ref": "north"
+    },
+    {
+      "id": "path",
+      "kind": "path",
+      "approach_ref": "north",
+      "lane_refs": [
+        "lane-a"
+      ]
+    },
+    {
+      "id": "closure",
+      "kind": "closure",
+      "closure_type": "lane",
+      "lane_refs": [
+        "lane-a",
+        "lane-b"
+      ]
+    },
+    {
+      "id": "zone-n",
+      "kind": "zone",
+      "zone_type": "work",
+      "approach_ref": "north",
+      "extent": {
+        "frame_ref": "station",
+        "start_station": 0,
+        "end_station": 100
+      }
+    },
+    {
+      "id": "zone-s",
+      "kind": "zone",
+      "zone_type": "work",
+      "approach_ref": "south",
+      "extent": {
+        "frame_ref": "station",
+        "start_station": 0,
+        "end_station": 100
+      }
+    },
+    {
+      "id": "taper",
+      "kind": "taper",
+      "taper_type": "one_lane_two_way",
+      "approach_ref": "north",
+      "device_run_refs": [
+        "run"
+      ],
+      "from_path_refs": [
+        "path"
+      ],
+      "length": {
+        "value": 0,
+        "unit": "ft"
+      }
+    },
+    {
+      "id": "run",
+      "kind": "device_run",
+      "device_type": "cone",
+      "segment_role": "taper",
+      "taper_ref": "taper",
+      "path_refs": [
+        "path"
+      ],
+      "spacing": {
+        "value": 60,
+        "unit": "ft"
+      }
+    },
+    {
+      "id": "control",
+      "kind": "control",
+      "control_type": "alternating",
+      "controlled_path_refs": [
+        "path"
+      ]
+    },
+    {
+      "id": "board-a",
+      "kind": "device",
+      "device_type": "arrow_board",
+      "lane_refs": [
+        "lane-a"
+      ],
+      "specification": {
+        "mode": "arrow"
+      }
+    },
+    {
+      "id": "board-b",
+      "kind": "device",
+      "device_type": "arrow_board",
+      "lane_refs": [
+        "lane-b"
+      ],
+      "specification": {
+        "mode": "caution"
+      }
+    },
+    {
+      "id": "alignment",
+      "kind": "alignment",
+      "frame_ref": "station",
+      "road_ref": "road",
+      "plan_geometry": {
+        "points": [
+          {
+            "frame_ref": "plan",
+            "x": 0,
+            "y": 0
+          },
+          {
+            "frame_ref": "plan",
+            "x": 100,
+            "y": 0
+          }
+        ]
+      },
+      "profile": [
+        {
+          "station": 0,
+          "elevation": 0
+        },
+        {
+          "station": 100,
+          "elevation": -2
+        }
+      ],
+      "station_mapping": [
+        {
+          "station": 0,
+          "point_index": 0,
+          "distance_along_segment": 0
+        },
+        {
+          "station": 100,
+          "point_index": 0,
+          "distance_along_segment": 100
+        }
+      ],
+      "grade_segments": [
+        {
+          "range": {
+            "frame_ref": "station",
+            "start_station": 0,
+            "end_station": 100
+          },
+          "grade": {
+            "value": -0.02,
+            "unit": "ratio"
+          }
+        }
+      ]
+    },
+    {
+      "id": "junction",
+      "kind": "junction",
+      "junction_type": "intersection",
+      "road_refs": [
+        "road"
+      ],
+      "approach_refs": [
+        "north",
+        "south"
+      ],
+      "movements": [
+        {
+          "from_path_ref": "path",
+          "to_path_ref": "path",
+          "movement": "u_turn"
+        }
+      ]
+    },
+    {
+      "id": "ramp",
+      "kind": "ramp",
+      "road_ref": "road",
+      "ramp_type": "temporary",
+      "from_path_ref": "path",
+      "available_length": {
+        "value": 200,
+        "unit": "ft"
+      }
+    },
+    {
+      "id": "edge",
+      "kind": "boundary",
+      "road_ref": "road",
+      "boundary_type": "curb_face",
+      "geometry": {
+        "points": [
+          {
+            "frame_ref": "plan",
+            "x": 0,
+            "y": 0
+          },
+          {
+            "frame_ref": "plan",
+            "x": 100,
+            "y": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "application",
+      "kind": "application",
+      "jurisdiction": {
+        "country": "US",
+        "state": "CA"
+      },
+      "source_evidence_ref": "source",
+      "layout_id": "Synthetic-layout",
+      "edition": "Synthetic example",
+      "closure_refs": [
+        "closure"
+      ],
+      "approach_refs": [
+        "north"
+      ]
+    },
+    {
+      "id": "buffer",
+      "kind": "buffer",
+      "buffer_role": "lateral",
+      "width": {
+        "value": 0,
+        "unit": "ft"
+      },
+      "protected_path_refs": [
+        "path"
+      ],
+      "zone_ref": "zone-n"
+    },
+    {
+      "id": "work-area",
+      "kind": "work_area",
+      "activity": "storage",
+      "extent": {
+        "rings": [
+          [
+            {
+              "frame_ref": "plan",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "frame_ref": "plan",
+              "x": 10,
+              "y": 0
+            },
+            {
+              "frame_ref": "plan",
+              "x": 10,
+              "y": 10
+            },
+            {
+              "frame_ref": "plan",
+              "x": 0,
+              "y": 10
+            },
+            {
+              "frame_ref": "plan",
+              "x": 0,
+              "y": 0
+            }
+          ]
+        ]
+      },
+      "occupant_refs": [
+        "vehicle"
+      ]
+    },
+    {
+      "id": "limits",
+      "kind": "ttc_extent",
+      "definition": "agency_project_limits",
+      "path_ref": "path",
+      "length": {
+        "value": 1000,
+        "unit": "ft"
+      },
+      "mileage_sign_refs": [
+        "sign"
+      ]
+    },
+    {
+      "id": "facility",
+      "kind": "facility",
+      "facility_type": "curb_ramp",
+      "clear_width": {
+        "value": 36,
+        "unit": "in"
+      },
+      "running_slope": {
+        "value": -0.05,
+        "unit": "ratio"
+      },
+      "cross_slope": {
+        "value": 0.02,
+        "unit": "ratio"
+      },
+      "surface": {
+        "firm": true,
+        "slip_resistant": false
+      },
+      "geometry": {
+        "rings": [
+          [
+            {
+              "frame_ref": "plan",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "frame_ref": "plan",
+              "x": 10,
+              "y": 0
+            },
+            {
+              "frame_ref": "plan",
+              "x": 10,
+              "y": 10
+            },
+            {
+              "frame_ref": "plan",
+              "x": 0,
+              "y": 10
+            },
+            {
+              "frame_ref": "plan",
+              "x": 0,
+              "y": 0
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crossing",
+      "kind": "crossing",
+      "crossing_type": "railroad",
+      "path_refs": [
+        "path"
+      ],
+      "rail_clearance_extent": {
+        "rings": [
+          [
+            {
+              "frame_ref": "plan",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "frame_ref": "plan",
+              "x": 10,
+              "y": 0
+            },
+            {
+              "frame_ref": "plan",
+              "x": 10,
+              "y": 10
+            },
+            {
+              "frame_ref": "plan",
+              "x": 0,
+              "y": 10
+            },
+            {
+              "frame_ref": "plan",
+              "x": 0,
+              "y": 0
+            }
+          ]
+        ]
+      },
+      "audible_device_refs": [
+        "audible_device"
+      ],
+      "control_ref": "control"
+    },
+    {
+      "id": "stop",
+      "kind": "marking",
+      "marking_type": "stop_line",
+      "lane_refs": [
+        "lane-a"
+      ],
+      "state": "temporary",
+      "geometry": {
+        "points": [
+          {
+            "frame_ref": "plan",
+            "x": 0,
+            "y": 0
+          },
+          {
+            "frame_ref": "plan",
+            "x": 10,
+            "y": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "restriction",
+      "kind": "restriction",
+      "restriction_type": "parking",
+      "boundary_ref": "edge",
+      "sign_refs": [
+        "sign"
+      ],
+      "state": "active"
+    },
+    {
+      "id": "actor",
+      "kind": "actor",
+      "role": "operator",
+      "control_refs": [
+        "control"
+      ],
+      "equipment_refs": [
+        "afad"
+      ],
+      "escape_path_ref": "path"
+    },
+    {
+      "id": "vehicle",
+      "kind": "vehicle",
+      "vehicle_role": "shadow",
+      "mounted_device_refs": [
+        "board-a"
+      ],
+      "lights": [
+        {
+          "type": "warning",
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "sign",
+      "kind": "device",
+      "device_type": "sign",
+      "phase_refs": [
+        "work"
+      ],
+      "specification": {
+        "mutcd_code": "G20-1",
+        "legend": "SYNTHETIC",
+        "shape": "rectangle",
+        "dimensions": {
+          "width": {
+            "value": 36,
+            "unit": "in"
+          },
+          "height": {
+            "value": 48,
+            "unit": "in"
+          }
+        },
+        "ttc_extent_ref": "limits"
+      }
+    },
+    {
+      "id": "cone",
+      "kind": "device",
+      "device_type": "cone",
+      "phase_refs": [
+        "work"
+      ],
+      "specification": {
+        "height": {
+          "value": 1,
+          "unit": "in"
+        },
+        "color": "orange",
+        "reflective_bands": [
+          {
+            "width": {
+              "value": 1,
+              "unit": "in"
+            },
+            "reflective": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "drum",
+      "kind": "device",
+      "device_type": "drum",
+      "phase_refs": [
+        "work"
+      ],
+      "specification": {
+        "diameter": {
+          "value": 1,
+          "unit": "in"
+        },
+        "height": {
+          "value": 2,
+          "unit": "in"
+        },
+        "material": "synthetic"
+      }
+    },
+    {
+      "id": "vertical_panel",
+      "kind": "device",
+      "device_type": "vertical_panel",
+      "phase_refs": [
+        "work"
+      ],
+      "specification": {
+        "dimensions": {
+          "width": {
+            "value": 1,
+            "unit": "in"
+          },
+          "height": {
+            "value": 2,
+            "unit": "in"
+          }
+        },
+        "stripes": {
+          "width": {
+            "value": 1,
+            "unit": "in"
+          },
+          "orientation": "left",
+          "reflective": true
+        }
+      }
+    },
+    {
+      "id": "tubular_marker",
+      "kind": "device",
+      "device_type": "tubular_marker",
+      "phase_refs": [
+        "work"
+      ],
+      "specification": {
+        "diameter": {
+          "value": 1,
+          "unit": "in"
+        },
+        "bands": [
+          {
+            "color": "white",
+            "reflective": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "barrier",
+      "kind": "device",
+      "device_type": "barrier",
+      "phase_refs": [
+        "work"
+      ],
+      "specification": {
+        "barrier_type": "temporary",
+        "protected_entity_refs": [
+          "work-area"
+        ],
+        "deflection_clearance": {
+          "value": 1,
+          "unit": "ft"
+        }
+      }
+    },
+    {
+      "id": "barricade",
+      "kind": "device",
+      "device_type": "barricade",
+      "phase_refs": [
+        "work"
+      ],
+      "specification": {
+        "barricade_type": "III",
+        "rail_count": 3,
+        "rail_area": {
+          "value": 1,
+          "unit": "ft2"
+        },
+        "covered_area": {
+          "value": 0.2,
+          "unit": "ft2"
+        },
+        "support_count": 2
+      }
+    },
+    {
+      "id": "arrow_board",
+      "kind": "device",
+      "device_type": "arrow_board",
+      "phase_refs": [
+        "work"
+      ],
+      "specification": {
+        "board_class": "synthetic",
+        "mode": "arrow",
+        "arrow_direction": "left",
+        "sequence": "sequential",
+        "display_height": {
+          "value": 1,
+          "unit": "ft"
+        },
+        "dimming": true
+      }
+    },
+    {
+      "id": "message_sign",
+      "kind": "device",
+      "device_type": "message_sign",
+      "phase_refs": [
+        "work"
+      ],
+      "specification": {
+        "messages": [
+          "SYNTHETIC"
+        ],
+        "active": false,
+        "protective_device_refs": [
+          "barrier"
+        ]
+      }
+    },
+    {
+      "id": "afad",
+      "kind": "device",
+      "device_type": "afad",
+      "phase_refs": [
+        "work"
+      ],
+      "specification": {
+        "afad_type": "stop_slow",
+        "gate_arm": true,
+        "operator_actor_refs": [
+          "actor"
+        ],
+        "warning_light_refs": [
+          "warning_light"
+        ]
+      }
+    },
+    {
+      "id": "signal",
+      "kind": "device",
+      "device_type": "signal",
+      "phase_refs": [
+        "work"
+      ],
+      "specification": {
+        "signal_role": "vehicular",
+        "state": "covered",
+        "stop_line_ref": "stop",
+        "head_height": {
+          "value": 1,
+          "unit": "ft"
+        }
+      }
+    },
+    {
+      "id": "audible_device",
+      "kind": "device",
+      "device_type": "audible_device",
+      "phase_refs": [
+        "work"
+      ],
+      "specification": {
+        "communication_mode": "both",
+        "active": false,
+        "crossing_ref": "crossing",
+        "assessment_decision_ref": "decision"
+      }
+    },
+    {
+      "id": "warning_light",
+      "kind": "device",
+      "device_type": "warning_light",
+      "phase_refs": [
+        "work"
+      ],
+      "specification": {
+        "light_type": "synthetic",
+        "color": "yellow",
+        "flash_rate": {
+          "value": 30,
+          "unit": "flashes/min"
+        },
+        "visibility_distance": {
+          "value": 5,
+          "unit": "ft"
+        }
+      },
+      "mount": {
+        "mount_type": "portable",
+        "bottom_height": {
+          "value": 12,
+          "unit": "in"
+        },
+        "top_height": {
+          "value": 2,
+          "unit": "ft"
+        },
+        "reference_surface_ref": "edge",
+        "support_count": 1,
+        "breakaway": false
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "id": "source",
+      "source_type": "manual_inspection",
+      "locator": {
+        "record_key": "inspection"
+      }
+    }
+  ],
+  "assertions": [
+    {
+      "id": "sight-assertion",
+      "subject_ref": "sight",
+      "path": "/value",
+      "status": "supported",
+      "method": "derived",
+      "scope": {
+        "phase_refs": [
+          "work"
+        ]
+      },
+      "evidence_refs": [
+        "source"
+      ]
+    }
+  ],
+  "completeness": [
+    {
+      "id": "inventory",
+      "scope": {
+        "subject_refs": [
+          "north"
+        ],
+        "phase_refs": [
+          "work"
+        ],
+        "entity_kinds": [
+          "device"
+        ],
+        "device_types": [
+          "sign"
+        ]
+      },
+      "state": "partial",
+      "method": "manual_inventory",
+      "evidence_refs": [
+        "source"
+      ],
+      "limitations": [
+        "Synthetic subset only."
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "id": "decision",
+      "decision_type": "coordination",
+      "subject_refs": [
+        "closure"
+      ],
+      "phase_refs": [
+        "work"
+      ],
+      "outcome": "conditional",
+      "authority": "Synthetic author; authority not verified",
+      "rationale": "Demonstrate stored coordination facts only",
+      "evidence_refs": [
+        "source"
+      ],
+      "notified_parties": [
+        "Synthetic agency"
+      ],
+      "acknowledgements": [],
+      "conditions": [
+        "Review source requirements"
+      ],
+      "parameters": [
+        {
+          "name": "example-tier",
+          "value": "authored",
+          "source_locator": "synthetic"
+        }
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "id": "sight",
+      "subject_refs": [
+        "north",
+        "control"
+      ],
+      "metric": "stopping_sight_distance",
+      "value": {
+        "value": 25,
+        "unit": "ft"
+      },
+      "reference_locations": [
+        {
+          "frame_ref": "station",
+          "station": 0,
+          "offset": 0
+        },
+        {
+          "frame_ref": "station",
+          "station": 25,
+          "offset": 0
+        }
+      ],
+      "derivation": "station_difference",
+      "evidence_refs": [
+        "source"
+      ],
+      "phase_refs": [
+        "work"
+      ]
+    },
+    {
+      "id": "occupancy",
+      "subject_refs": [
+        "crossing"
+      ],
+      "metric": "queue_occupancy",
+      "value": false,
+      "footprint": {
+        "rings": [
+          [
+            {
+              "frame_ref": "plan",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "frame_ref": "plan",
+              "x": 10,
+              "y": 0
+            },
+            {
+              "frame_ref": "plan",
+              "x": 10,
+              "y": 10
+            },
+            {
+              "frame_ref": "plan",
+              "x": 0,
+              "y": 10
+            },
+            {
+              "frame_ref": "plan",
+              "x": 0,
+              "y": 0
+            }
+          ]
+        ]
+      },
+      "evidence_refs": [
+        "source"
+      ]
+    },
+    {
+      "id": "bike-speed",
+      "subject_refs": [
+        "path"
+      ],
+      "metric": "calculation_speed",
+      "mode": "bicycle",
+      "basis": "anticipated_operating",
+      "value": {
+        "value": 10,
+        "unit": "mph"
+      }
+    },
+    {
+      "id": "queue",
+      "subject_refs": [
+        "path"
+      ],
+      "metric": "queue_length",
+      "value": {
+        "value": 100,
+        "unit": "ft"
+      }
+    }
+  ],
+  "predictions": [
+    {
+      "id": "prediction",
+      "model_version": "synthetic-model",
+      "predicted_at": "2026-11-19T20:00:00Z",
+      "horizon": {
+        "value": 15,
+        "unit": "min"
+      },
+      "subject_refs": [
+        "path"
+      ],
+      "metrics": [
+        {
+          "metric": "queue_length",
+          "value": {
+            "value": 200,
+            "unit": "ft"
+          }
+        }
+      ]
+    }
+  ]
+}
